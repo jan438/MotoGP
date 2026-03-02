@@ -31,7 +31,7 @@ os.chdir(path)
 my_canvas = canvas.Canvas("PDF/MotoGP.pdf", pagesize = A4)
 width, height = A4
 my_canvas.setTitle("MotoGP")
-drawing = scaleSVG('SVG/ina-info.svg', 2.0)
+drawing = scaleSVG('SVG/Indonesia.svg', 0.5)
 renderPDF.draw(drawing, my_canvas, 50, 50)
 my_canvas.setFillColor(HexColor('#FECDE5'))
 p = my_canvas.beginPath()
