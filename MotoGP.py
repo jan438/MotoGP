@@ -33,6 +33,8 @@ width, height = A4
 my_canvas.setTitle("MotoGP")
 drawing = scaleSVG('SVG/Indonesia.svg', 0.5)
 renderPDF.draw(drawing, my_canvas, 50, 50)
+drawing = scaleSVG('SVG/ita-info.svg', 0.5)
+renderPDF.draw(drawing, my_canvas, 150, 50)
 my_canvas.setFillColor(HexColor('#FECDE5'))
 p = my_canvas.beginPath()
 p.arc(2.0, 12.0, 22.0, 32.0, startAng = 90, extent = 90)
