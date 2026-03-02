@@ -4,6 +4,7 @@ import csv
 import math
 import unicodedata
 from pathlib import Path
+from reportlab.lib.pagesizes import A4
 from datetime import datetime, date, timedelta
 from reportlab.pdfgen import canvas
 from reportlab.lib.colors import HexColor
@@ -14,7 +15,7 @@ if sys.platform[0] == 'l':
 if sys.platform[0] == 'w':
     path = "C:/Users/janbo/OneDrive/Documents/GitHub/MotoGP"
 os.chdir(path)
-my_canvas = canvas.Canvas("PDF/MotoGP.pdf")
+my_canvas = canvas.Canvas("PDF/MotoGP.pdf", pagesize = A4)
 my_canvas.setFillColor(HexColor('#FECDE5'))
 p = my_canvas.beginPath()
 p.arc(2.0, 12.0, 22.0, 32.0, startAng = 90, extent = 90)
