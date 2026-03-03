@@ -76,9 +76,9 @@ drawing = scaleSVG('SVG/Malaysia.svg', 0.5)
 renderPDF.draw(drawing, my_canvas, 450, 650)
 
 drawing = scaleSVG('SVG/Portugal.svg', 0.4)
-renderPDF.draw(drawing, my_canvas, 50, 300)
+renderPDF.draw(drawing, my_canvas, 50, 350)
 drawing = scaleSVG('SVG/Valencia.svg', 0.5)
-renderPDF.draw(drawing, my_canvas, 450, 300)
+renderPDF.draw(drawing, my_canvas, 450, 350)
 
 my_canvas.save()
 key = input("Wait")
