@@ -33,6 +33,7 @@ width, height = A4
 my_canvas.setTitle("MotoGP")
 drawing = scaleSVG('SVG/Indonesia.svg', 0.5)
 renderPDF.draw(drawing, my_canvas, 50, 50)
+my_canvas.drawString(50, 45, "Indonesia")
 drawing = scaleSVG('SVG/Italy.svg', 0.5)
 renderPDF.draw(drawing, my_canvas, 150, 50)
 drawing = scaleSVG('SVG/Catalonia.svg', 0.5)
