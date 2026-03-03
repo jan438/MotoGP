@@ -72,7 +72,7 @@ drawing = scaleSVG('SVG/Austria.svg', 0.5)
 renderPDF.draw(drawing, my_canvas, 250, 650)
 drawing = scaleSVG('SVG/Japan.svg', 0.4)
 renderPDF.draw(drawing, my_canvas, 350, 650)
-drawing = scaleSVG('SVG/Great Britain.svg', 0.1)
+drawing = scaleSVG('SVG/Malaysia.svg', 0.5)
 renderPDF.draw(drawing, my_canvas, 450, 650)
 
 my_canvas.save()
