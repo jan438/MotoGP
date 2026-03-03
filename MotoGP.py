@@ -55,7 +55,7 @@ renderPDF.draw(drawing, my_canvas, 450, 250)
 
 drawing = scaleSVG('SVG/Hungary.svg', 0.1)
 renderPDF.draw(drawing, my_canvas, 50, 450)
-drawing = scaleSVG('SVG/USA.svg', 0.1)
+drawing = scaleSVG('SVG/Czechia.svg', 0.1)
 renderPDF.draw(drawing, my_canvas, 150, 450)
 drawing = scaleSVG('SVG/Qatar.svg', 0.09)
 renderPDF.draw(drawing, my_canvas, 250, 450)
