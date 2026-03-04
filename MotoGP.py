@@ -16,8 +16,8 @@ circuitsdata = []
 row = 4
 col = 0
 leftmargin = 25
-rowheight = 160
-colwidth = 180
+rowheight = 100
+colwidth = 90
 
 def scaleSVG(svgfile, scaling_factor):
     svg_root = load_svg_file(svgfile)
