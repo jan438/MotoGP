@@ -18,7 +18,7 @@ col = 0
 leftmargin = 25
 rowheight = 150
 colwidth = 90
-circuit_y = row * rowheight
+circuit_y = row * rowheight + 50
 
 def scaleSVG(svgfile, scaling_factor):
     svg_root = load_svg_file(svgfile)
