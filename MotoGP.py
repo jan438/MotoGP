@@ -16,7 +16,7 @@ circuitsdata = []
 row = 4
 col = 0
 leftmargin = 25
-rowheight = 125
+rowheight = 150
 colwidth = 90
 circuit_y = row * rowheight
 
@@ -51,7 +51,7 @@ drawing = scaleSVG('SVG/MotoGPlogo.svg', 0.1)
 renderPDF.draw(drawing, my_canvas, 50, 750)
 
 for i in range(len(circuitsdata)):
-    if i == 8:
+    if i == 10:
         break
     scale = float(circuitsdata[i][1])
     drawing = scaleSVG("SVG/" + circuitsdata[i][0] + ".svg", scale)
