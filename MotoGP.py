@@ -7,7 +7,9 @@ from pathlib import Path
 from reportlab.lib.pagesizes import A4
 from reportlab.graphics import renderPDF
 from datetime import datetime, date, timedelta
+from reportlab.pdfbase.ttfonts import TTFont
 from reportlab.pdfgen import canvas
+from reportlab.pdfbase import pdfmetrics  
 from reportlab.lib.colors import HexColor
 from reportlab.lib.units import inch, mm
 from svglib.svglib import svg2rlg, load_svg_file, SvgRenderer
@@ -19,6 +21,7 @@ leftmargin = 25
 rowheight = 150
 colwidth = 90
 circuit_y = row * rowheight + 50
+motogpfont = "LiberationSerif"
 
 def scaleSVG(svgfile, scaling_factor):
     svg_root = load_svg_file(svgfile)
@@ -36,6 +39,12 @@ if sys.platform[0] == 'l':
 if sys.platform[0] == 'w':
     path = "C:/Users/janbo/OneDrive/Documents/GitHub/MotoGP"
 os.chdir(path)
+
+pdfmetrics.registerFont(TTFont('LiberationSerif', 'LiberationSerif-Regular.ttf'))
+pdfmetrics.registerFont(TTFont('LiberationSerifBold', 'LiberationSerif-Bold.ttf'))
+pdfmetrics.registerFont(TTFont('LiberationSerifItalic', 'LiberationSerif-Italic.ttf'))
+pdfmetrics.registerFont(TTFont('LiberationSerifBoldItalic', 'LiberationSerif-BoldItalic.ttf'))
+
 file_to_open = "Data/Circuits.csv"
 with open(file_to_open, 'r') as file:
     csvreader = csv.reader(file, delimiter = ';')
@@ -45,6 +54,7 @@ with open(file_to_open, 'r') as file:
         count += 1
 my_canvas = canvas.Canvas("PDF/MotoGP.pdf", pagesize = A4)
 width, height = A4
+my_canvas.setFont(motogpfont, 12)
 my_canvas.setTitle("MotoGP")
 
 drawing = scaleSVG('SVG/MotoGPlogo.svg', 0.1)
