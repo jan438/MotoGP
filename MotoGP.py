@@ -53,8 +53,8 @@ for i in range(len(circuitsdata)):
     if i == 1:
         break
     drawing = scaleSVG("SVG/" + circuitsdata[i][0] + ".svg", 0.5)
-    renderPDF.draw(drawing, my_canvas, 50, 700)
-    my_canvas.drawString(150, 700, circuitsdata[i][0])
+    renderPDF.draw(drawing, my_canvas, leftmargin + 50, 700)
+    my_canvas.drawString(leftmargin + 150, 700, circuitsdata[i][0])
     col = col + 1
     if col == 5:
         col = 0
