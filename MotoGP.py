@@ -54,6 +54,7 @@ renderPDF.draw(drawing, my_canvas, 50, 750)
 for i in range(len(circuitsdata)):
     if i == 1:
         break
+    scale = float(circuitsdata[i][1])
     drawing = scaleSVG("SVG/" + circuitsdata[i][0] + ".svg", scale)
     renderPDF.draw(drawing, my_canvas, leftmargin + col * colwidth, circuit_y)
     my_canvas.drawString(leftmargin + col * colwidth, circuit_y - 20, circuitsdata[i][0])
