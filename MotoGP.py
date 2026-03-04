@@ -16,7 +16,7 @@ circuitsdata = []
 row = 4
 col = 0
 leftmargin = 25
-rowheight = 100
+rowheight = 125
 colwidth = 90
 circuit_y = row * rowheight
 
@@ -51,7 +51,7 @@ drawing = scaleSVG('SVG/MotoGPlogo.svg', 0.1)
 renderPDF.draw(drawing, my_canvas, 50, 750)
 
 for i in range(len(circuitsdata)):
-    if i == 2:
+    if i == 5:
         break
     drawing = scaleSVG("SVG/" + circuitsdata[i][0] + ".svg", 0.5)
     renderPDF.draw(drawing, my_canvas, leftmargin + col * colwidth, circuit_y)
@@ -67,16 +67,11 @@ my_canvas.drawString(50, 45, "Indonesia")
 drawing = scaleSVG('SVG/Italy.svg', 0.5)
 renderPDF.draw(drawing, my_canvas, 150, 50)
 my_canvas.drawString(150, 45, "Italy")
-drawing = scaleSVG('SVG/Catalonia.svg', 0.5)
-renderPDF.draw(drawing, my_canvas, 250, 50)
-my_canvas.drawString(250, 45, "Catalonia")
+
 drawing = scaleSVG('SVG/Thailand.svg', 0.5)
 renderPDF.draw(drawing, my_canvas, 450, 50)
 my_canvas.drawString(450, 45, "Thailand")
 
-drawing = scaleSVG('SVG/Brazil.svg', 0.5)
-renderPDF.draw(drawing, my_canvas, 50, 250)
-my_canvas.drawString(50, 245, "Brazil")
 drawing = scaleSVG('SVG/USA.svg', 0.1)
 renderPDF.draw(drawing, my_canvas, 150, 250)
 my_canvas.drawString(150, 245, "USA")
@@ -110,9 +105,7 @@ my_canvas.drawString(450, 445, "Great Britain")
 drawing = scaleSVG('SVG/San Marino;.svg', 0.5)
 renderPDF.draw(drawing, my_canvas, 150, 650)
 my_canvas.drawString(150, 645, "San Marino")
-drawing = scaleSVG('SVG/Austria.svg', 0.5)
-renderPDF.draw(drawing, my_canvas, 250, 650)
-my_canvas.drawString(250, 645, "Austria")
+
 drawing = scaleSVG('SVG/Japan.svg', 0.4)
 renderPDF.draw(drawing, my_canvas, 350, 650)
 my_canvas.drawString(350, 645, "Japan")
