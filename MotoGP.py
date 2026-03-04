@@ -51,7 +51,7 @@ drawing = scaleSVG('SVG/MotoGPlogo.svg', 0.1)
 renderPDF.draw(drawing, my_canvas, 50, 750)
 
 for i in range(len(circuitsdata)):
-    if i == 5:
+    if i == 7:
         break
     drawing = scaleSVG("SVG/" + circuitsdata[i][0] + ".svg", 0.5)
     renderPDF.draw(drawing, my_canvas, leftmargin + col * colwidth, circuit_y)
