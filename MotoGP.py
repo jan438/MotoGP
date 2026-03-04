@@ -31,6 +31,10 @@ os.chdir(path)
 my_canvas = canvas.Canvas("PDF/MotoGP.pdf", pagesize = A4)
 width, height = A4
 my_canvas.setTitle("MotoGP")
+
+drawing = scaleSVG('SVG/MotoGPlogo.svg', 0.1)
+renderPDF.draw(drawing, my_canvas, 50, 750)
+
 drawing = scaleSVG('SVG/Indonesia.svg', 0.5)
 renderPDF.draw(drawing, my_canvas, 50, 50)
 my_canvas.drawString(50, 45, "Indonesia")
