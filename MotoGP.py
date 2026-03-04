@@ -18,6 +18,7 @@ col = 0
 leftmargin = 25
 rowheight = 100
 colwidth = 90
+circuit_y = row * rowheight
 
 def scaleSVG(svgfile, scaling_factor):
     svg_root = load_svg_file(svgfile)
@@ -53,12 +54,12 @@ for i in range(len(circuitsdata)):
     if i == 2:
         break
     drawing = scaleSVG("SVG/" + circuitsdata[i][0] + ".svg", 0.5)
-    renderPDF.draw(drawing, my_canvas, leftmargin + col * colwidth, 710)
-    my_canvas.drawString(leftmargin + col * colwidth, 700, circuitsdata[i][0])
+    renderPDF.draw(drawing, my_canvas, leftmargin + col * colwidth, circuit_y)
+    my_canvas.drawString(leftmargin + col * colwidth, circuit_y - 20, circuitsdata[i][0])
     col = col + 1
     if col == 5:
         col = 0
-        row = row + 1
+        circuit_y = circuit_y - rowheight
 
 drawing = scaleSVG('SVG/Indonesia.svg', 0.5)
 renderPDF.draw(drawing, my_canvas, 50, 50)
