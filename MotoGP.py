@@ -51,8 +51,6 @@ drawing = scaleSVG('SVG/MotoGPlogo.svg', 0.1)
 renderPDF.draw(drawing, my_canvas, 50, 750)
 
 for i in range(len(circuitsdata)):
-    if i == 222:
-        break
     if i == 11:
         col = 4  
     scale = float(circuitsdata[i][1])
