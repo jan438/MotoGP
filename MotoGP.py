@@ -13,6 +13,8 @@ from reportlab.lib.units import inch, mm
 from svglib.svglib import svg2rlg, load_svg_file, SvgRenderer
 
 circuitsdata = []
+row = 4
+col = 0
 
 def scaleSVG(svgfile, scaling_factor):
     svg_root = load_svg_file(svgfile)
@@ -48,8 +50,12 @@ for i in range(len(circuitsdata)):
     if i == 1:
         break
     drawing = scaleSVG("SVG/" + circuitsdata[i][0] + ".svg", 0.5)
-    renderPDF.draw(drawing, my_canvas, 350, 750)
-    my_canvas.drawString(450, 745, circuitsdata[i][0])
+    renderPDF.draw(drawing, my_canvas, 50, 700)
+    my_canvas.drawString(150, 700, circuitsdata[i][0])
+    col = col + 1
+    if col == 5:
+        col = 0
+        row = row + 1
 
 drawing = scaleSVG('SVG/Indonesia.svg', 0.5)
 renderPDF.draw(drawing, my_canvas, 50, 50)
