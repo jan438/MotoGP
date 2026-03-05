@@ -67,7 +67,7 @@ renderPDF.draw(drawing, my_canvas, 50, 750)
 for i in range(len(circuitsdata)):
     if i == 11:
         col = 4
-    my_canvas.setStrokeColor(black)
+    my_canvas.setStrokeColor(yellow)
     my_canvas.rect(leftmargin + col * colwidth, circuit_y, colwidth, colwidth, stroke = 1, fill = 0)
     my_canvas.setFillColor(HexColor("#000000"))
     svgfile = "SVG/" + circuitsdata[i][0] + ".svg"
