@@ -76,7 +76,8 @@ for i in range(len(circuitsdata)):
         my_canvas.setStrokeColor(yellow)
         my_canvas.rect(leftmargin + col * colwidth, circuit_y, colwidth, colwidth, stroke = 1, fill = 0)
     my_canvas.setFillColor(HexColor("#000000"))
-    svgfile = "SVG/" + circuitsdata[i][0] + ".svg"
+    displayname = circuitsdata[i][0]
+    svgfile = "SVG/" + displayname + ".svg"
     tree = ET.parse(svgfile)
     root = tree.getroot()
     attrib = root.attrib
@@ -87,7 +88,8 @@ for i in range(len(circuitsdata)):
     drawing = scaleSVG(svgfile, scale)
     renderPDF.draw(drawing, my_canvas, leftmargin + col * colwidth, circuit_y)
     my_canvas.setFillColor(HexColor("#FFFFFF"))
-    my_canvas.drawString(leftmargin + col * colwidth, circuit_y - 20, circuitsdata[i][0])
+    namewidth = pdfmetrics.stringWidth(displayname, motogpfont, 12)
+    my_canvas.drawString(leftmargin + col * colwidth + colwidth - namewidth / 2, circuit_y - 20, displayname)
     col = col + 1
     if col == 5:
         col = 0
