@@ -62,7 +62,7 @@ my_canvas.setFillColor(HexColor("#000000"))
 my_canvas.rect(0, 0, width, height, fill=1)
 
 drawing = scaleSVG('SVG/MotoGPlogo.svg', 0.1)
-renderPDF.draw(drawing, my_canvas, 50, 750)
+renderPDF.draw(drawing, my_canvas, 50, 775)
 
 for i in range(len(circuitsdata)):
     if i == 11:
