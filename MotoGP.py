@@ -25,6 +25,9 @@ colwidth = 110
 circuit_y = row * rowheight + 50
 motogpfont = "LiberationSerif"
 cadre_mode = False
+worldmap_x = 125
+worldmap_y = 325
+worldmapscale = 0.34
 
 def scaleSVG(svgfile, scaling_factor):
     svg_root = load_svg_file(svgfile)
@@ -64,6 +67,7 @@ my_canvas.rect(0, 0, width, height, fill=1)
 
 drawing = scaleSVG('SVG/MotoGPlogo.svg', 0.1)
 renderPDF.draw(drawing, my_canvas, 50, 775)
+renderPDF.draw(scaleSVG("SVG/WorldMap.svg", worldmapscale), my_canvas, worldmap_x, worldmap_y)
 
 for i in range(len(circuitsdata)):
     if i == 11:
