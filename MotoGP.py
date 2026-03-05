@@ -89,7 +89,7 @@ for i in range(len(circuitsdata)):
     renderPDF.draw(drawing, my_canvas, leftmargin + col * colwidth, circuit_y)
     my_canvas.setFillColor(HexColor("#FFFFFF"))
     namewidth = pdfmetrics.stringWidth(displayname, motogpfont, 12)
-    my_canvas.drawString(leftmargin + col * colwidth + colwidth / 2 - namewidth / 2, circuit_y - 20, displayname)
+    my_canvas.drawString(leftmargin + col * colwidth + (colwidth - namewidth) / 2, circuit_y - 20, displayname)
     col = col + 1
     if col == 5:
         col = 0
