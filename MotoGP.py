@@ -80,6 +80,7 @@ for i in range(len(circuitsdata)):
     scale = float(circuitsdata[i][1])
     drawing = scaleSVG(svgfile, scale)
     renderPDF.draw(drawing, my_canvas, leftmargin + col * colwidth, circuit_y)
+    my_canvas.setFillColor(HexColor("#FFFFFF"))
     my_canvas.drawString(leftmargin + col * colwidth, circuit_y - 20, circuitsdata[i][0])
     col = col + 1
     if col == 5:
