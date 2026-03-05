@@ -58,6 +58,8 @@ my_canvas = canvas.Canvas("PDF/MotoGP.pdf", pagesize = A4)
 width, height = A4
 my_canvas.setFont(motogpfont, 12)
 my_canvas.setTitle("MotoGP")
+my_canvas.setFillColor(HexColor("#000000"))
+my_canvas.rect(0, 0, width, height, fill=1)
 
 drawing = scaleSVG('SVG/MotoGPlogo.svg', 0.1)
 renderPDF.draw(drawing, my_canvas, 50, 750)
