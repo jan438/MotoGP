@@ -65,7 +65,7 @@ for i in range(len(circuitsdata)):
     if i == 11:
         col = 4
     my_canvas.setStrokeColor(black)
-    my_canvas.rect(leftmargin + col * colwidth, circuit_y, colwidth, rowheight, stroke = 1, fill = 0)
+    my_canvas.rect(leftmargin + col * colwidth, circuit_y, colwidth, colwidth, stroke = 1, fill = 0)
     my_canvas.setFillColor(HexColor("#000000"))
     scale = float(circuitsdata[i][1])
     drawing = scaleSVG("SVG/" + circuitsdata[i][0] + ".svg", scale)
