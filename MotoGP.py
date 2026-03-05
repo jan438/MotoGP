@@ -14,6 +14,7 @@ from reportlab.pdfbase import pdfmetrics
 from reportlab.lib.colors import HexColor
 from reportlab.lib.units import inch, mm
 from svglib.svglib import svg2rlg, load_svg_file, SvgRenderer
+import xml.etree.ElementTree as ET
 
 circuitsdata = []
 row = 4
@@ -67,8 +68,15 @@ for i in range(len(circuitsdata)):
     my_canvas.setStrokeColor(black)
     my_canvas.rect(leftmargin + col * colwidth, circuit_y, colwidth, colwidth, stroke = 1, fill = 0)
     my_canvas.setFillColor(HexColor("#000000"))
+    svgfile = "SVG/" + circuitsdata[i][0] + ".svg"
+    tree = ET.parse(svgfile)
+    root = tree.getroot()
+    attrib = root.attrib
+    for name, value in attrib.items():
+        if name == "viewBox":
+            print('{0}="{1}"'.format(name, value))
     scale = float(circuitsdata[i][1])
-    drawing = scaleSVG("SVG/" + circuitsdata[i][0] + ".svg", scale)
+    drawing = scaleSVG(svgfile, scale)
     renderPDF.draw(drawing, my_canvas, leftmargin + col * colwidth, circuit_y)
     my_canvas.drawString(leftmargin + col * colwidth, circuit_y - 20, circuitsdata[i][0])
     col = col + 1
