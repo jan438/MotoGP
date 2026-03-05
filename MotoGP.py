@@ -26,7 +26,7 @@ circuit_y = row * rowheight + 50
 motogpfont = "LiberationSerif"
 cadre_mode = False
 worldmap_x = 125
-worldmap_y = 325
+worldmap_y = 300
 worldmapscale = 0.34
 
 def scaleSVG(svgfile, scaling_factor):
