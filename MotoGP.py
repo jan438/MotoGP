@@ -21,7 +21,7 @@ row = 4
 col = 0
 leftmargin = 25
 rowheight = 150
-colwidth = 90
+colwidth = 110
 circuit_y = row * rowheight + 50
 motogpfont = "LiberationSerif"
 
