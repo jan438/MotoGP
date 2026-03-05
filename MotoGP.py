@@ -8,6 +8,7 @@ from reportlab.lib.pagesizes import A4
 from reportlab.graphics import renderPDF
 from datetime import datetime, date, timedelta
 from reportlab.pdfbase.ttfonts import TTFont
+from reportlab.lib.colors import blue, green, black, red, pink, gray, brown, purple, orange, yellow
 from reportlab.pdfgen import canvas
 from reportlab.pdfbase import pdfmetrics  
 from reportlab.lib.colors import HexColor
@@ -63,7 +64,9 @@ renderPDF.draw(drawing, my_canvas, 50, 750)
 for i in range(len(circuitsdata)):
     if i == 11:
         col = 4
-    my_canvas.rect(leftmargin + col * colwidth, circuit_y, colwidth, rowheight, stroke = 1, fill = 1)
+    my_canvas.setStrokeColor(black)
+    my_canvas.rect(leftmargin + col * colwidth, circuit_y, colwidth, rowheight, stroke = 1, fill = 0)
+    my_canvas.setFillColor(HexColor("#000000"))
     scale = float(circuitsdata[i][1])
     drawing = scaleSVG("SVG/" + circuitsdata[i][0] + ".svg", scale)
     renderPDF.draw(drawing, my_canvas, leftmargin + col * colwidth, circuit_y)
