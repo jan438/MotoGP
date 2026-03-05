@@ -19,7 +19,7 @@ import xml.etree.ElementTree as ET
 circuitsdata = []
 row = 4
 col = 0
-leftmargin = 25
+leftmargin = 22.5
 rowheight = 150
 colwidth = 110
 circuit_y = row * rowheight + 50
