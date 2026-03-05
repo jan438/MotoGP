@@ -74,7 +74,7 @@ for i in range(len(circuitsdata)):
     attrib = root.attrib
     for name, value in attrib.items():
         if name == "viewBox":
-            print('{0}="{1}"'.format(name, value))
+            print(svgfile, '{0}="{1}"'.format(name, value))
     scale = float(circuitsdata[i][1])
     drawing = scaleSVG(svgfile, scale)
     renderPDF.draw(drawing, my_canvas, leftmargin + col * colwidth, circuit_y)
