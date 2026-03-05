@@ -24,6 +24,7 @@ rowheight = 150
 colwidth = 110
 circuit_y = row * rowheight + 50
 motogpfont = "LiberationSerif"
+cadre_mode = False
 
 def scaleSVG(svgfile, scaling_factor):
     svg_root = load_svg_file(svgfile)
@@ -67,8 +68,9 @@ renderPDF.draw(drawing, my_canvas, 50, 775)
 for i in range(len(circuitsdata)):
     if i == 11:
         col = 4
-    my_canvas.setStrokeColor(yellow)
-    my_canvas.rect(leftmargin + col * colwidth, circuit_y, colwidth, colwidth, stroke = 1, fill = 0)
+    if cadre_mode:
+        my_canvas.setStrokeColor(yellow)
+        my_canvas.rect(leftmargin + col * colwidth, circuit_y, colwidth, colwidth, stroke = 1, fill = 0)
     my_canvas.setFillColor(HexColor("#000000"))
     svgfile = "SVG/" + circuitsdata[i][0] + ".svg"
     tree = ET.parse(svgfile)
