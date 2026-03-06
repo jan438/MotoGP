@@ -51,14 +51,14 @@ pdfmetrics.registerFont(TTFont('LiberationSerifBold', 'LiberationSerif-Bold.ttf'
 pdfmetrics.registerFont(TTFont('LiberationSerifItalic', 'LiberationSerif-Italic.ttf'))
 pdfmetrics.registerFont(TTFont('LiberationSerifBoldItalic', 'LiberationSerif-BoldItalic.ttf'))
 
-file_to_open = "Data/Circuits.csv"
+file_to_open = "Data/CircuitsInfo.csv"
 with open(file_to_open, 'r') as file:
     csvreader = csv.reader(file, delimiter = ';')
     count = 0
     for row in csvreader:
         circuitsdata.append(row)
         count += 1
-my_canvas = canvas.Canvas("PDF/MotoGP.pdf", pagesize = A4)
+my_canvas = canvas.Canvas("PDF/MotoGPInfo.pdf", pagesize = A4)
 width, height = A4
 my_canvas.setFont(motogpfont, 12)
 my_canvas.setTitle("MotoGP")
