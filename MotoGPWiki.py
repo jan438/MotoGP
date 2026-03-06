@@ -65,9 +65,9 @@ my_canvas.setTitle("MotoGP")
 my_canvas.setFillColor(HexColor("#000000"))
 my_canvas.rect(0, 0, width, height, fill=1)
 
-drawing = scaleSVG('SVG/MotoGPlogo.svg', 0.1)
+drawing = scaleSVG('Wiki/MotoGPlogo.svg', 0.1)
 renderPDF.draw(drawing, my_canvas, 50, 775)
-renderPDF.draw(scaleSVG("SVG/WorldMap.svg", worldmapscale), my_canvas, worldmap_x, worldmap_y)
+renderPDF.draw(scaleSVG("Wiki/WorldMap.svg", worldmapscale), my_canvas, worldmap_x, worldmap_y)
 
 for i in range(len(circuitsdata)):
     if i == 11:
@@ -77,7 +77,7 @@ for i in range(len(circuitsdata)):
         my_canvas.rect(leftmargin + col * colwidth, circuit_y, colwidth, colwidth, stroke = 1, fill = 0)
     my_canvas.setFillColor(HexColor("#000000"))
     displayname = circuitsdata[i][0]
-    svgfile = "SVG/" + displayname + ".svg"
+    svgfile = "Wiki/" + displayname + ".svg"
     tree = ET.parse(svgfile)
     root = tree.getroot()
     attrib = root.attrib
