@@ -67,9 +67,5 @@
       <text id="text2441-2" y="1447.7952" x="1372.1074" style="font-size:20px;font-style:normal;font-weight:normal;text-align:center;writing-mode:lr-tb;text-anchor:middle;fill:#fffa69;fill-opacity:1;font-family:Times New Roman" xml:space="preserve"><tspan y="1447.7952" x="1372.1074" id="tspan2443-4" sodipodi:role="line">904 ft (275 m)</tspan></text>
       <use height="1052.3622" width="744.09448" x="0" y="0" xlink:href="#path2423-8" id="use4437" style="stroke:#fffa69" />
     </g>
-    <g style="display:inline" id="g3922-1" transform="matrix(1.0000055,0,0,1.0000055,1478.6116,201.11364)" clip-path="none">
-      <use style="stroke:white;stroke-width:5;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;filter:url(#filter5277)" id="use3920-5" xlink:href="#text3116-2" y="0" x="0" width="1276.099" height="849.69269" transform="translate(0.20267154,0)" />
-      <text sodipodi:linespacing="100%" id="text3116-2" y="713.47638" x="-404.51428" style="font-size:16px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:end;line-height:100%;writing-mode:lr-tb;text-anchor:end;color:#fffa69;fill:#fffa69;fill-opacity:1;fill-rule:nonzero;display:inline;overflow:visible;enable-background:accumulate;font-family:Times New Roman;-inkscape-font-specification:Times New Roman" xml:space="preserve"><tspan y="713.47638" x="-404.51428" id="tspan3118-7" sodipodi:role="line">Map based on data from October 9th, 2008</tspan></text>
-    </g>
   </g>
 </svg>
