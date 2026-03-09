@@ -554,50 +554,7 @@
        inkscape:randomized="0"
        d="m 1695.937,1398.5206 -24.4812,0 12.2406,-21.2013 z"
        transform="matrix(-0.2739978,0.6424166,1.9471113,0.8304647,-1115.6023,-1019.5885)" />
-    <g
-       id="g4906">
-      <g
-         id="g4667"
-         transform="translate(-36.835776,-17.834444)">
-        <path
-           transform="matrix(0.902439,0,0,0.902439,-602.72504,-42.992568)"
-           d="m 2307.0785,1490.1846 a 32.460609,32.460609 0 0 1 -32.4606,32.4606 32.460609,32.460609 0 0 1 -32.4606,-32.4606 32.460609,32.460609 0 0 1 32.4606,-32.4606 32.460609,32.460609 0 0 1 32.4606,32.4606 z"
-           sodipodi:ry="32.460609"
-           sodipodi:rx="32.460609"
-           sodipodi:cy="1490.1846"
-           sodipodi:cx="2274.6179"
-           id="path4663"
-           style="opacity:1;fill:white;fill-opacity:1;fill-rule:nonzero;stroke:#181818;stroke-width:2.21621633;stroke-linecap:round;stroke-linejoin:round;marker:none;marker-start:none;marker-mid:none;marker-end:none;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:66;stroke-opacity:1;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
-           sodipodi:type="arc" />
-        <text
-           id="text4560"
-           y="1319.9644"
-           x="1436.184"
-           style="font-style:normal;font-weight:normal;line-height:0%;font-family:'Times New Roman';writing-mode:lr-tb;fill:#fffa69;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-           xml:space="preserve"><tspan
-             style="font-size:56px;line-height:1.25"
-             y="1319.9644"
-             x="1436.184"
-             id="tspan4562"
-             sodipodi:role="line">7</tspan></text>
-      </g>
-      <path
-         transform="matrix(0.5162472,-0.4703857,-1.4256998,-1.5647025,2560.0253,4288.1468)"
-         d="m 1695.937,1398.5206 -24.4812,0 12.2406,-21.2013 z"
-         inkscape:randomized="0"
-         inkscape:rounded="0"
-         inkscape:flatsided="true"
-         sodipodi:arg2="1.5707963"
-         sodipodi:arg1="0.52359878"
-         sodipodi:r2="7.0671172"
-         sodipodi:r1="14.134234"
-         sodipodi:cy="1391.4535"
-         sodipodi:cx="1683.6964"
-         sodipodi:sides="3"
-         id="path4805"
-         style="opacity:1;fill:black;fill-opacity:1;stroke:white;stroke-width:0.61682928;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
-         sodipodi:type="star" />
-    </g>
+
 
 
 
