@@ -705,50 +705,6 @@
          style="opacity:1;fill:black;fill-opacity:1;stroke:white;stroke-width:0.61682928;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
          sodipodi:type="star" />
     </g>
-    <g
-       transform="translate(98.33264,40.464317)"
-       id="g4870">
-      <use
-         x="0"
-         y="0"
-         xlink:href="#text4748"
-         id="use4778"
-         style="stroke:#ffffff;stroke-width:2;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-         width="744.09448"
-         height="1052.3622" />
-      <g
-         id="g4644"
-         transform="translate(-92.419612,-1.7075776)">
-        <circle
-           r="32.460609"
-           cy="1490.1846"
-           cx="2274.6179"
-           transform="matrix(0.902439,0,0,0.902439,66.14227,-24.428847)"
-           id="path4642"
-           style="display:inline;overflow:visible;visibility:visible;opacity:1;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:#181818;stroke-width:2.21621633;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:66;stroke-opacity:1;marker:none;marker-start:none;marker-mid:none;marker-end:none;enable-background:accumulate" />
-        <text
-           id="text4572"
-           y="1338.9656"
-           x="2088.563"
-           style="font-style:normal;font-weight:normal;line-height:0%;font-family:'Times New Roman';writing-mode:lr-tb;fill:#fffa69;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-           xml:space="preserve"><tspan
-             style="font-size:56px;line-height:1.25"
-             y="1338.9656"
-             x="2088.563"
-             id="tspan4574"
-             sodipodi:role="line">10</tspan></text>
-      </g>
-      <text
-         xml:space="preserve"
-         style="font-style:normal;font-weight:normal;line-height:0%;font-family:'Times New Roman';writing-mode:lr-tb;fill:#fffa69;fill-opacity:1"
-         x="1911.1013"
-         y="1294.6882"
-         id="text4748"><tspan
-           style="font-size:22px;line-height:1.25"
-           sodipodi:role="line"
-           id="tspan4750"
-           x="1911.1013"
-           y="1294.6882">La Caixa</tspan></text>
-    </g>
+
   </g>
 </svg>
