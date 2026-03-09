@@ -642,69 +642,7 @@
          style="opacity:1;fill:black;fill-opacity:1;stroke:white;stroke-width:0.61682928;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
          sodipodi:type="star" />
     </g>
-    <g
-       id="g4839">
-      <use
-         x="0"
-         y="0"
-         xlink:href="#text4758"
-         id="use4782"
-         style="stroke:white;stroke-width:2;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-         width="744.09448"
-         height="1052.3622" />
-      <g
-         id="g4623"
-         transform="translate(24.810258,-9.0219119)">
-        <path
-           sodipodi:cx="2274.6179"
-           sodipodi:cy="1490.1846"
-           sodipodi:rx="32.460609"
-           sodipodi:ry="32.460609"
-           sodipodi:type="arc"
-           d="m 2307.0785,1490.1846 a 32.460609,32.460609 0 0 1 -32.4606,32.4606 32.460609,32.460609 0 0 1 -32.4606,-32.4606 32.460609,32.460609 0 0 1 32.4606,-32.4606 32.460609,32.460609 0 0 1 32.4606,32.4606 z"
-           transform="matrix(0.902439,0,0,0.902439,216.82684,-307.86537)"
-           id="path4621"
-           style="opacity:1;fill:white;fill-opacity:1;fill-rule:nonzero;stroke:#181818;stroke-width:2.21621633;stroke-linecap:round;stroke-linejoin:round;marker:none;marker-start:none;marker-mid:none;marker-end:none;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:66;stroke-opacity:1;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" />
-        <text
-           id="text4584"
-           y="1055.5291"
-           x="2240.5737"
-           style="font-style:normal;font-weight:normal;line-height:0%;font-family:'Times New Roman';writing-mode:lr-tb;fill:#fffa69;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-           xml:space="preserve"><tspan
-             style="font-size:56px;line-height:1.25"
-             y="1055.5291"
-             x="2240.5737"
-             id="tspan4586"
-             sodipodi:role="line">13</tspan></text>
-      </g>
-      <text
-         xml:space="preserve"
-         style="font-style:normal;font-weight:normal;line-height:0%;font-family:'Times New Roman';writing-mode:lr-tb;fill:#fffa69;fill-opacity:1"
-         x="2175.22"
-         y="1034.2031"
-         id="text4758"><tspan
-           style="font-size:22px;line-height:1.25"
-           sodipodi:role="line"
-           id="tspan4760"
-           x="2175.22"
-           y="1034.2031">Europcar</tspan></text>
-      <path
-         transform="matrix(0.6984022,2.877296e-3,8.7209945e-3,-2.116799,1106.855,4017.0595)"
-         d="m 1695.937,1398.5206 -24.4812,0 12.2406,-21.2013 z"
-         inkscape:randomized="0"
-         inkscape:rounded="0"
-         inkscape:flatsided="true"
-         sodipodi:arg2="1.5707963"
-         sodipodi:arg1="0.52359878"
-         sodipodi:r2="7.0671172"
-         sodipodi:r1="14.134234"
-         sodipodi:cy="1391.4535"
-         sodipodi:cx="1683.6964"
-         sodipodi:sides="3"
-         id="path4809"
-         style="opacity:1;fill:black;fill-opacity:1;stroke:white;stroke-width:0.61682928;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
-         sodipodi:type="star" />
-    </g>
+
 
   </g>
 </svg>
