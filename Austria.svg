@@ -64,26 +64,5 @@
        stroke-width="4.04"
        stroke="#fffa69"
        d="m 607.54,286.48 -2.58,31.69 c 0,0 0.35,5.92 -6.54,11.56 0,0 -16.75,11.46 -27.2,16.04 l -106.36,25.93 -72.82,19.23 -85,21.35 -5.52,1.68 c 0,0 -10.41,0.51 -17.01,-12.01 0,0 -6.32,-9.86 -15.95,-16.59 L 253.48,374.7" />
-    <text
-       id="text20"
-       transform="scale(0.887623)"
-       fill="#999999"
-       font-size="18px"
-       font-family="'Liberation Sans'"
-       xml:space="preserve">             <tspan
-   id="tspan18"
-   y="536.40997"
-   x="241.02">Niki Lauda Kurve</tspan>        </text>
-    <text
-       id="text24"
-       transform="scale(0.887623)"
-       fill="#999999"
-       font-size="18px"
-       font-family="'Liberation Sans'"
-       xml:space="preserve">             <tspan
-   id="tspan22"
-   y="148.39999"
-   x="485.13">Schlossgold</tspan>        </text>
-
   </g>
 </svg>
