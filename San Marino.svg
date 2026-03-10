@@ -734,67 +734,8 @@
        d="M 1787.9383,800.85556 C 1815.3699,769.76278 1827.7533,758.95644 1892.5252,777.19898"
        id="path5221"
        sodipodi:nodetypes="cc" />
-    <g
-       style="display:inline"
-       id="g3804"
-       transform="matrix(1.9555278,0,0,1.9555278,-2195.3174,-611.3616)"
-       clip-path="none">
-      <text
-         id="text3180"
-         y="964.98792"
-         x="2073.4658"
-         style="font-size:64px;font-style:normal;font-weight:normal;fill:black;fill-opacity:1;stroke:white;stroke-width:0.51137096px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Times New Roman"
-         xml:space="preserve"
-         inkscape:export-xdpi="90.015755"
-         inkscape:export-ydpi="90.015755"><tspan
-           y="964.98792"
-           x="2073.4658"
-           id="tspan3182"
-           sodipodi:role="line"
-           style="stroke-width:0.51137096">N</tspan></text>
-      <path
-         id="path2745"
-         d="M 2146.9581,917.25439 L 2157.3017,971.03394 L 2156.2706,971.02504 L 2146.5892,959.53371 L 2136.7087,970.85443 L 2135.6777,970.84528 L 2146.9581,917.25439 z"
-         style="fill:red;fill-opacity:1;fill-rule:nonzero;stroke:white;stroke-width:0.51137096;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
-         inkscape:transform-center-x="6.995674"
-         inkscape:transform-center-y="-11.604558"
-         inkscape:export-filename="D:\Images\Race Tracks\text3180.png"
-         inkscape:export-xdpi="90.015755"
-         inkscape:export-ydpi="90.015755" />
-    </g>
-    <g
-       style="display:inline"
-       transform="matrix(-1.2259208,0.3970303,0.3970303,1.2259208,3104.6243,-482.57345)"
-       id="g4801"
-       clip-path="url(#clipPath9716)">
-      <path
-         clip-path="url(#clipPath3494)"
-         transform="matrix(-0.358939,0.3679125,-1.1151124,-1.0879142,3587.0721,1686.6577)"
-         d="m 1695.937,1398.5206 -24.4812,0 12.2406,-21.2013 z"
-         inkscape:randomized="0"
-         inkscape:rounded="0"
-         inkscape:flatsided="true"
-         sodipodi:arg2="1.5707963"
-         sodipodi:arg1="0.52359878"
-         sodipodi:r2="7.0671172"
-         sodipodi:r1="14.134234"
-         sodipodi:cy="1391.4535"
-         sodipodi:cx="1683.6964"
-         sodipodi:sides="3"
-         id="path3463"
-         style="opacity:1;fill:red;fill-opacity:1;stroke:white;stroke-width:0.867217;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;display:inline"
-         sodipodi:type="star" />
-      <rect
-         clip-path="url(#clipPath3490)"
-         ry="0"
-         transform="matrix(-0.7183395,-0.6956928,0.6956928,-0.7183395,0,0)"
-         y="376.01733"
-         x="-1620.8837"
-         height="53.588943"
-         width="13.041035"
-         id="rect3457"
-         style="opacity:1;fill:url(#pattern4166);fill-opacity:1;stroke:black;stroke-width:0.77603012;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;display:inline" />
-    </g>
+
+
 
 
   </g>
