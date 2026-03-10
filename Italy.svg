@@ -19,71 +19,7 @@
    inkscape:export-filename="D:\Images\Race Tracks\Mugello Racing Circuit track map.png"
    inkscape:export-xdpi="90.015755"
    inkscape:export-ydpi="90.015755">
-  <defs
-     id="defs2385">
-    <rect
-       id="rect153"
-       height="41.697542"
-       width="12.402327"
-       y="1394.7802"
-       x="1745.986" />
-    <pattern
-       patternUnits="userSpaceOnUse"
-       width="18.181098"
-       height="18.137641"
-       patternTransform="matrix(0.1737876,0,0,0.1737876,763.47719,1693.9071)"
-       id="pattern4912">
 
-    </pattern>
-    <pattern
-       inkscape:collect="always"
-       xlink:href="#pattern4912"
-       id="pattern4166"
-       patternTransform="matrix(0.4562459,1.0584762e-8,-1.0584762e-8,0.4562459,1606.0059,1268.5349)" />
-    <clipPath
-       clipPathUnits="userSpaceOnUse"
-       id="clipPath9724">
-      <path
-         id="path9726"
-         d="M 727.23942,720.30758 C 1333.36,720.30758 1939.4804,720.30758 2545.601,720.30758 C 2545.601,974.89282 2545.601,1229.4779 2545.601,1484.0631 C 1939.4804,1484.0631 1333.36,1484.0631 727.23942,1484.0631 C 727.23942,1229.4779 727.23942,974.89282 727.23942,720.30758 L 727.23942,720.30758 z"
-         style="fill:#6a6a6a;fill-opacity:1;fill-rule:nonzero;stroke:#010101;stroke-width:0.94262564;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
-    </clipPath>
-    <inkscape:path-effect
-       effect="bend_path"
-       id="path-effect3215"
-       bendpath="M 2115.5206,1279.2381 C 2122.2706,1347.3181 2132.45,1378.49 2099.54,1403.39 C 2084.41,1414.83 2074.9968,1421.8903 2055.37,1413.89"
-       prop_scale="1"
-       vertical="true"
-       bendpath-nodetypes="ccc" />
-    <inkscape:perspective
-       sodipodi:type="inkscape:persp3d"
-       inkscape:vp_x="0 : 526.18109 : 1"
-       inkscape:vp_y="0 : 1000 : 0"
-       inkscape:vp_z="744.09448 : 526.18109 : 1"
-       inkscape:persp3d-origin="372.04724 : 350.78739 : 1"
-       id="perspective2391" />
-    <inkscape:perspective
-       id="perspective2400"
-       inkscape:persp3d-origin="372.04724 : 350.78739 : 1"
-       inkscape:vp_z="744.09448 : 526.18109 : 1"
-       inkscape:vp_y="0 : 1000 : 0"
-       inkscape:vp_x="0 : 526.18109 : 1"
-       sodipodi:type="inkscape:persp3d" />
-    <inkscape:perspective
-       id="perspective2413"
-       inkscape:persp3d-origin="372.04724 : 350.78739 : 1"
-       inkscape:vp_z="744.09448 : 526.18109 : 1"
-       inkscape:vp_y="0 : 1000 : 0"
-       inkscape:vp_x="0 : 526.18109 : 1"
-       sodipodi:type="inkscape:persp3d" />
-    <inkscape:perspective
-       id="perspective3224"
-       inkscape:persp3d-origin="372.04724 : 350.78739 : 1"
-       inkscape:vp_z="744.09448 : 526.18109 : 1"
-       inkscape:vp_y="0 : 1000 : 0"
-       inkscape:vp_x="0 : 526.18109 : 1"
-       sodipodi:type="inkscape:persp3d" />
-  </defs>
   <sodipodi:namedview
      id="base"
      pagecolor="#ffffff"
