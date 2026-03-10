@@ -694,80 +694,9 @@
          x="2066.2017"
          y="1924.3628"
          style="font-size:53.3333px;line-height:1.25">Aspar</tspan></text>
-    <g
-       id="g1621">
-      <ellipse
-         ry="32.944916"
-         rx="33.402481"
-         cy="1688.204"
-         cx="649.71399"
-         id="path3154-6-6"
-         style="fill:#ffffff;stroke:#fffa69;stroke-width:2.2964;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;fill-opacity:1" />
-      <text
-         id="text3957"
-         y="1707.9115"
-         x="617.71692"
-         style="font-style:normal;font-weight:normal;font-size:10.8344px;line-height:0%;font-family:'Times New Roman';-inkscape-font-specification:'Times New Roman';letter-spacing:0px;word-spacing:0px;fill:#fffa69;fill-opacity:1;stroke:none;stroke-width:0.902868"
-         xml:space="preserve"><tspan
-           y="1707.9115"
-           x="617.71692"
-           id="tspan3959"
-           sodipodi:role="line"
-           style="font-size:60.148px;line-height:1.25;stroke-width:0.902868">14</tspan></text>
-    </g>
-    <g
-       id="g1505">
-      <ellipse
-         ry="32.944916"
-         rx="33.402481"
-         cy="1357.8114"
-         cx="806.66608"
-         id="path3154-6"
-         style="fill:#ffffff;stroke:#fffa69;stroke-width:2.2964;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;fill-opacity:1" />
-      <text
-         id="text3953"
-         y="1377.2501"
-         x="776.17511"
-         style="font-style:normal;font-weight:normal;font-size:10.8344px;line-height:0%;font-family:'Times New Roman';-inkscape-font-specification:'Times New Roman';letter-spacing:0px;word-spacing:0px;fill:#fffa69;fill-opacity:1;stroke:none;stroke-width:0.902868"
-         xml:space="preserve"><tspan
-           y="1377.2501"
-           x="776.17511"
-           id="tspan3955"
-           sodipodi:role="line"
-           style="font-size:59.63px;line-height:1.25;stroke-width:0.902868">13</tspan></text>
-    </g>
-    <g
-       id="g1389">
-      <ellipse
-         ry="32.944916"
-         rx="33.402481"
-         cy="1453.5107"
-         cx="1377.9341"
-         id="path3154-6-5"
-         style="fill:#ffffff;stroke:#fffa69;stroke-width:2.2964;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;fill-opacity:1" />
-      <text
-         id="text3949"
-         y="1473.557"
-         x="1346.2155"
-         style="font-style:normal;font-weight:normal;font-size:10.8344px;line-height:0%;font-family:'Times New Roman';-inkscape-font-specification:'Times New Roman';letter-spacing:0px;word-spacing:0px;fill:#fffa69;fill-opacity:1;stroke:none;stroke-width:0.902868"
-         xml:space="preserve"><tspan
-           y="1473.557"
-           x="1346.2155"
-           id="tspan3951"
-           sodipodi:role="line"
-           style="font-size:59.8603px;line-height:1.25;stroke-width:0.902868">12</tspan></text>
-    </g>
-    <text
-       xml:space="preserve"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:53.3333px;line-height:0%;font-family:'Times New Roman';-inkscape-font-specification:'Times New Roman';letter-spacing:0px;word-spacing:0px;fill:#fffa69;fill-opacity:1;stroke:none"
-       x="2089.0515"
-       y="1636.4556"
-       id="text3096"><tspan
-         sodipodi:role="line"
-         id="tspan3098"
-         x="2089.0515"
-         y="1636.4556"
-         style="font-size:53.3333px;line-height:1.25">Nico Terol</tspan></text>
+
+
+
 
 
 
