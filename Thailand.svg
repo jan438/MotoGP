@@ -822,51 +822,7 @@
          id="path3850"
          inkscape:connector-curvature="0" />
     </g>
-    <path
-       style="fill:none;stroke:#fffa69;stroke-width:5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
-       d="m 1104.693,1391.4405 c 0,0 -17.781,-33.9376 -22.7667,-52.2792 -1.4357,-5.2818 -2.3192,-10.8399 -1.9675,-16.3021 0.3913,-6.0772 2.0242,-12.1423 4.4971,-17.7074 3.1649,-7.1221 16.3042,-21.8322 21.3092,-27.8063 l 33.2186,-39.6507 c 9.0781,-10.8359 15.7321,-23.4936 23.3289,-35.4149 l 67.738,-138.2869 c 10.9964,-23.3528 33.7285,-69.70552 33.7285,-69.70552 l 61.8356,-131.8222 59.3059,-126.76293 28.9503,-57.05737 c 2.8555,-5.62775 7.3311,-10.53149 12.3671,-14.33461 2.3081,-1.74302 5.0877,-2.86413 7.87,-3.65392 3.8122,-1.08211 7.8643,-1.82292 11.805,-1.40536 3.7418,0.39649 7.1486,2.3565 10.6807,3.65392 29.5758,10.86407 87.9751,34.57171 87.9751,34.57171 l 142.5029,59.86808 60.9924,24.17209"
-       id="path3267"
-       inkscape:connector-curvature="0"
-       sodipodi:nodetypes="cssssscccccsssssccc" />
-    <g
-       style="display:inline"
-       transform="matrix(1.2048701,-0.45694955,-0.45694955,-1.2048701,-187.44478,2912.0422)"
-       id="g4801"
-       clip-path="url(#clipPath9716-8)">
-      <path
-         clip-path="url(#clipPath3494-4)"
-         transform="matrix(-0.358939,0.3679125,-1.1151124,-1.0879142,3617.8586,1699.8985)"
-         d="m 1695.937,1398.5206 -24.4812,0 12.2406,-21.2013 z"
-         inkscape:randomized="0"
-         inkscape:rounded="0"
-         inkscape:flatsided="true"
-         sodipodi:arg2="1.5707963"
-         sodipodi:arg1="0.52359878"
-         sodipodi:r2="7.0671172"
-         sodipodi:r1="14.134234"
-         sodipodi:cy="1391.4535"
-         sodipodi:cx="1683.6964"
-         sodipodi:sides="3"
-         id="path3463"
-         style="fill:#ff0000;fill-opacity:1;stroke:#ffffff;stroke-width:0.867217;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;display:inline"
-         sodipodi:type="star" />
-      <rect
-         clip-path="url(#clipPath3490-6)"
-         ry="0"
-         transform="matrix(-0.7183395,-0.6956928,0.6956928,-0.7183395,0,0)"
-         y="376.01733"
-         x="-1620.8837"
-         height="53.588943"
-         width="13.041035"
-         id="rect3457"
-         style="fill:url(#pattern4264-1);fill-opacity:1;stroke:#fffa69;stroke-width:0.77603012;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;display:inline" />
-      <rect
-         style="fill:url(#pattern4256-7);stroke:none"
-         width="0"
-         height="0"
-         x="1593.7246"
-         y="910.57043"
-         id="rect4262" />
-    </g>
+
+
   </g>
 </svg>
