@@ -738,61 +738,7 @@
          id="text151"
          xml:space="preserve" />
     </g>
-    <g
-       id="g3897"
-       transform="translate(7.7157379,-7.7157378)">
-      <g
-         transform="translate(-303.18525,-92.091141)"
-         id="g3294">
-        <ellipse
-           style="display:inline;overflow:visible;visibility:visible;opacity:1;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:#181818;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:66;stroke-opacity:1;marker:none;marker-start:none;marker-mid:none;marker-end:none;enable-background:accumulate"
-           id="path3292"
-           cx="2164.2053"
-           cy="1576.4237"
-           rx="23.927273"
-           ry="22.132729" />
-        <text
-           xml:space="preserve"
-           style="font-style:normal;font-weight:normal;line-height:0%;font-family:'Times New Roman';writing-mode:lr-tb;fill:#fffa69;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-           x="2142.5552"
-           y="1591.0416"
-           id="text3288"
-           inkscape:transform-center-x="-6.6134896"
-           inkscape:transform-center-y="-3.3067448"><tspan
-             sodipodi:role="line"
-             id="tspan3290"
-             x="2142.5552"
-             y="1591.0416"
-             style="font-size:40px;line-height:1.25">14</tspan></text>
-        <ellipse
-           ry="22.132729"
-           rx="23.927273"
-           cy="1705.1166"
-           cx="2582.6597"
-           id="path3292-7"
-           style="display:inline;overflow:visible;visibility:visible;opacity:1;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:#181818;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:66;stroke-opacity:1;marker:none;marker-start:none;marker-mid:none;marker-end:none;enable-background:accumulate" />
-        <text
-           xml:space="preserve"
-           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:40px;line-height:1.25;font-family:'Times New Roman';-inkscape-font-specification:'Times New Roman, ';white-space:pre;inline-size:50.3118;fill:#fffa69;fill-opacity:1;stroke:none"
-           x="2466.9233"
-           y="1629.0614"
-           id="text163"
-           transform="translate(94.793352,89.282109)"><tspan
-             x="2466.9233"
-             y="1629.0614"><tspan>15</tspan></tspan></text>
-      </g>
-      <text
-         id="text3456"
-         y="1595.1475"
-         x="2191.9663"
-         style="font-style:normal;font-weight:normal;line-height:0%;font-family:'Times New Roman';writing-mode:lr-tb;fill:#fffa69;fill-opacity:1"
-         xml:space="preserve"><tspan
-           y="1595.1475"
-           x="2191.9663"
-           id="tspan3458"
-           sodipodi:role="line"
-           style="font-size:22px;line-height:1.25">Bucine</tspan></text>
-    </g>
+
 
 
 
