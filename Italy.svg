@@ -793,35 +793,7 @@
            sodipodi:role="line"
            style="font-size:22px;line-height:1.25">Bucine</tspan></text>
     </g>
-    <g
-       id="g4425"
-       transform="matrix(0.7415411,-1.1385819,1.1385819,0.7415411,-1134.5829,2012.288)">
-      <path
-         transform="matrix(-0.500919,0.1152259,0.34924,1.5182438,1918.238,-810.87292)"
-         d="M 1695.937,1398.5206 L 1671.4558,1398.5206 L 1683.6964,1377.3193 L 1695.937,1398.5206 z"
-         inkscape:randomized="0"
-         inkscape:rounded="0"
-         inkscape:flatsided="true"
-         sodipodi:arg2="1.5707963"
-         sodipodi:arg1="0.52359878"
-         sodipodi:r2="7.0671172"
-         sodipodi:r1="14.134234"
-         sodipodi:cy="1391.4535"
-         sodipodi:cx="1683.6964"
-         sodipodi:sides="3"
-         id="path3463"
-         style="opacity:1;fill:red;fill-opacity:1;stroke:white;stroke-width:0.61682928;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
-         sodipodi:type="star" />
-      <rect
-         ry="0"
-         transform="matrix(0.2205973,0.975365,0.975365,-0.2205973,0,0)"
-         y="1189.9088"
-         x="1763.3485"
-         height="45.402771"
-         width="12.409092"
-         id="rect3457"
-         style="opacity:1;fill:url(#pattern4166);fill-opacity:1;stroke:#fffa69;stroke-width:0.55197024;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;display:inline" />
-    </g>
+
 
 
   </g>
