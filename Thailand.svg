@@ -745,83 +745,9 @@
              y="1378.2101">10</tspan></text>
       </g>
     </g>
-    <g
-       transform="translate(-6.9628729,274.60831)"
-       id="g3880">
-      <g
-         transform="translate(-2.467732,28.378919)"
-         id="g3654">
-        <path
-           sodipodi:type="arc"
-           style="fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:#181818;stroke-width:1.83606553;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:66;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
-           id="path5010"
-           sodipodi:cx="2403.7485"
-           sodipodi:cy="1324.1293"
-           sodipodi:rx="25.113791"
-           sodipodi:ry="25.113791"
-           d="m 2428.8623,1324.1293 c 0,13.8699 -11.2438,25.1138 -25.1138,25.1138 -13.8699,0 -25.1138,-11.2439 -25.1138,-25.1138 0,-13.87 11.2439,-25.1138 25.1138,-25.1138 13.87,0 25.1138,11.2438 25.1138,25.1138 z"
-           transform="matrix(1.0892857,0,0,1.0892857,-911.63844,-418.01438)" />
-        <text
-           xml:space="preserve"
-           style="font-size:56px;font-style:normal;font-weight:normal;writing-mode:lr-tb;fill:#fffa69;fill-opacity:1;stroke:none;font-family:Times New Roman"
-           x="1678.8672"
-           y="1043.2626"
-           id="text3455"><tspan
-             sodipodi:role="line"
-             id="tspan3457"
-             x="1678.8672"
-             y="1043.2626">11</tspan></text>
-      </g>
-    </g>
-    <g
-       style="display:inline"
-       transform="translate(-536.6206,311.01346)"
-       id="g3880-1">
-      <g
-         transform="translate(-2.467732,28.378919)"
-         id="g3654-7">
-        <path
-           sodipodi:type="arc"
-           style="fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:#181818;stroke-width:1.83606553;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:66;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
-           id="path5010-4"
-           sodipodi:cx="2403.7485"
-           sodipodi:cy="1324.1293"
-           sodipodi:rx="25.113791"
-           sodipodi:ry="25.113791"
-           d="m 2428.8623,1324.1293 c 0,13.8699 -11.2438,25.1138 -25.1138,25.1138 -13.8699,0 -25.1138,-11.2439 -25.1138,-25.1138 0,-13.87 11.2439,-25.1138 25.1138,-25.1138 13.87,0 25.1138,11.2438 25.1138,25.1138 z"
-           transform="matrix(1.0892857,0,0,1.0892857,-911.63844,-418.01438)" />
-        <text
-           xml:space="preserve"
-           style="font-size:56px;font-style:normal;font-weight:normal;writing-mode:lr-tb;fill:#fffa69;fill-opacity:1;stroke:none;font-family:Times New Roman"
-           x="1678.8672"
-           y="1043.2626"
-           id="text3455-0"><tspan
-             sodipodi:role="line"
-             id="tspan3457-9"
-             x="1678.8672"
-             y="1043.2626">12</tspan><tspan
-             sodipodi:role="line"
-             x="1678.8672"
-             y="1113.2626"
-             id="tspan3706" /></text>
-      </g>
-    </g>
-    <g
-       clip-path="none"
-       transform="matrix(-1.0045653,1.6777776,-1.6777776,-1.0045653,6318.1243,-1449.8079)"
-       id="g3844"
-       style="display:inline">
-      <path
-         inkscape:transform-center-y="-7.648836"
-         inkscape:transform-center-x="-2.9505833"
-         inkscape:export-ydpi="90.015755"
-         inkscape:export-xdpi="90.015755"
-         inkscape:export-filename="D:\Images\Race Tracks\text3180.png"
-         style="fill:#ff0000;fill-opacity:1;fill-rule:nonzero;stroke:#ffffff;stroke-width:0.51137096;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
-         d="m 2137.9218,918.43151 37.2707,40.12631 -0.8793,0.53884 -14.2993,-4.61476 -2.3804,14.83637 -0.8791,0.53855 -18.8326,-51.42531 z"
-         id="path3850"
-         inkscape:connector-curvature="0" />
-    </g>
+
+
+
 
 
   </g>
