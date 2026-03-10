@@ -33,31 +33,7 @@
        height="18.137641"
        patternTransform="matrix(0.1737876,0,0,0.1737876,763.47719,1693.9071)"
        id="pattern4912">
-      <g
-         id="g4907"
-         transform="translate(-1025.5348,-1215.2814)">
-        <rect
-           style="opacity:1;fill:#fffa69;fill-opacity:1;stroke:none;stroke-width:0.5;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
-           id="rect4899"
-           width="18.172573"
-           height="18.095789"
-           x="1025.5348"
-           y="1215.2814" />
-        <rect
-           style="opacity:1;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.5;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
-           id="rect4903"
-           width="9.0746527"
-           height="9.0746527"
-           x="1025.5348"
-           y="1215.2814" />
-        <rect
-           style="opacity:1;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.5;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
-           id="rect4905"
-           width="9.0746527"
-           height="9.0746527"
-           x="1034.6412"
-           y="1224.3444" />
-      </g>
+
     </pattern>
     <pattern
        inkscape:collect="always"
