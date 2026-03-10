@@ -910,61 +910,7 @@
          id="rect3457"
          style="opacity:1;fill:url(#pattern4166);fill-opacity:1;stroke:#fffa69;stroke-width:0.55197024;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;display:inline" />
     </g>
-    <g
-       style="display:inline"
-       id="g3804"
-       transform="matrix(1.823592,0,0,1.823592,-2614.6118,-323.88656)"
-       clip-path="url(#clipPath9724)"
-       inkscape:export-filename="D:\Losail.jpg.png"
-       inkscape:export-xdpi="90.015755"
-       inkscape:export-ydpi="90.015755">
-      <text
-         id="text3180"
-         y="964.03094"
-         x="2073.4658"
-         style="font-style:normal;font-weight:normal;line-height:0%;font-family:'Times New Roman';fill:#fffa69;fill-opacity:1;stroke:#ffffff;stroke-width:0.548368px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-         xml:space="preserve"><tspan
-           y="964.03094"
-           x="2073.4658"
-           id="tspan3182"
-           sodipodi:role="line"
-           style="font-size:64px;line-height:1.25;stroke-width:0.548368">N</tspan></text>
-      <path
-         id="path2745"
-         d="M 2121.833,945.997 L 2176.0128,953.98489 L 2175.9588,952.95507 L 2164.0562,943.78427 L 2174.935,933.41913 L 2174.881,932.3895 L 2121.833,945.997 z"
-         style="fill:red;fill-opacity:1;fill-rule:nonzero;stroke:white;stroke-width:0.54836828;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
-    </g>
-    <text
-       id="text2083"
-       y="1587.6736"
-       x="1675.4421"
-       style="font-style:normal;font-weight:normal;font-size:40px;line-height:1.25;font-family:sans-serif;fill:#fffa69;fill-opacity:1;stroke:none"
-       xml:space="preserve"><tspan
-         y="1587.6736"
-         x="1675.4421"
-         id="tspan2081"
-         sodipodi:role="line" /></text>
-    <text
-       xml:space="preserve"
-       style="font-style:normal;font-weight:normal;line-height:0%;font-family:'Times New Roman';writing-mode:lr-tb;fill:#fffa69;fill-opacity:1"
-       x="1719.8618"
-       y="1478.3065"
-       id="text3448-5"><tspan
-         style="font-size:22px;line-height:1.25"
-         sodipodi:role="line"
-         id="tspan3450-2"
-         x="1719.8618"
-         y="1478.3065">Biondetti 1</tspan></text>
-    <text
-       id="text3448-5-9"
-       y="1430.9259"
-       x="1834.6473"
-       style="font-style:normal;font-weight:normal;line-height:0%;font-family:'Times New Roman';writing-mode:lr-tb;fill:#fffa69;fill-opacity:1"
-       xml:space="preserve"><tspan
-         y="1430.9259"
-         x="1834.6473"
-         id="tspan3450-2-5"
-         sodipodi:role="line"
-         style="font-size:22px;line-height:1.25">Biondetti 2</tspan></text>
+
+
   </g>
 </svg>
