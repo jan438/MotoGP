@@ -161,38 +161,7 @@
      id="layer2"
      inkscape:label="Visible map"
      transform="translate(343.24428,-89.584991)">
-    <use
-       x="0"
-       y="0"
-       xlink:href="#path3764"
-       id="use4003"
-       style="stroke:white;stroke-width:20;stroke-miterlimit:4;stroke-dasharray:none;filter:url(#filter5277)"
-       width="744.09448"
-       height="1052.3622" />
-    <use
-       x="0"
-       y="0"
-       xlink:href="#path3771"
-       id="use3980"
-       style="stroke:white;stroke-width:10;stroke-miterlimit:4;stroke-dasharray:none;filter:url(#filter5277)"
-       width="744.09448"
-       height="1052.3622" />
-    <use
-       x="0"
-       y="0"
-       xlink:href="#path3768"
-       id="use3957"
-       style="stroke:white;stroke-width:20;stroke-miterlimit:4;stroke-dasharray:none;filter:url(#filter5277)"
-       width="744.09448"
-       height="1052.3622" />
-    <use
-       x="0"
-       y="0"
-       xlink:href="#path3771"
-       id="use3971"
-       style="color:#fffa69;fill:none;stroke:#fffa69;stroke-width:3;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
-       width="744.09448"
-       height="1052.3622" />
+
     <use
        x="0"
        y="0"
