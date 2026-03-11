@@ -16,61 +16,6 @@
    version="1.1"
    inkscape:version="0.48.2 r9819"
    sodipodi:docname="Silverstone_Circuit_moto intl.svg">
-  <defs
-     id="defs4">
-    <pattern
-       inkscape:collect="always"
-       xlink:href="#pattern4059"
-       id="pattern3911"
-       patternTransform="matrix(0.45624592,3.1510055e-8,-3.1510055e-8,0.45624592,-528.45033,-80.615315)" />
-    <pattern
-       inkscape:collect="always"
-       xlink:href="#pattern5356"
-       id="pattern4059"
-       patternTransform="matrix(0.45624592,3.1510055e-8,-3.1510055e-8,0.45624592,-598.78986,-84.657256)" />
-    <pattern
-       inkscape:collect="always"
-       xlink:href="#pattern4166"
-       id="pattern5356"
-       patternTransform="matrix(0.45624592,2.877603e-8,-2.877603e-8,0.45624592,-617.13355,-912.91152)" />
-    <pattern
-       inkscape:collect="always"
-       xlink:href="#pattern4912"
-       id="pattern4166"
-       patternTransform="matrix(0.4562459,3.0071167e-8,-3.0071167e-8,0.4562459,521.04871,-1945.0134)" />
-    <pattern
-       patternUnits="userSpaceOnUse"
-       width="18.181098"
-       height="18.137641"
-       patternTransform="matrix(0.1737876,0,0,0.1737876,763.47719,1693.9071)"
-       id="pattern4912">
-      <g
-         id="g4907"
-         transform="translate(-1025.5348,-1215.2814)">
-        <rect
-           style="opacity:1;fill:#fffa69;fill-opacity:1;stroke:none;stroke-width:0.5;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
-           id="rect4899"
-           width="18.172573"
-           height="18.095789"
-           x="1025.5348"
-           y="1215.2814" />
-        <rect
-           style="opacity:1;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.5;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
-           id="rect4903"
-           width="9.0746527"
-           height="9.0746527"
-           x="1025.5348"
-           y="1215.2814" />
-        <rect
-           style="opacity:1;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.5;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
-           id="rect4905"
-           width="9.0746527"
-           height="9.0746527"
-           x="1034.6412"
-           y="1224.3444" />
-      </g>
-    </pattern>
-  </defs>
   <sodipodi:namedview
      id="base"
      pagecolor="#ffffff"
