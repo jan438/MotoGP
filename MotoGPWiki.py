@@ -57,6 +57,7 @@ with open(file_to_open, 'r') as file:
     count = 0
     for row in csvreader:
         circuitsdata.append(row)
+        print(circuitsdata[count][3])
         count += 1
 my_canvas = canvas.Canvas("PDF/MotoGPWiki.pdf", pagesize = A4)
 width, height = A4
