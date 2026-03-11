@@ -1,23 +1,23 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <!-- Created with Inkscape (http://www.inkscape.org/) -->
+
 <svg
-   xmlns:dc="http://purl.org/dc/elements/1.1/"
-   xmlns:cc="http://web.resource.org/cc/"
-   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-   xmlns:svg="http://www.w3.org/2000/svg"
-   xmlns="http://www.w3.org/2000/svg"
-   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
-   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    width="834"
    height="551"
    id="svg2"
    sodipodi:version="0.32"
-   inkscape:version="0.45"
+   inkscape:version="1.4.3 (fcd0343856, 2026-01-01)"
    version="1.0"
-   sodipodi:docbase="E:\Imachens\Wiki\Motorland"
-   sodipodi:docname="Motorland FIM.svg"
+   sodipodi:docname="Aragón.svg"
    inkscape:output_extension="org.inkscape.output.svg.inkscape"
-   sodipodi:modified="true">
+   sodipodi:modified="true"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:dc="http://purl.org/dc/elements/1.1/">
   <defs
      id="defs4" />
   <sodipodi:namedview
@@ -28,16 +28,20 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="0.49497475"
-     inkscape:cx="750.33627"
-     inkscape:cy="116.03083"
+     inkscape:cx="750.54334"
+     inkscape:cy="189.90868"
      inkscape:document-units="px"
-     inkscape:current-layer="layer1"
-     inkscape:window-width="1024"
-     inkscape:window-height="742"
-     inkscape:window-x="0"
-     inkscape:window-y="0"
+     inkscape:current-layer="g2364"
+     inkscape:window-width="1104"
+     inkscape:window-height="883"
+     inkscape:window-x="26"
+     inkscape:window-y="23"
      width="834px"
-     height="551px" />
+     height="551px"
+     inkscape:showpageshadow="2"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:window-maximized="0" />
   <metadata
      id="metadata7">
     <rdf:RDF>
@@ -56,31 +60,6 @@
      transform="translate(-30.142849,-115.6479)">
     <g
        id="g2364">
-      <path
-         sodipodi:nodetypes="cccccc"
-         id="path9172"
-         d="M 306.89703,425.19851 L 358.3256,467.34137 C 364.72799,473.61172 357.43845,479.55395 350.8256,473.58626 L 338.68274,463.58626 C 336.85357,462.20115 335.71726,461.6384 332.55004,461.59134 L 305.8256,462.51483"
-         style="fill:none;fill-rule:evenodd;stroke:#dcdcdc;stroke-width:7;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
-      <path
-         sodipodi:nodetypes="ccc"
-         id="path8198"
-         d="M 370.05919,361.67321 C 374.44514,386.28247 377.32334,402.04197 357.33041,407.64199 C 338.98765,411.72773 293.74342,421.33559 277.12515,405.10976"
-         style="fill:none;fill-rule:evenodd;stroke:#dcdcdc;stroke-width:10;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
-      <path
-         sodipodi:nodetypes="cccccccccccccccccccccsccccc"
-         id="path7225"
-         d="M 791.53996,527.87246 L 559.3971,350.01532 C 542.71313,340.94548 534.86057,375.00616 511.9857,394.50365 C 479.85811,428.26641 447.38163,401.83019 393.29277,386.92751 C 373.02346,378.37434 371.30706,366.85817 367.53388,352.07724 L 351.37144,265.7092 C 349.25676,252.37568 343.89057,243.50964 334.70393,236.41478 L 301.36889,214.19142 C 293.58465,208.1985 278.52169,212.5482 275.10493,226.31325 L 267.02371,270.75996 C 265.8452,277.13304 263.15145,283.0502 258.94248,289.95286 C 247.73624,308.39027 228.56297,327.61751 196.18282,344.30104 C 175.32085,353.06938 170.21443,344.40174 166.18282,327.15818 L 141.18282,202.15818 C 139.38527,191.08423 144.16855,182.23298 152.37139,178.33101 L 166.00845,172.27009 C 176.58647,166.93397 174.52335,157.04979 163.48307,147.01628 C 127.37324,116.30367 57.503435,126.88777 54.386595,180.85639 C 58.883945,282.81646 102.60483,384.01195 184.75425,434.30104 C 230.71184,462.18946 259.12111,466.21649 301.89711,480.72961 L 839.03997,652.15818 C 845.84838,654.80049 850.23749,653.74909 851.48074,651.05224 C 853.30041,647.10504 850.87639,642.35862 844.03997,639.30104 L 822.61139,627.15818 C 815.9898,622.99729 814.66778,616.71658 812.61139,610.72961 L 803.32568,547.15818 C 801.95327,540.72961 799.50674,534.30103 791.53996,527.87246 z "
-         style="fill:none;fill-rule:evenodd;stroke:#dcdcdc;stroke-width:10;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
-      <path
-         sodipodi:nodetypes="ccccc"
-         id="path8200"
-         d="M 652.96846,592.87198 C 637.62707,579.4631 618.53425,558.55423 608.73002,554.43107 L 559.42869,537.92891 C 555.25891,536.70459 551.2339,538.1346 549.75417,542.15769 L 542.96845,561.08626"
-         style="fill:none;fill-rule:evenodd;stroke:#dcdcdc;stroke-width:10;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
-      <path
-         sodipodi:nodetypes="cccccccc"
-         id="path13051"
-         d="M 422.58712,396.27093 C 414.59505,394.28606 408.90288,394.8986 403.57377,409.65282 L 393.97732,443.49292 C 392.06234,458.8287 399.99312,460.71226 408.95006,463.95115 L 450.87139,476.32552 C 460.13572,480.05018 463.19865,485.93156 463.24576,493.75065 L 463.24576,514.71131 C 461.77518,532.75768 470.20606,533.99061 475.11505,535.92452"
-         style="fill:none;fill-rule:evenodd;stroke:#dcdcdc;stroke-width:10;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
       <path
          sodipodi:nodetypes="ccsccccccccccccccccccccccccccc"
          id="path2366"
