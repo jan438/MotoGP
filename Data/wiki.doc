@@ -1,6 +1,17 @@
+0 name country
+1 scale svg
+2 dx svg
+3 dy svg 
+
 #fffa69  Wiki colors
 
 Australia Can't handle color: url(#pattern4166)
 Brazil    Can't handle color: url(#pattern4264)
 
 France    Can't handle color: url(#pattern4256)
+
+aragon stroke-width 10
+australia stroke-width:15
+austria stroke-width="7.34"
+brazil stroke-width:10
+catalonia stroke-width:10
