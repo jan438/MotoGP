@@ -28,6 +28,8 @@ cadre_mode = True
 worldmap_x = 125
 worldmap_y = 300
 worldmapscale = 0.34
+dx = 0
+dy = 0
 
 def scaleSVG(svgfile, scaling_factor):
     svg_root = load_svg_file(svgfile)
@@ -78,6 +80,8 @@ for i in range(len(circuitsdata)):
         my_canvas.rect(leftmargin + col * colwidth, circuit_y, colwidth, colwidth, stroke = 1, fill = 0)
     my_canvas.setFillColor(HexColor("#000000"))
     displayname = circuitsdata[i][0]
+    dx = float(circuitsdata[i][2])
+    dy = float(circuitsdata[i][3])
     svgfile = "Wiki/" + displayname + ".svg"
     tree = ET.parse(svgfile)
     root = tree.getroot()
@@ -87,7 +91,7 @@ for i in range(len(circuitsdata)):
             print(svgfile, '{0}="{1}"'.format(name, value))
     scale = float(circuitsdata[i][1])
     drawing = scaleSVG(svgfile, scale)
-    renderPDF.draw(drawing, my_canvas, leftmargin + col * colwidth, circuit_y)
+    renderPDF.draw(drawing, my_canvas, leftmargin + col * colwidth + dx, circuit_y + dy)
     my_canvas.setFillColor(HexColor("#FFFFFF"))
     namewidth = pdfmetrics.stringWidth(displayname, motogpfont, 12)
     my_canvas.drawString(leftmargin + col * colwidth + (colwidth - namewidth) / 2, circuit_y - 20, displayname)
