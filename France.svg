@@ -7,7 +7,6 @@
     <filter color-interpolation-filters="sRGB" inkscape:collect="always" id="filter5277" x="-0.036581911" width="1.0731637" y="-0.16673841" height="1.3334768">
       <feGaussianBlur inkscape:collect="always" stdDeviation="4.5896484" id="feGaussianBlur5279" />
     </filter>
-
     <pattern inkscape:collect="always" xlink:href="#pattern4256" id="pattern4264" patternTransform="matrix(-0.7760302,9.7935943e-4,-9.7935943e-4,-0.7760302,-1599.8308,380.49)" />
     <inkscape:perspective id="perspective5412" inkscape:persp3d-origin="0.5 : 0.33333333 : 1" inkscape:vp_z="1 : 0.5 : 1" inkscape:vp_y="0 : 1000 : 0" inkscape:vp_x="0 : 0.5 : 1" sodipodi:type="inkscape:persp3d" />
     <inkscape:perspective id="perspective5604" inkscape:persp3d-origin="0.5 : 0.33333333 : 1" inkscape:vp_z="1 : 0.5 : 1" inkscape:vp_y="0 : 1000 : 0" inkscape:vp_x="0 : 0.5 : 1" sodipodi:type="inkscape:persp3d" />
