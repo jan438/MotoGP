@@ -1,7 +1,8 @@
 0 name country
 1 scale svg
 2 dx svg
-3 dy svg 
+3 dy svg
+4 name city
 
 #fffa69  Wiki colors
 
