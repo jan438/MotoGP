@@ -17,6 +17,7 @@ from svglib.svglib import svg2rlg, load_svg_file, SvgRenderer
 import xml.etree.ElementTree as ET
 
 circuitsdata = []
+raceevents = []
 row = 4
 col = 0
 leftmargin = 22.5
@@ -30,6 +31,28 @@ worldmap_y = 300
 worldmapscale = 0.34
 dx = 0
 dy = 0
+
+class RaceEvent:
+    def __init__(self, summary, day, location, description, starttime, endtime, month):
+        self.summary = summary
+        self.day = day
+        self.location = location
+        self.description = description
+        self.starttime = starttime
+        self.endtime = endtime
+        self.month = month
+        
+def weekDay(year, month, day):
+    offset = [0, 31, 59, 90, 120, 151, 181, 212, 243, 273, 304, 334]
+    afterFeb = 1
+    if month > 2: afterFeb = 0
+    aux = year - 1700 - afterFeb
+    dayOfWeek  = 5
+    dayOfWeek += (aux + afterFeb) * 365                  
+    dayOfWeek += aux / 4 - aux / 100 + (aux + 100) / 400     
+    dayOfWeek += offset[month - 1] + (day - 1)               
+    dayOfWeek %= 7
+    return round(dayOfWeek)
 
 def scaleSVG(svgfile, scaling_factor):
     svg_root = load_svg_file(svgfile)
@@ -74,6 +97,44 @@ for line in in_file:
     count += 1
 in_file.close()
 print("Count eventslines", len(alleventslines))
+for i in range(len(alleventslines)):
+    neweventpos = alleventslines[i].find("BEGIN:VEVENT")
+    summaryeventpos = alleventslines[i].find("SUMMARY")
+    locationeventpos = alleventslines[i].find("LOCATION")
+    categorieseventpos = alleventslines[i].find("CATEGORIES")
+
+    dtstarteventpos = alleventslines[i].find("DTSTART")
+    dtendeventpos = alleventslines[i].find("DTEND")
+    endeventpos = alleventslines[i].find("END:VEVENT")
+    if neweventpos == 0:
+        day = 0
+        location = ""
+        starttime = 0
+        endtime = 0
+        month = 0
+        categories = ""
+    if dtstarteventpos == 0:
+        eventdtstartstr = alleventslines[i][8:]
+        datevaluepos = alleventslines[i].find("VALUE=DATE:")
+        if datevaluepos == 8:
+            eventdtstartstr = alleventslines[i][19:]
+        year = int(eventdtstartstr[:4])
+        month = int(eventdtstartstr[4:6])
+        day = int(eventdtstartstr[6:8])
+        weekday = weekDay(year, month, day)
+        starttime = eventdtstartstr
+    if dtendeventpos == 0:
+        eventdtendstr = alleventslines[i][6:]
+        endtime = eventdtendstr[9:11] + ':' + eventdtendstr[11:13]
+    if summaryeventpos == 0:
+        summary = alleventslines[i][8:]
+    if categorieseventpos == 0:
+        categories = alleventslines[i][11:]
+    if locationeventpos == 0:
+        location = alleventslines[i][9:]
+    if endeventpos == 0:
+        raceevents.append(RaceEvent(categories, summary, day, location, starttime, endtime, month))
+print("Count race events", len(raceevents))
 my_canvas = canvas.Canvas("PDF/MotoGPWiki.pdf", pagesize = A4)
 width, height = A4
 my_canvas.setFont(motogpfont, 12)
