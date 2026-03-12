@@ -100,6 +100,7 @@ for i in range(len(alleventslines)):
     neweventpos = alleventslines[i].find("BEGIN:VEVENT")
     summaryeventpos = alleventslines[i].find("SUMMARY")
     locationeventpos = alleventslines[i].find("LOCATION")
+    descriptioneventpos = alleventslines[i].find("DESCRIPTIOn")
     dtstarteventpos = alleventslines[i].find("DTSTART")
     dtendeventpos = alleventslines[i].find("DTEND")
     endeventpos = alleventslines[i].find("END:VEVENT")
@@ -109,7 +110,6 @@ for i in range(len(alleventslines)):
         starttime = 0
         endtime = 0
         month = 0
-
     if dtstarteventpos == 0:
         eventdtstartstr = alleventslines[i][8:]
         datevaluepos = alleventslines[i].find("VALUE=DATE:")
