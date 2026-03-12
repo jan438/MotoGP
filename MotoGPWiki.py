@@ -33,10 +33,11 @@ dx = 0
 dy = 0
 
 class RaceEvent:
-    def __init__(self, summary, day, location, starttime, endtime, month):
+    def __init__(self, summary, day, location, description, starttime, endtime, month):
         self.summary = summary
         self.day = day
         self.location = location
+        self.description = description
         self.starttime = starttime
         self.endtime = endtime
         self.month = month
@@ -107,6 +108,7 @@ for i in range(len(alleventslines)):
     if neweventpos == 0:
         day = 0
         location = ""
+        description = ""
         starttime = 0
         endtime = 0
         month = 0
@@ -130,7 +132,7 @@ for i in range(len(alleventslines)):
     if descriptioneventpos == 0:
         description = alleventslines[i][12:]
     if endeventpos == 0:
-        raceevents.append(RaceEvent(summary, day, location, starttime, endtime, month))
+        raceevents.append(RaceEvent(summary, day, location, description, starttime, endtime, month))
 print("Count race events", len(raceevents))
 my_canvas = canvas.Canvas("PDF/MotoGPWiki.pdf", pagesize = A4)
 width, height = A4
