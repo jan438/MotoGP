@@ -16,6 +16,7 @@ from reportlab.lib.units import inch, mm
 from svglib.svglib import svg2rlg, load_svg_file, SvgRenderer
 import xml.etree.ElementTree as ET
 
+monthnames = ["JAN", "FEB", "MRT", "APR", "MAY", "JUN", "JUL", "AUG", "SEP", "NOV", "DEC"]
 circuitsdata = []
 raceevents = []
 row = 4
@@ -158,7 +159,7 @@ date_y = 100
 for i in range(len(circuitsdata)):
     rce = lookupraceevent(circuitsdata[i][0])
     day = str(rce.day)
-    month = str(rce.month)
+    month = monthnames[rce.month - 1]
     if i == 11:
         col = 4
     if cadre_mode:
