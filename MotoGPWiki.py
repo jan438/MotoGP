@@ -106,6 +106,7 @@ for i in range(len(alleventslines)):
     dtendeventpos = alleventslines[i].find("DTEND")
     endeventpos = alleventslines[i].find("END:VEVENT")
     if neweventpos == 0:
+        summary = ""
         day = 0
         location = ""
         description = ""
@@ -133,7 +134,7 @@ for i in range(len(alleventslines)):
     if descriptioneventpos == 0:
         description = alleventslines[i][12:]
     if endeventpos == 0:
-        print("endevent")
+        print("endevent", summary)
         raceevents.append(RaceEvent(summary, day, location, description, starttime, endtime, month))
 print("Count race events", len(raceevents))
 my_canvas = canvas.Canvas("PDF/MotoGPWiki.pdf", pagesize = A4)
