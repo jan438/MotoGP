@@ -155,7 +155,8 @@ renderPDF.draw(scaleSVG("Wiki/WorldMap.svg", worldmapscale), my_canvas, worldmap
 
 for i in range(len(circuitsdata)):
     rce = lookupraceevent(circuitsdata[i][0])
-    print("raceevent", rce.summary, "day", rce.day, "month", rce.month, "desc", rce.description)
+    day = str(rce.day)    
+    print("raceevent", rce.summary, "day", day, "month", rce.month, "desc", rce.description)
     if i == 11:
         col = 4
     if cadre_mode:
@@ -178,6 +179,7 @@ for i in range(len(circuitsdata)):
     my_canvas.setFillColor(HexColor("#FFFFFF"))
     namewidth = pdfmetrics.stringWidth(displayname, motogpfont, 12)
     my_canvas.drawString(leftmargin + col * colwidth + (colwidth - namewidth) / 2, circuit_y - 20, displayname)
+    my_canvas.drawString(leftmargin + col * colwidth, circuit_y, day)
     col = col + 1
     if col == 5:
         col = 0
