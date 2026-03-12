@@ -131,7 +131,6 @@ for i in range(len(alleventslines)):
     if locationeventpos == 0:
         location = alleventslines[i][9:]
     if descriptioneventpos == 0:
-        print("dddddddddddddddddd")
         description = alleventslines[i][12:]
     if endeventpos == 0:
         raceevents.append(RaceEvent(summary, day, location, description, starttime, endtime, month))
