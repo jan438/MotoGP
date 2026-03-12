@@ -26,9 +26,9 @@ colwidth = 110
 circuit_y = row * rowheight + 50
 motogpfont = "LiberationSerif"
 cadre_mode = True
-worldmap_x = 125
+worldmap_x = 128
 worldmap_y = 300
-worldmapscale = 0.34
+worldmapscale = 0.33
 dx = 0
 dy = 0
 
