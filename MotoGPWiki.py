@@ -61,6 +61,19 @@ with open(file_to_open, 'r') as file:
         circuitsdata.append(row)
         print(circuitsdata[count][5])
         count += 1
+eventcal = "Calendar/MotoGP2026.ics"
+in_file = open(os.path.join(path, eventcal), 'r')
+count = 0
+lastpos = 0
+found = 0
+alleventslines = []
+for line in in_file:
+    newlinepos = line.find("\t\n")
+    lastsubstring = line[lastpos:newlinepos]
+    alleventslines.append(lastsubstring)
+    count += 1
+in_file.close()
+print("Count eventslines", len(alleventslines))
 my_canvas = canvas.Canvas("PDF/MotoGPWiki.pdf", pagesize = A4)
 width, height = A4
 my_canvas.setFont(motogpfont, 12)
