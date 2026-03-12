@@ -53,6 +53,13 @@ def weekDay(year, month, day):
     dayOfWeek += offset[month - 1] + (day - 1)               
     dayOfWeek %= 7
     return round(dayOfWeek)
+    
+def lookupraceevent(country):
+    raceevent = None
+    for j in range(len(raceevents)):
+        if raceevents[j].summary == country:
+            raceevent = raceevents[j]
+    return raceevent
 
 def scaleSVG(svgfile, scaling_factor):
     svg_root = load_svg_file(svgfile)
@@ -149,6 +156,8 @@ renderPDF.draw(scaleSVG("Wiki/WorldMap.svg", worldmapscale), my_canvas, worldmap
 for i in range(len(raceevents)):
     print(i, "SUM", raceevents[i].summary, "LOC", raceevents[i].location, "DES", raceevents[i].description)
 for i in range(len(circuitsdata)):
+    rce = lookupraceevent(circuitsdata[i][0])
+    print("returned raceevent", rce.summary)
     if i == 11:
         col = 4
     if cadre_mode:
