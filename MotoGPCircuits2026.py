@@ -157,7 +157,7 @@ for i in range(len(raceevents)):
     print(i, "SUM", raceevents[i].summary, "LOC", raceevents[i].location, "DES", raceevents[i].description)
 for i in range(len(circuitsdata)):
     rce = lookupraceevent(circuitsdata[i][0])
-    print("returned raceevent", rce.summary)
+    print("raceevent", rce.summary, "day", rce.day, "month", rce.month)
     if i == 11:
         col = 4
     if cadre_mode:
