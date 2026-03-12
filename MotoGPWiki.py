@@ -126,8 +126,8 @@ for i in range(len(alleventslines)):
         eventdtendstr = alleventslines[i][6:]
         endtime = eventdtendstr[9:11] + ':' + eventdtendstr[11:13]
     if summaryeventpos == 0:
-        print("sssss")
         summary = alleventslines[i][8:]
+        print("summary", summary)
     if locationeventpos == 0:
         location = alleventslines[i][9:]
     if descriptioneventpos == 0:
