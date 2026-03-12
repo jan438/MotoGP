@@ -33,11 +33,10 @@ dx = 0
 dy = 0
 
 class RaceEvent:
-    def __init__(self, summary, day, location, description, starttime, endtime, month):
+    def __init__(self, summary, day, location, starttime, endtime, month):
         self.summary = summary
         self.day = day
         self.location = location
-        self.description = description
         self.starttime = starttime
         self.endtime = endtime
         self.month = month
@@ -101,8 +100,6 @@ for i in range(len(alleventslines)):
     neweventpos = alleventslines[i].find("BEGIN:VEVENT")
     summaryeventpos = alleventslines[i].find("SUMMARY")
     locationeventpos = alleventslines[i].find("LOCATION")
-    categorieseventpos = alleventslines[i].find("CATEGORIES")
-
     dtstarteventpos = alleventslines[i].find("DTSTART")
     dtendeventpos = alleventslines[i].find("DTEND")
     endeventpos = alleventslines[i].find("END:VEVENT")
@@ -112,7 +109,7 @@ for i in range(len(alleventslines)):
         starttime = 0
         endtime = 0
         month = 0
-        categories = ""
+
     if dtstarteventpos == 0:
         eventdtstartstr = alleventslines[i][8:]
         datevaluepos = alleventslines[i].find("VALUE=DATE:")
@@ -128,12 +125,10 @@ for i in range(len(alleventslines)):
         endtime = eventdtendstr[9:11] + ':' + eventdtendstr[11:13]
     if summaryeventpos == 0:
         summary = alleventslines[i][8:]
-    if categorieseventpos == 0:
-        categories = alleventslines[i][11:]
     if locationeventpos == 0:
         location = alleventslines[i][9:]
     if endeventpos == 0:
-        raceevents.append(RaceEvent(categories, summary, day, location, starttime, endtime, month))
+        raceevents.append(RaceEvent(summary, day, location, starttime, endtime, month))
 print("Count race events", len(raceevents))
 my_canvas = canvas.Canvas("PDF/MotoGPWiki.pdf", pagesize = A4)
 width, height = A4
