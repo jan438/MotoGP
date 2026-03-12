@@ -127,6 +127,8 @@ for i in range(len(alleventslines)):
         summary = alleventslines[i][8:]
     if locationeventpos == 0:
         location = alleventslines[i][9:]
+    if descriptioneventpos == 0:
+        description = alleventslines[i][12:]
     if endeventpos == 0:
         raceevents.append(RaceEvent(summary, day, location, starttime, endtime, month))
 print("Count race events", len(raceevents))
