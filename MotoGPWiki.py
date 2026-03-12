@@ -148,6 +148,8 @@ drawing = scaleSVG('Wiki/MotoGPlogo.svg', 0.1)
 renderPDF.draw(drawing, my_canvas, 50, 775)
 renderPDF.draw(scaleSVG("Wiki/WorldMap.svg", worldmapscale), my_canvas, worldmap_x, worldmap_y)
 
+for i in range(len(raceevents)):
+    print(i, raceevents[i].summary)
 for i in range(len(circuitsdata)):
     if i == 11:
         col = 4
