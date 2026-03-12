@@ -153,11 +153,9 @@ drawing = scaleSVG('Wiki/MotoGPlogo.svg', 0.1)
 renderPDF.draw(drawing, my_canvas, 50, 775)
 renderPDF.draw(scaleSVG("Wiki/WorldMap.svg", worldmapscale), my_canvas, worldmap_x, worldmap_y)
 
-for i in range(len(raceevents)):
-    print(i, "SUM", raceevents[i].summary, "LOC", raceevents[i].location, "DES", raceevents[i].description)
 for i in range(len(circuitsdata)):
     rce = lookupraceevent(circuitsdata[i][0])
-    print("raceevent", rce.summary, "day", rce.day, "month", rce.month)
+    print("raceevent", rce.summary, "day", rce.day, "month", rce.month, "desc", rce.description)
     if i == 11:
         col = 4
     if cadre_mode:
