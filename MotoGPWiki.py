@@ -147,7 +147,7 @@ renderPDF.draw(drawing, my_canvas, 50, 775)
 renderPDF.draw(scaleSVG("Wiki/WorldMap.svg", worldmapscale), my_canvas, worldmap_x, worldmap_y)
 
 for i in range(len(raceevents)):
-    print(i, raceevents[i].summary)
+    print(i, raceevents[i].summary, raceevents[i].location)
 for i in range(len(circuitsdata)):
     if i == 11:
         col = 4
