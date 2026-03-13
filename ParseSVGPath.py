@@ -1,8 +1,7 @@
-# Install svgpathtools if not already installed:
-# pip install svgpathtools
 
 from svgpathtools import parse_path, Path, Line, CubicBezier
 from cmath import rect
+from reportlab.pdfgen import canvas
 
 def line_to_cubic(line: Line) -> CubicBezier:
     """
@@ -15,11 +14,12 @@ def line_to_cubic(line: Line) -> CubicBezier:
     ctrl1 = start + (end - start) / 3
     ctrl2 = start + 2 * (end - start) / 3
     return CubicBezier(start, ctrl1, ctrl2, end)
+    
+def hello(c):
+    c.drawString(100,100,"Hello World")
+    return
 
-# Example SVG path string
 svg_path_str = "M 0,0 L 100,0 L 100,100 C 100,150 150,150 150,100"
-
-# Parse the path
 path = parse_path(svg_path_str)
 
 # Convert all Line segments to CubicBezier
@@ -29,11 +29,14 @@ for segment in path:
         converted_segments.append(line_to_cubic(segment))
     else:
         converted_segments.append(segment)
-
-# Create new path
 new_path = Path(*converted_segments)
-
-# Output new SVG path string
 print("Original path:", svg_path_str)
 print("Converted path:", new_path.d())
+
+c = canvas.Canvas("PDF/hello.pdf")
+hello(c)
+c.showPage()
+c.save()
+
 key = input("Wait")
+
