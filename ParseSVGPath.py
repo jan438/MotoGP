@@ -4,6 +4,7 @@ from cmath import rect
 from reportlab.pdfgen import canvas
 from reportlab.lib.units import inch
 from reportlab.lib.colors import red, green
+from xml.dom import minidom
 
 def line_to_cubic(line: Line) -> CubicBezier:
     """
@@ -76,14 +77,16 @@ for segment in path:
     else:
         converted_segments.append(segment)
 new_path = Path(*converted_segments)
-print("Original path:", svg_path_str)
-print("Converted path:", new_path.d())
+#print("Original path:", svg_path_str)
+#print("Converted path:", new_path.d())
 
 c = canvas.Canvas("PDF/hello.pdf")
 #hello(c)
-f = open("cloud.svg")
-print(f.read())
-f.close()
+doc = minidom.parse("cloud.svg")
+path_strings = [path.getAttribute('d') for path
+                in doc.getElementsByTagName('path')]
+doc.unlink()
+print(path_strings)
 hand(c, 1, 0)
 c.showPage()
 c.save()
