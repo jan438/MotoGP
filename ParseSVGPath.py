@@ -65,6 +65,8 @@ def hand(c, debug=1, fill=0):
 svg_path_str = "M 0,0 L 100,0 L 100,100 C 100,150 150,150 150,100"
 path = parse_path(svg_path_str)
 converted_segments = []
+start_x = 30
+start_y = 50
 for segment in path:
     if isinstance(segment, Line):
         converted_segments.append(line_to_cubic(segment))
@@ -85,14 +87,14 @@ for path_string in path_strings:
             x1 = e.end.real
             y1 = e.end.imag
             print("(%.2f, %.2f) - (%.2f, %.2f)" % (x0, y0, x1, y1))
-        if isinstance(e, CubicBezier):
+        elif isinstance(e, CubicBezier):
             cubic = e
             start = cubic.start
             control1 = cubic.control1
             control2 = cubic.control2
             end = cubic.end
             print("cubic", start, control1, control2, end)
-p.moveTo(0, 0)
+p.moveTo(start_x, start_y)
 p.curveTo(1,1 ,10,40, 18,28)
 p.close()
 c.drawPath(p, fill=1)
