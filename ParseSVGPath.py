@@ -73,7 +73,7 @@ for segment in path:
         converted_segments.append(line_to_cubic(segment))
     else:
         converted_segments.append(segment)
-c = canvas.Canvas("PDF/hello.pdf")
+c = canvas.Canvas("PDF/Path.pdf")
 doc = minidom.parse("Netherlands.svg")
 path_strings = [path.getAttribute('d') for path
                 in doc.getElementsByTagName('path')]
@@ -98,9 +98,8 @@ for path_string in path_strings:
                 start_x = start.real / 10
                 start_y = start.imag / 10
                 first_command = False
+                p.moveTo(start_x, start_y)
             print("cubic", start, control1, control2, end)
-            break
-p.moveTo(start_x, start_y)
 p.curveTo(start_x + 1, start_y + 1 ,start_x + 10, start_y + 40, start_x + 18, start_y + 28)
 p.close()
 c.drawPath(p, fill=1)
