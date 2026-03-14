@@ -71,7 +71,7 @@ for segment in path:
     else:
         converted_segments.append(segment)
 c = canvas.Canvas("PDF/hello.pdf")
-doc = minidom.parse("cloud.svg")
+doc = minidom.parse("Netherlands.svg")
 path_strings = [path.getAttribute('d') for path
                 in doc.getElementsByTagName('path')]
 doc.unlink()
