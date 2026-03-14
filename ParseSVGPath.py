@@ -95,7 +95,7 @@ for path_string in path_strings:
             end = cubic.end
             print("cubic", start, control1, control2, end)
 p.moveTo(start_x, start_y)
-p.curveTo(1,1 ,10,40, 18,28)
+p.curveTo(start_x + 1, start_y + 1 ,start_x + 10, start_y + 40, start_x + 18, start_y + 28)
 p.close()
 c.drawPath(p, fill=1)
 c.showPage()
