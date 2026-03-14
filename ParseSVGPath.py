@@ -75,6 +75,7 @@ doc = minidom.parse("Netherlands.svg")
 path_strings = [path.getAttribute('d') for path
                 in doc.getElementsByTagName('path')]
 doc.unlink()
+p = c.beginPath()
 for path_string in path_strings:
     path = parse_path(path_string)
     for e in path:
@@ -91,6 +92,10 @@ for path_string in path_strings:
             control2 = cubic.control2
             end = cubic.end
             print("cubic", start, control1, control2, end)
+p.moveTo(0, 0)
+p.curveTo(1,1 ,2,2, 3,3)
+p.close()
+c.drawPath(p, fill=1)
 c.showPage()
 c.save()
 
