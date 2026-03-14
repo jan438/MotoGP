@@ -65,8 +65,9 @@ def hand(c, debug=1, fill=0):
 svg_path_str = "M 0,0 L 100,0 L 100,100 C 100,150 150,150 150,100"
 path = parse_path(svg_path_str)
 converted_segments = []
-start_x = 30
-start_y = 50
+start_x = 0
+start_y = 0
+first_command = True
 for segment in path:
     if isinstance(segment, Line):
         converted_segments.append(line_to_cubic(segment))
@@ -93,8 +94,11 @@ for path_string in path_strings:
             control1 = cubic.control1
             control2 = cubic.control2
             end = cubic.end
-            #print("cubic", start, control1, control2, end)
-            print(start)
+            if first_command:
+                start_x = start.real / 10
+                start_y = start.imag / 10
+                first_command = False
+            print("cubic", start, control1, control2, end)
             break
 p.moveTo(start_x, start_y)
 p.curveTo(start_x + 1, start_y + 1 ,start_x + 10, start_y + 40, start_x + 18, start_y + 28)
