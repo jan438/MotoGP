@@ -5,6 +5,8 @@ from reportlab.pdfgen import canvas
 from reportlab.lib.units import inch
 from reportlab.lib.colors import red, green
 from xml.dom import minidom
+from svg.path import parse_path
+from svg.path.path import Line
 
 def line_to_cubic(line: Line) -> CubicBezier:
     """
@@ -76,7 +78,15 @@ path_strings = [path.getAttribute('d') for path
                 in doc.getElementsByTagName('path')]
 doc.unlink()
 print("path in Cloud svg", path_strings)
-hand(c, 1, 0)
+for path_string in path_strings:
+    path = parse_path(path_string)
+    for e in path:
+        if isinstance(e, Line):
+            x0 = e.start.real
+            y0 = e.start.imag
+            x1 = e.end.real
+            y1 = e.end.imag
+            print("(%.2f, %.2f) - (%.2f, %.2f)" % (x0, y0, x1, y1))        
 c.showPage()
 c.save()
 
