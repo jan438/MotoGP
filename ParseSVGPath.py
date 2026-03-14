@@ -86,7 +86,8 @@ for path_string in path_strings:
             y0 = e.start.imag
             x1 = e.end.real
             y1 = e.end.imag
-            print("(%.2f, %.2f) - (%.2f, %.2f)" % (x0, y0, x1, y1))        
+            print("(%.2f, %.2f) - (%.2f, %.2f)" % (x0, y0, x1, y1))
+        print("e", e)        
 c.showPage()
 c.save()
 
