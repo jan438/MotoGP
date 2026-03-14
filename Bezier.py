@@ -4,6 +4,9 @@
 
 from svgpathtools import Path, Line, CubicBezier
 
+complex = (300+100j)
+print(complex.real)
+
 bezier_curve = CubicBezier(start=(300+100j), control1=(100+100j), control2=(200+200j), end=(200+300j))
 bezier_path = Path(bezier_curve)
 
