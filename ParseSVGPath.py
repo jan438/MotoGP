@@ -86,7 +86,11 @@ for path_string in path_strings:
             print("(%.2f, %.2f) - (%.2f, %.2f)" % (x0, y0, x1, y1))
         if isinstance(e, CubicBezier):
             cubic = e
-            print("cubic start", cubic.start)        
+            start = cubic.start
+            control1 = cubic.control1
+            control2 = cubic.control2
+            end = cubic.end
+            print("cubic", start, control1, control2, end)
 c.showPage()
 c.save()
 
