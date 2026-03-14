@@ -93,7 +93,8 @@ for path_string in path_strings:
             control1 = cubic.control1
             control2 = cubic.control2
             end = cubic.end
-            print("cubic", start, control1, control2, end)
+            #print("cubic", start, control1, control2, end)
+            print(start)
             break
 p.moveTo(start_x, start_y)
 p.curveTo(start_x + 1, start_y + 1 ,start_x + 10, start_y + 40, start_x + 18, start_y + 28)
