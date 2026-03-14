@@ -61,32 +61,21 @@ def hand(c, debug=1, fill=0):
             c.setStrokeColor(green)
             c.line(x2*u,y2*u, x3*u,y3*u)
             (lastx,lasty) = (x3,y3)
-    
-def hello(c):
-    c.drawString(100,100,"Hello World")
-    return
 
 svg_path_str = "M 0,0 L 100,0 L 100,100 C 100,150 150,150 150,100"
 path = parse_path(svg_path_str)
-
-# Convert all Line segments to CubicBezier
 converted_segments = []
 for segment in path:
     if isinstance(segment, Line):
         converted_segments.append(line_to_cubic(segment))
     else:
         converted_segments.append(segment)
-new_path = Path(*converted_segments)
-#print("Original path:", svg_path_str)
-#print("Converted path:", new_path.d())
-
 c = canvas.Canvas("PDF/hello.pdf")
-#hello(c)
 doc = minidom.parse("cloud.svg")
 path_strings = [path.getAttribute('d') for path
                 in doc.getElementsByTagName('path')]
 doc.unlink()
-print(path_strings)
+print("path in Cloud svg", path_strings)
 hand(c, 1, 0)
 c.showPage()
 c.save()
