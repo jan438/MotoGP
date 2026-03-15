@@ -5,7 +5,19 @@ from reportlab.pdfgen import canvas
 from reportlab.lib.units import inch
 from reportlab.lib.colors import red, green
 from xml.dom import minidom
+from svglib.svglib import svg2rlg, load_svg_file, SvgRenderer
 
+def scaleSVG(svgfile, scaling_factor):
+    svg_root = load_svg_file(svgfile)
+    svgRenderer = SvgRenderer(svgfile)
+    drawing = svgRenderer.render(svg_root)
+    scaling_x = scaling_factor
+    scaling_y = scaling_factor
+    drawing.width = drawing.minWidth() * scaling_x
+    drawing.height = drawing.height * scaling_y
+    drawing.scale(scaling_x, scaling_y)
+    return drawing
+    
 def line_to_cubic(line: Line) -> CubicBezier:
     """
     Convert a straight line segment into a cubic Bézier curve
@@ -74,6 +86,7 @@ for segment in path:
     else:
         converted_segments.append(segment)
 c = canvas.Canvas("PDF/Path.pdf")
+scaledsvg = scaleSVG("Netherlands.svg", 0.1)
 doc = minidom.parse("Netherlands.svg")
 path_strings = [path.getAttribute('d') for path
                 in doc.getElementsByTagName('path')]
