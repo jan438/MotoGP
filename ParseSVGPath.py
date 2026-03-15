@@ -116,6 +116,7 @@ for path_string in path_strings:
                 p.curveTo(control1_x, control1_y, control2_x, control2_y, end_x, end_y)
             else:
                 p.curveTo(control1_x, control1_y, control2_x, control2_y, end_x, end_y)
+p.lineTo(start_x, start_y)
 p.close()
 c.drawPath(p, fill=1)
 c.showPage()
