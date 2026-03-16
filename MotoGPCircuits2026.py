@@ -15,6 +15,8 @@ from reportlab.lib.colors import HexColor
 from reportlab.lib.units import inch, mm
 from svglib.svglib import svg2rlg, load_svg_file, SvgRenderer
 import xml.etree.ElementTree as ET
+from xml.dom import minidom
+from svgpathtools import parse_path, Path, Line, CubicBezier
 
 monthnames = ["JAN", "FEB", "MRT", "APR", "MAY", "JUN", "JUL", "AUG", "SEP", "NOV", "DEC"]
 circuitsdata = []
@@ -74,7 +76,11 @@ def scaleSVG(svgfile, scaling_factor):
     return drawing
     
 def drawwikicircuit(c, file, scale, x, y):
-    print(c, file, scale, x, y)
+    doc = minidom.parse(file)
+    path_strings = [path.getAttribute('d') for path
+                in doc.getElementsByTagName('path')]
+    doc.unlink()
+    return
 
 if sys.platform[0] == 'l':
     path = '/home/jan/git/MotoGP'
