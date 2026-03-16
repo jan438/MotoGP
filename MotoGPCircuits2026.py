@@ -102,10 +102,10 @@ def drawwikicircuit(c, file, scale, x, y):
                 end_y = cubic.end.imag / 10
                 if first_command:
                     first_command = False
-                    p.moveTo(start_x, start_y)
-                    p.curveTo(control1_x, control1_y, control2_x, control2_y, end_x, end_y)
+                    p.moveTo(x + start_x, y + start_y)
+                    p.curveTo(x + control1_x, y + control1_y, x + control2_x, y + control2_y, x + end_x, y + end_y)
                 else:
-                    p.curveTo(control1_x, control1_y, control2_x, control2_y, end_x, end_y)
+                    p.curveTo(x + control1_x, y + control1_y, x + control2_x, y + control2_y, x + end_x, y + end_y)
     p.close()
     c.drawPath(p, stroke = 1, fill = 0)
     return
