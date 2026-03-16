@@ -76,10 +76,38 @@ def scaleSVG(svgfile, scaling_factor):
     return drawing
     
 def drawwikicircuit(c, file, scale, x, y):
+    first_command = True
     doc = minidom.parse(file)
     path_strings = [path.getAttribute('d') for path
                 in doc.getElementsByTagName('path')]
     doc.unlink()
+    p = c.beginPath()
+    for path_string in path_strings:
+        path = parse_path(path_string)
+        for e in path:
+            if isinstance(e, Line):
+                x0 = e.start.real
+                y0 = e.start.imag
+                x1 = e.end.real
+                y1 = e.end.imag
+            elif isinstance(e, CubicBezier):
+                cubic = e
+                start_x = cubic.start.real / 10
+                start_y = cubic.start.imag / 10
+                control1_x = cubic.control1.real / 10
+                control1_y = cubic.control1.imag / 10
+                control2_x = cubic.control2.real / 10
+                control2_y = cubic.control2.imag / 10
+                end_x = cubic.end.real / 10
+                end_y = cubic.end.imag / 10
+                if first_command:
+                    first_command = False
+                    p.moveTo(start_x, start_y)
+                    p.curveTo(control1_x, control1_y, control2_x, control2_y, end_x, end_y)
+                else:
+                    p.curveTo(control1_x, control1_y, control2_x, control2_y, end_x, end_y)
+    p.close()
+    c.drawPath(p, stroke = 1, fill = 0)
     return
 
 if sys.platform[0] == 'l':
