@@ -81,6 +81,8 @@ def drawwikicircuit(c, file, scale, x, y):
     path_strings = [path.getAttribute('d') for path
                 in doc.getElementsByTagName('path')]
     doc.unlink()
+    c.setLineWidth(4)
+    c.setStrokeColorRGB(0.8, 1, 0.6)
     p = c.beginPath()
     for path_string in path_strings:
         path = parse_path(path_string)
@@ -194,7 +196,7 @@ renderPDF.draw(scaleSVG("Wiki/WorldMap.svg", worldmapscale), my_canvas, worldmap
 date_y = 100
 
 for i in range(len(circuitsdata)):
-    if i == 6:
+    if i == 7:
         break
     rce = lookupraceevent(circuitsdata[i][0])
     day = str(rce.day)
