@@ -81,7 +81,7 @@ def drawwikicircuit(c, file, scale, x, y):
     path_strings = [path.getAttribute('d') for path
                 in doc.getElementsByTagName('path')]
     doc.unlink()
-    c.setLineWidth(4)
+    c.setLineWidth(2)
     c.setStrokeColorRGB(0.8, 1, 0.6)
     p = c.beginPath()
     for path_string in path_strings:
@@ -204,6 +204,7 @@ for i in range(len(circuitsdata)):
     if i == 11:
         col = 4
     if cadre_mode:
+        my_canvas.setLineWidth(1)
         my_canvas.setStrokeColor(yellow)
         my_canvas.rect(leftmargin + col * colwidth, circuit_y, colwidth, colwidth, stroke = 1, fill = 0)
     my_canvas.setFillColor(HexColor("#000000"))
