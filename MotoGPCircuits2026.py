@@ -72,6 +72,9 @@ def scaleSVG(svgfile, scaling_factor):
     drawing.height = drawing.height * scaling_y
     drawing.scale(scaling_x, scaling_y)
     return drawing
+    
+def drawwikicircuit(c, file, scale):
+    print(c, file, scale)
 
 if sys.platform[0] == 'l':
     path = '/home/jan/git/MotoGP'
@@ -179,6 +182,7 @@ for i in range(len(circuitsdata)):
         if name == "viewBox":
             print(svgfile, '{0}="{1}"'.format(name, value))
     scale = float(circuitsdata[i][1])
+    drawwikicircuit(my_canvas, svgfile, scale)
     #renderPDF.draw(drawing, my_canvas, leftmargin + col * colwidth + dx, circuit_y + dy)
     my_canvas.setFillColor(HexColor("#FFFFFF"))
     namewidth = pdfmetrics.stringWidth(displayname, motogpfont, 12)
