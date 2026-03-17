@@ -199,8 +199,13 @@ renderPDF.draw(drawing, my_canvas, 50, 775)
 renderPDF.draw(scaleSVG("Wiki/WorldMap.svg", worldmapscale), my_canvas, worldmap_x, worldmap_y)
 
 date_y = 100
+cx = 8
 
 for i in range(len(circuitsdata)):
+    if i == cx:
+        print("Index", cx)
+    else:
+        continue
     rce = lookupraceevent(circuitsdata[i][0])
     day = str(rce.day)
     month = monthnames[rce.month - 1]
