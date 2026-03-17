@@ -88,10 +88,10 @@ def drawwikicircuit(c, file, scale, x, y):
         path = parse_path(path_string)
         for e in path:
             if isinstance(e, Line):
-                x0 = e.start.real / 10
-                y0 = e.start.imag / 10
-                x1 = e.end.real / 10
-                y1 = e.end.imag / 10
+                x0 = e.start.real * scale
+                y0 = e.start.imag * scale
+                x1 = e.end.real * scale
+                y1 = e.end.imag * scale
                 if first_command:
                     first_command = False
                     p.moveTo(x + x0, y + y0)
@@ -99,14 +99,14 @@ def drawwikicircuit(c, file, scale, x, y):
                 else:
                     p.lineTo(x + x1, y + y1)
             elif isinstance(e, CubicBezier):
-                start_x = e.start.real / 10
-                start_y = e.start.imag / 10
-                control1_x = e.control1.real / 10
-                control1_y = e.control1.imag / 10
-                control2_x = e.control2.real / 10
-                control2_y = e.control2.imag / 10
-                end_x = e.end.real / 10
-                end_y = e.end.imag / 10
+                start_x = e.start.real * scale
+                start_y = e.start.imag * scale
+                control1_x = e.control1.real * scale
+                control1_y = e.control1.imag * scale
+                control2_x = e.control2.real * scale
+                control2_y = e.control2.imag * scale
+                end_x = e.end.real * scale
+                end_y = e.end.imag * scale
                 if first_command:
                     first_command = False
                     p.moveTo(x + start_x, y + start_y)
