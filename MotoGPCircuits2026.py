@@ -88,10 +88,16 @@ def drawwikicircuit(c, file, scale, x, y):
         path = parse_path(path_string)
         for e in path:
             if isinstance(e, Line):
-                x0 = e.start.real
-                y0 = e.start.imag
-                x1 = e.end.real
-                y1 = e.end.imag
+                x0 = e.start.real / 10
+                y0 = e.start.imag / 10
+                x1 = e.end.real / 10
+                y1 = e.end.imag / 10
+                if first_command:
+                    first_command = False
+                    p.moveTo(x + x0, y + y0)
+                    p.lineTo(x + x1, y + y1)
+                else:
+                    p.lineTo(x + x1, y + y1)
             elif isinstance(e, CubicBezier):
                 cubic = e
                 start_x = cubic.start.real / 10
