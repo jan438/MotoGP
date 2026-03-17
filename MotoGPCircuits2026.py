@@ -99,15 +99,14 @@ def drawwikicircuit(c, file, scale, x, y):
                 else:
                     p.lineTo(x + x1, y + y1)
             elif isinstance(e, CubicBezier):
-                cubic = e
-                start_x = cubic.start.real / 10
-                start_y = cubic.start.imag / 10
-                control1_x = cubic.control1.real / 10
-                control1_y = cubic.control1.imag / 10
-                control2_x = cubic.control2.real / 10
-                control2_y = cubic.control2.imag / 10
-                end_x = cubic.end.real / 10
-                end_y = cubic.end.imag / 10
+                start_x = e.start.real / 10
+                start_y = e.start.imag / 10
+                control1_x = e.control1.real / 10
+                control1_y = e.control1.imag / 10
+                control2_x = e.control2.real / 10
+                control2_y = e.control2.imag / 10
+                end_x = e.end.real / 10
+                end_y = e.end.imag / 10
                 if first_command:
                     first_command = False
                     p.moveTo(x + start_x, y + start_y)
