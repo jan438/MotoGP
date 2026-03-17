@@ -169,79 +169,6 @@
          x="993.84344"
          y="617.74011"
          style="font-size:20px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;font-family:Arial;-inkscape-font-specification:Arial">Copse</tspan></text>
-    <text
-       xml:space="preserve"
-       style="font-size:20px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;display:inline;font-family:Segoe UI;-inkscape-font-specification:Segoe UI"
-       x="604.33569"
-       y="254.3886"
-       id="text6100-9-7"
-       sodipodi:linespacing="125%"><tspan
-         sodipodi:role="line"
-         id="tspan6102-4-6"
-         x="604.33569"
-         y="254.3886"
-         style="font-size:20px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;font-family:Arial;-inkscape-font-specification:Arial">Abbey</tspan></text>
-    <text
-       xml:space="preserve"
-       style="font-size:20px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;display:inline;font-family:Arial;-inkscape-font-specification:Arial"
-       x="790.52161"
-       y="268.8653"
-       id="text6100-9-14"
-       sodipodi:linespacing="125%"><tspan
-         sodipodi:role="line"
-         id="tspan6102-4-2"
-         x="790.52161"
-         y="268.8653"
-         style="font-size:20px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;font-family:Arial;-inkscape-font-specification:Arial">Brooklands</tspan></text>
-    <text
-       xml:space="preserve"
-       style="font-size:20px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;display:inline;font-family:Segoe UI;-inkscape-font-specification:Segoe UI"
-       x="696.4613"
-       y="179.19951"
-       id="text6100-9-3"
-       sodipodi:linespacing="125%"><tspan
-         sodipodi:role="line"
-         id="tspan6102-4-22"
-         x="696.4613"
-         y="179.19951"
-         style="font-size:20px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;font-family:Arial;-inkscape-font-specification:Arial">Luffield</tspan></text>
-    <text
-       xml:space="preserve"
-       style="font-size:20px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;display:inline;font-family:Segoe UI;-inkscape-font-specification:Segoe UI"
-       x="1002.5466"
-       y="256.1759"
-       id="text6100-9-16"
-       sodipodi:linespacing="125%"><tspan
-         sodipodi:role="line"
-         id="tspan6102-4-85"
-         x="1002.5466"
-         y="256.1759"
-         style="font-size:20px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;font-family:Arial;-inkscape-font-specification:Arial">Woodcote</tspan></text>
-    <text
-       xml:space="preserve"
-       style="font-size:20px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;display:inline;font-family:Arial;-inkscape-font-specification:Arial"
-       x="423.08167"
-       y="382.82144"
-       id="text6100-9-8-4"
-       sodipodi:linespacing="125%"><tspan
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:20px;line-height:125%;font-family:Arial;-inkscape-font-specification:Arial;text-align:start;writing-mode:lr-tb;text-anchor:start"
-         y="382.82144"
-         x="433.08167"
-         id="tspan6102-4-8-3"
-         sodipodi:role="line">Farm</tspan></text>
-    <text
-       xml:space="preserve"
-       style="font-size:20px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;display:inline;font-family:Arial;-inkscape-font-specification:Arial"
-       x="122.51482"
-       y="842.48688"
-       id="text6100-9-33"
-       sodipodi:linespacing="125%"
-       transform="matrix(0.66472667,-0.74708665,0.74708665,0.66472667,0,0)"><tspan
-         sodipodi:role="line"
-         id="tspan6102-4-41"
-         x="122.51482"
-         y="842.48688"
-         style="font-size:20px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;font-family:Arial;-inkscape-font-specification:Arial">Wellington Straight</tspan></text>
     <path
        inkscape:connector-curvature="0"
        style="fill:#ff0000;fill-opacity:1;fill-rule:nonzero;stroke:#ffffff;stroke-width:1;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
@@ -290,16 +217,6 @@
       <g
          transform="translate(-2.467732,28.378919)"
          id="g3654" />
-      <text
-         id="text3767"
-         y="1017.814"
-         x="1653.3805"
-         style="font-size:20px;font-style:normal;font-weight:normal;writing-mode:lr-tb;fill:#000000;fill-opacity:1;font-family:Times New Roman"
-         xml:space="preserve"><tspan
-           y="1017.814"
-           x="1653.3805"
-           sodipodi:role="line"
-           id="tspan5218" /></text>
     </g>
     <g
        style="display:inline"
