@@ -201,8 +201,6 @@ renderPDF.draw(scaleSVG("Wiki/WorldMap.svg", worldmapscale), my_canvas, worldmap
 date_y = 100
 
 for i in range(len(circuitsdata)):
-    if i == 22:
-        break
     rce = lookupraceevent(circuitsdata[i][0])
     day = str(rce.day)
     month = monthnames[rce.month - 1]
