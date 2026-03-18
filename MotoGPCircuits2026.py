@@ -75,7 +75,7 @@ def scaleSVG(svgfile, scaling_factor):
     drawing.scale(scaling_x, scaling_y)
     return drawing
     
-def drawwikicircuit(c, file, scale, x, y):
+def drawwikicircuit(c, i, file, scale, x, y):
     doc = minidom.parse(file)
     path_strings = [path.getAttribute('d') for path
                 in doc.getElementsByTagName('path')]
@@ -214,7 +214,7 @@ for i in range(len(circuitsdata)):
         if name == "viewBox":
             print(svgfile, '{0}="{1}"'.format(name, value))
     scale = float(circuitsdata[i][1])
-    drawwikicircuit(my_canvas, svgfile, scale, leftmargin + col * colwidth + dx, circuit_y + dy)
+    drawwikicircuit(my_canvas, i, svgfile, scale, leftmargin + col * colwidth + dx, circuit_y + dy)
     my_canvas.setFillColor(HexColor("#FFFFFF"))
     namewidth = pdfmetrics.stringWidth(displayname, motogpfont, 12)
     my_canvas.drawString(leftmargin + col * colwidth + (colwidth - namewidth) / 2, circuit_y - 20, displayname)
