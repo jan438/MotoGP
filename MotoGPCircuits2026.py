@@ -193,10 +193,6 @@ date_y = 100
 cx = 20
 
 for i in range(len(circuitsdata)):
-    if i == cx:
-        print("Index", cx)
-    else:
-        continue
     rce = lookupraceevent(circuitsdata[i][0])
     day = str(rce.day)
     month = monthnames[rce.month - 1]
