@@ -1,61 +1,24 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <!-- Created with Inkscape by VulcanSphere (http://www.inkscape.org/ and http://vulcansphere.com) -->
-
 <svg
    width="430.862mm"
    height="536.70074mm"
    viewBox="0 0 430.862 536.70074"
    version="1.1"
    id="svg1"
-   sodipodi:docname="Indonesiav.svg"
-   inkscape:version="1.4.3 (fcd0343856, 2026-01-01)"
-   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns="http://www.w3.org/2000/svg"
-   xmlns:svg="http://www.w3.org/2000/svg"
-   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-   xmlns:cc="http://creativecommons.org/ns#"
-   xmlns:dc="http://purl.org/dc/elements/1.1/">
-  <sodipodi:namedview
-     id="namedview1"
-     pagecolor="#ffffff"
-     bordercolor="#000000"
-     borderopacity="0.25"
-     inkscape:showpageshadow="2"
-     inkscape:pageopacity="0.0"
-     inkscape:pagecheckerboard="0"
-     inkscape:deskcolor="#d1d1d1"
-     inkscape:document-units="mm"
-     inkscape:zoom="0.33818505"
-     inkscape:cx="814.64276"
-     inkscape:cy="1014.2376"
-     inkscape:window-width="1210"
-     inkscape:window-height="933"
-     inkscape:window-x="0"
-     inkscape:window-y="0"
-     inkscape:window-maximized="1"
-     inkscape:current-layer="svg1" />
+   xmlns:svg="http://www.w3.org/2000/svg">
   <title
-     id="title1">Mandalika International Street Circuit</title>
-  <desc
-     id="desc1">Motorsport circuit in Central Lombok Regency, Indonesia</desc>
+    id="title1">Mandalika International Street Circuit</title><desc
+    id="desc1">Motorsport circuit in Central Lombok Regency, Indonesia</desc>
   <defs
      id="defs1" />
   <g
      id="layer1"
-     transform="matrix(1,0,0,-1,141.28751,361.54171)">
+     transform="translate(141.28751,177.00626)">
     <path
        id="path33"
        d="m -51.44751,-76.663828 264.39435,-73.516362 c 0,0 28.15921,-4.9137 29.86011,16.63095 1.7009,21.54464 0.56697,88.446425 0.56697,88.446425 0,0 1.17043,13.328835 -14.17411,10.961309 -17.62555,-2.719465 -20.41071,-7.181548 -26.08035,6.236607 -5.66965,13.418155 -8.69346,18.8988095 6.42559,33.261905 15.11905,14.363095 45.92411,41.199405 45.92411,41.199405 0,0 8.50446,6.236607 8.50446,34.584821 0,28.348218 0.18899,50.081848 0.18899,50.081848 0,0 0.75595,11.15029 -15.68601,28.5372 -16.44197,17.3869 -36.66369,41.57738 -36.66369,41.57738 0,0 -6.61459,10.39435 -29.48214,10.39435 -22.86756,0 -35.90774,3.96875 -60.85417,32.50595 -24.94643,28.5372 -25.89137,27.21428 -51.21578,41.01042 -25.3244,13.79613 -82.96577,44.97916 -82.96577,44.97916 0,0 -32.88393,22.11161 -30.23809,-24.37946 2.64583,-46.49107 3.40178,-67.09078 3.40178,-67.09078 0,0 -0.94494,-21.92262 31.37202,-34.20684 32.31697,-12.28423 56.50745,-15.11905 51.40477,-59.53125 -5.10268,-44.4122 -7.74852,-74.650299 -7.74852,-74.650299 0,0 1.13393,-27.78125 -38.36458,-29.482143 0,0 -31.18303,-1.511905 -54.99553,-33.450893 -23.8125,-31.938988 -49.89286,-72.382441 -49.89286,-72.382441 0,0 -14.74107,-17.764881 -5.29167,-54.995534 9.44941,-37.23066 26.647323,-30.61607 26.647323,-30.61607 0,0 13.418157,0.18899 8.693457,42.33333 -4.72471,42.144346 4.15773,37.419643 26.26934,31.561012 z"
        style="display:inline;fill:none;stroke:#fffa69;stroke-width:5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
   </g>
-  <metadata
-     id="metadata1">
-    <rdf:RDF>
-      <cc:Work
-         rdf:about="">
-        <dc:title>Mandalika International Street Circuit</dc:title>
-      </cc:Work>
-    </rdf:RDF>
-  </metadata>
 </svg>
