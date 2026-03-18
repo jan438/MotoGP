@@ -76,7 +76,6 @@ def scaleSVG(svgfile, scaling_factor):
     return drawing
     
 def drawwikicircuit(c, file, scale, x, y):
-    first_command = True
     doc = minidom.parse(file)
     path_strings = [path.getAttribute('d') for path
                 in doc.getElementsByTagName('path')]
@@ -92,12 +91,8 @@ def drawwikicircuit(c, file, scale, x, y):
                 y0 = e.start.imag * scale
                 x1 = e.end.real * scale
                 y1 = e.end.imag * scale
-                if first_command:
-                    first_command = False
-                    p.moveTo(x + x0, y + y0)
-                    p.lineTo(x + x1, y + y1)
-                else:
-                    p.lineTo(x + x1, y + y1)
+                p.moveTo(x + x0, y + y0)
+                p.lineTo(x + x1, y + y1)
             elif isinstance(e, CubicBezier):
                 start_x = e.start.real * scale
                 start_y = e.start.imag * scale
@@ -107,12 +102,8 @@ def drawwikicircuit(c, file, scale, x, y):
                 control2_y = e.control2.imag * scale
                 end_x = e.end.real * scale
                 end_y = e.end.imag * scale
-                if first_command:
-                    first_command = False
-                    p.moveTo(x + start_x, y + start_y)
-                    p.curveTo(x + control1_x, y + control1_y, x + control2_x, y + control2_y, x + end_x, y + end_y)
-                else:
-                    p.curveTo(x + control1_x, y + control1_y, x + control2_x, y + control2_y, x + end_x, y + end_y)
+                p.moveTo(x + start_x, y + start_y)
+                p.curveTo(x + control1_x, y + control1_y, x + control2_x, y + control2_y, x + end_x, y + end_y)
     p.close()
     c.drawPath(p, stroke = 1, fill = 0)
     return
