@@ -76,6 +76,8 @@ def scaleSVG(svgfile, scaling_factor):
     return drawing
     
 def drawwikicircuit(c, i, file, scale, x, y):
+    if i != 10:
+        return
     doc = minidom.parse(file)
     path_strings = [path.getAttribute('d') for path
                 in doc.getElementsByTagName('path')]
