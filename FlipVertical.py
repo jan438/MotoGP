@@ -1,4 +1,5 @@
 from svgpathtools import parse_path, Path
+from xml.dom import minidom
 import sys
 
 def flip_svg_path_vertically(path_data, height):
@@ -33,5 +34,12 @@ try:
     print("Flipped Path: ", flipped_path_data)
 except ValueError as e:
     print("Error:", e)
+
+svgfile = "Indonesia.svg"
+doc = minidom.parse(svgfile)
+path_strings = [path.getAttribute('d') for path
+            in doc.getElementsByTagName('path')]
+doc.unlink()
+print(path_strings)
 
 key = input("Wait")
