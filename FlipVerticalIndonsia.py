@@ -44,6 +44,7 @@ svg_height = 536.70074
 try:
     flipped_path_data = flip_svg_path_vertically(original_path_data, svg_height)
     print("Original Path:", original_path_data)
+    print("------------------")
     print("Flipped Path: ", flipped_path_data)
 except ValueError as e:
     print("Error:", e)
