@@ -37,11 +37,21 @@ except ValueError as e:
 
 print("------------------")
 
-svgfile = "Indonesia.svg"
-doc = minidom.parse(svgfile)
-original_path_data = [path.getAttribute('d') for path
-            in doc.getElementsByTagName('path')]
-doc.unlink()
+#svgfile = "Indonesia.svg"
+#doc = minidom.parse(svgfile)
+#original_path_data = [path.getAttribute('d') for path
+#            in doc.getElementsByTagName('path')]
+#doc.unlink()
+
+original_path_data = "M10 10 L50 10 L50 50 L10 50 Z"
+svg_height = 100  # Height of the SVG canvas
 print(original_path_data)
+
+try:
+    flipped_path_data = flip_svg_path_vertically(original_path_data, svg_height)
+    print("Original Path:", original_path_data)
+    print("Flipped Path: ", flipped_path_data)
+except ValueError as e:
+    print("Error:", e)
 
 key = input("Wait")
