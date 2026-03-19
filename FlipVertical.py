@@ -35,11 +35,13 @@ try:
 except ValueError as e:
     print("Error:", e)
 
+print("------------------")
+
 svgfile = "Indonesia.svg"
 doc = minidom.parse(svgfile)
-path_strings = [path.getAttribute('d') for path
+original_path_data = [path.getAttribute('d') for path
             in doc.getElementsByTagName('path')]
 doc.unlink()
-print(path_strings)
+print(original_path_data)
 
 key = input("Wait")
