@@ -76,8 +76,6 @@ def scaleSVG(svgfile, scaling_factor):
     return drawing
     
 def drawwikicircuit(c, i, file, scale, x, y):
-    #if i != 10:
-        #return
     doc = minidom.parse(file)
     path_strings = [path.getAttribute('d') for path
                 in doc.getElementsByTagName('path')]
@@ -95,7 +93,7 @@ def drawwikicircuit(c, i, file, scale, x, y):
                 y1 = e.end.imag * scale
                 p.moveTo(x + x0, y + y0)
                 p.lineTo(x + x1, y + y1)
-                #print("Line", x0, y0, x1, y1)
+
             elif isinstance(e, CubicBezier):
                 start_x = e.start.real * scale
                 start_y = e.start.imag * scale
@@ -107,7 +105,6 @@ def drawwikicircuit(c, i, file, scale, x, y):
                 end_y = e.end.imag * scale
                 p.moveTo(x + start_x, y + start_y)
                 p.curveTo(x + control1_x, y + control1_y, x + control2_x, y + control2_y, x + end_x, y + end_y)
-                #print("Cubic", start_x, start_y, end_x, end_y)
     p.close()
     c.drawPath(p, stroke = 1, fill = 0)
     return
@@ -129,7 +126,7 @@ with open(file_to_open, 'r') as file:
     count = 0
     for row in csvreader:
         circuitsdata.append(row)
-        print(circuitsdata[count][5])
+        #print(circuitsdata[count][5])
         count += 1
 eventcal = "Calendar/MotoGP2026.ics"
 in_file = open(os.path.join(path, eventcal), 'r')
