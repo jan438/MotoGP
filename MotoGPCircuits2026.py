@@ -210,7 +210,7 @@ for i in range(len(circuitsdata)):
     displayname = circuitsdata[i][0]
     dx = float(circuitsdata[i][2])
     dy = float(circuitsdata[i][3])
-    svgfile = displayname + "v.svg"
+    svgfile = displayname + ".svg"
     tree = ET.parse(svgfile)
     root = tree.getroot()
     attrib = root.attrib
