@@ -194,12 +194,14 @@ renderPDF.draw(drawing, my_canvas, 50, 775)
 renderPDF.draw(scaleSVG("Wiki/WorldMap.svg", worldmapscale), my_canvas, worldmap_x, worldmap_y)
 
 date_y = 100
+location_y = 80
 cx = 20
 
 for i in range(len(circuitsdata)):
     rce = lookupraceevent(circuitsdata[i][0])
     day = str(rce.day)
     month = monthnames[rce.month - 1]
+    location = rce.location
     if i == 11:
         col = 4
     if cadre_mode:
@@ -224,6 +226,7 @@ for i in range(len(circuitsdata)):
     my_canvas.drawString(leftmargin + col * colwidth + (colwidth - namewidth) / 2, circuit_y - 20, displayname)
     my_canvas.drawString(leftmargin + col * colwidth, circuit_y + date_y, day)
     my_canvas.drawString(leftmargin + col * colwidth + 20, circuit_y + date_y, month)
+    my_canvas.drawString(leftmargin + col * colwidth + 20, circuit_y + location_y, location)
     col = col + 1
     if col == 5:
         col = 0
