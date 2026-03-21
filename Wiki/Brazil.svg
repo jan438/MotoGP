@@ -34,19 +34,4 @@
        inkscape:connector-curvature="0"
        sodipodi:nodetypes="ssssssssssssssssssssssssssssss" />
   </g>
-  <g
-     inkscape:groupmode="layer"
-     id="layer2"
-     inkscape:label="Visible map"
-     transform="translate(343.24428,-89.584991)">
-
-    <use
-       x="0"
-       y="0"
-       xlink:href="#path3764"
-       id="use3994"
-       style="color:#fffa69;fill:none;stroke:#fffa69;stroke-width:10;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
-       width="744.09448"
-       height="1052.3622" />
-  </g>
 </svg>
