@@ -223,6 +223,8 @@ for i in range(len(circuitsdata)):
     my_canvas.drawString(leftmargin + col * colwidth + (colwidth - namewidth) / 2, circuit_y - 20, displayname)
     my_canvas.drawString(leftmargin + col * colwidth, circuit_y + date_y, day)
     my_canvas.drawString(leftmargin + col * colwidth + 20, circuit_y + date_y, month)
+    drawing = scaleSVG('Wiki/location.svg', 0.1)
+    renderPDF.draw(drawing, my_canvas, leftmargin + col * colwidth, circuit_y + location_y)
     my_canvas.drawString(leftmargin + col * colwidth + 20, circuit_y + location_y, location)
     col = col + 1
     if col == 5:
