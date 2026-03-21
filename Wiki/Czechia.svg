@@ -18,43 +18,6 @@
    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
    xmlns:cc="http://creativecommons.org/ns#"
    xmlns:dc="http://purl.org/dc/elements/1.1/">
-  <defs
-     id="defs1" />
-  <sodipodi:namedview
-     inkscape:window-maximized="1"
-     inkscape:document-rotation="0"
-     inkscape:showpageshadow="false"
-     showborder="false"
-     inkscape:window-y="0"
-     inkscape:window-x="0"
-     inkscape:window-height="933"
-     inkscape:window-width="1210"
-     showgrid="false"
-     inkscape:current-layer="layer1"
-     inkscape:document-units="px"
-     inkscape:cy="575.71882"
-     inkscape:cx="326.69373"
-     inkscape:zoom="1.0300167"
-     inkscape:pageshadow="0"
-     inkscape:pageopacity="0.0"
-     borderopacity="0.0"
-     bordercolor="#ffffff"
-     pagecolor="#ffffff"
-     id="base"
-     inkscape:snap-text-baseline="false"
-     inkscape:pagecheckerboard="0"
-     inkscape:deskcolor="#d1d1d1" />
-  <metadata
-     id="metadata3587">
-    <rdf:RDF>
-      <cc:Work
-         rdf:about="">
-        <dc:format>image/svg+xml</dc:format>
-        <dc:type
-           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-      </cc:Work>
-    </rdf:RDF>
-  </metadata>
   <g
      transform="translate(164.2099,-438.3449)"
      id="layer1"
