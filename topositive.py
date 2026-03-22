@@ -43,7 +43,8 @@ def svg_to_positive_coords(input_svg, output_svg):
     except Exception as e:
         print(f"An error occurred: {e}")
 
-inputfile = open("path.svg")
+inputname = "path.svg"
+inputfile = open(inputname)
 
 print(inputfile)
 
