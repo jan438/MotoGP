@@ -1,7 +1,14 @@
 import sys
 from svgpathtools import svg2paths, wsvg
+from xml.dom import minidom
 
 def svg_to_positive_coords(input_svg, output_svg):
+    doc = minidom.parse(input_svg)
+    path_strings = [path.getAttribute('d') for path
+                in doc.getElementsByTagName('path')]
+    doc.unlink()
+    print(str(path_strings))
+    return
     try:
         # Load paths and attributes from the SVG
         paths, attributes = svg2paths(input_svg)
