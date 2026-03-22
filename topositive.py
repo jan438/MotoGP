@@ -43,8 +43,4 @@ def svg_to_positive_coords(input_svg, output_svg):
     except Exception as e:
         print(f"An error occurred: {e}")
 
-if __name__ == "__main__":
-    if len(sys.argv) != 3:
-        print("Usage: python svg_to_positive_coords.py input.svg output.svg")
-    else:
-        svg_to_positive_coords(sys.argv[1], sys.argv[2])
+key = input("Wait")
