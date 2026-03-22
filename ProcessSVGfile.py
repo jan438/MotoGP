@@ -23,20 +23,6 @@ def flip_svg_path_vertically(path_data, height):
     flipped_path = Path(*flipped_segments)
     return flipped_path.d()
 
-
-# Example SVG path (replace with your own)
-original_path_data = "M10 10 L50 10 L50 50 L10 50 Z"
-svg_height = 100  # Height of the SVG canvas
-
-try:
-    flipped_path_data = flip_svg_path_vertically(original_path_data, svg_height)
-    print("Original Path:", original_path_data)
-    print("Flipped Path: ", flipped_path_data)
-except ValueError as e:
-    print("Error:", e)
-
-print("------------------")
-
 original_path_data = "M150 5 L75 200 L225 200 Z"
 
 svg_height = 210
