@@ -51,9 +51,6 @@ def svg_to_positive_coords(input_svg, output_svg):
         print(f"An error occurred: {e}")
 
 inputname = "path.svg"
-inputfile = open(inputname)
-
-print(inputfile)
 
 svg_to_positive_coords(inputname, "PDF/outfile")
 
