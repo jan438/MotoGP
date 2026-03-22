@@ -48,4 +48,6 @@ inputfile = open(inputname)
 
 print(inputfile)
 
+svg_to_positive_coords(inputname, "PDF/outfile")
+
 key = input("Wait")
