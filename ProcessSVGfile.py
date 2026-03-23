@@ -10,10 +10,10 @@ def flip_svg_path_vertically(input_svg):
     :param height: The total height of the SVG canvas.
     :return: Flipped path data string.
     """
-    path_data = "M150 5 L75 200 L225 200 Z"
     height = 210
     try:
         paths, attributes = svg2paths(input_svg)
+        path_data = paths[0]
         path = parse_path(path_data)
     except Exception as e:
         raise ValueError(f"Invalid SVG path data: {e}")
@@ -22,7 +22,6 @@ def flip_svg_path_vertically(input_svg):
     flipped_segments = []
     for segment in path:
         flipped_segments.append(segment.translated(complex(0, -height)).scaled(1, -1).translated(complex(0, height)))
-
     flipped_path = Path(*flipped_segments)
     return flipped_path.d()
 
