@@ -13,12 +13,13 @@ def flip_svg_path_vertically(input_svg, output_svg):
     height = 263.86343
     try:
         paths, attributes = svg2paths(input_svg)
-        print("orig paths", len(paths), len(paths[0]))
+        print("orig paths", len(paths), len(paths[0]), paths)
         path_data = paths[0]
         path = parse_path(path_data)
     except Exception as e:
         raise ValueError(f"Invalid SVG path data: {e}")
-
+    
+    print("=======================================================")
     # Apply vertical flip: scale y by -1 and translate
     flipped_segments = []
     for segment in path:
@@ -26,7 +27,7 @@ def flip_svg_path_vertically(input_svg, output_svg):
     flipped_path = Path(*flipped_segments)
     paths = []
     paths.append(flipped_path)
-    print("flipped", len(paths), len(paths[0]), len(flipped_path))
+    print("flipped", len(paths), len(paths[0]), len(flipped_path), flipped_path)
     wsvg(paths, attributes=attributes, filename=output_svg)
     return
 
