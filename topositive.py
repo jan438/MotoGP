@@ -1,27 +1,19 @@
 import sys
 from svgpathtools import svg2paths, wsvg
-from xml.dom import minidom
 
 def svg_to_positive_coords(input_svg, output_svg):
-    doc = minidom.parse(input_svg)
-    path_strings = [path.getAttribute('d') for path
-                in doc.getElementsByTagName('path')]
-    doc.unlink()
-    print(str(path_strings))
     try:
         # Load paths and attributes from the SVG
         paths, attributes = svg2paths(input_svg)
-        print(paths)
-        key = input("Wait")
-        return
         # Extract all coordinates from all paths
         all_x = []
         all_y = []
         for path in paths:
             for segment in path:
-                for point in [segment.start, segment.end]:
-                    all_x.append(point.real)
-                    all_y.append(point.imag)
+                print("Segment", segment)
+                #for point in [segment.start, segment.end]:
+                    #all_x.append(point.real)
+                    #all_y.append(point.imag)
 
         if not all_x or not all_y:
             print("No coordinates found in the SVG.")
