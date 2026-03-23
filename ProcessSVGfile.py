@@ -75,8 +75,8 @@ def svg_to_positive_coords(input_svg, output_svg):
 
 inputname = "BalatonPark.svg"
 
-flip_svg_path_vertically(inputname, "PDF/outfile")
+flip_svg_path_vertically(inputname, "PDF/outfile.svg")
 
-svg_to_positive_coords(inputname, "PDF/outfile")
+svg_to_positive_coords(inputname, "PDF/outfile.svg")
 
 key = input("Wait")
