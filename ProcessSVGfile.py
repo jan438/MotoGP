@@ -2,7 +2,7 @@ import sys
 from svgpathtools import svg2paths, wsvg
 from svgpathtools import parse_path, Path, Line, CubicBezier
 
-def flip_svg_path_vertically(input_svg):
+def flip_svg_path_vertically(input_svg, output_svg):
     """
     Flip an SVG path vertically around the horizontal axis at y = height / 2.
 
@@ -10,7 +10,7 @@ def flip_svg_path_vertically(input_svg):
     :param height: The total height of the SVG canvas.
     :return: Flipped path data string.
     """
-    height = 210
+    height = 263.86343
     try:
         paths, attributes = svg2paths(input_svg)
         path_data = paths[0]
@@ -23,8 +23,9 @@ def flip_svg_path_vertically(input_svg):
     for segment in path:
         flipped_segments.append(segment.translated(complex(0, -height)).scaled(1, -1).translated(complex(0, height)))
     flipped_path = Path(*flipped_segments)
-    print(str(flipped_path))
-    return flipped_path.d()
+    paths[0] = flipped_path
+    wsvg(paths, attributes=attributes, filename=output_svg)
+    return
 
 def svg_to_positive_coords(input_svg, output_svg):
     try:
@@ -74,13 +75,8 @@ def svg_to_positive_coords(input_svg, output_svg):
 
 inputname = "BalatonPark.svg"
 
-try:
-    flipped_path_data = flip_svg_path_vertically(inputname)
-    print("------------------")
-    print("Flipped Path: ", flipped_path_data)
-except ValueError as e:
-    print("Error:", e)
-    
+flip_svg_path_vertically(inputname, "PDF/outfile")
+
 svg_to_positive_coords(inputname, "PDF/outfile")
 
 key = input("Wait")
