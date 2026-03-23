@@ -6,15 +6,15 @@ def svg_to_positive_coords(input_svg, output_svg):
         # Load paths and attributes from the SVG
         paths, attributes = svg2paths(input_svg)
         # Extract all coordinates from all paths
+        segments = []
         all_x = []
         all_y = []
         for path in paths:
             for segment in path:
-                #for point in [segment.start, segment.end]:
-                    #all_x.append(point.real)
-                    #all_y.append(point.imag)
+                segments.append(segment)
                 for point in segment:
-                    print(point.real, point.imag)
+                    all_x.append(point.real)
+                    all_y.append(point.imag)
 
         if not all_x or not all_y:
             print("No coordinates found in the SVG.")
@@ -26,7 +26,8 @@ def svg_to_positive_coords(input_svg, output_svg):
 
         shift_x = -min_x if min_x < 0 else 0
         shift_y = -min_y if min_y < 0 else 0
-
+        print(len(all_x), len(segments))
+        return
         # Apply the shift to all paths
         shifted_paths = []
         for path in paths:
