@@ -11,6 +11,7 @@ def svg_to_positive_coords(input_svg, output_svg):
         all_y = []
         for path in paths:
             for segment in path:
+                print("Segment", segment)
                 segments.append(segment)
                 for point in segment:
                     all_x.append(point.real)
