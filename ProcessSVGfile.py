@@ -35,7 +35,7 @@ def svg_to_positive_coords(input_svg, output_svg):
         all_y = []
         for path in paths:
             for segment in path:
-                print("Segment start", segment.start)
+                #print("Segment start", segment.start)
                 if isinstance(segment, CubicBezier):
                     segments.append(segment)
                     for point in segment:
