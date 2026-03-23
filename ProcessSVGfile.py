@@ -15,6 +15,7 @@ def flip_svg_path_vertically(input_svg):
         paths, attributes = svg2paths(input_svg)
         path_data = paths[0]
         path = parse_path(path_data)
+        print(str(path))
     except Exception as e:
         raise ValueError(f"Invalid SVG path data: {e}")
 
