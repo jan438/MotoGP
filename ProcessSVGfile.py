@@ -26,7 +26,7 @@ def flip_svg_path_vertically(input_svg, output_svg):
     flipped_path = Path(*flipped_segments)
     paths = []
     paths.append(flipped_path)
-    print("flipped", len(paths), len(paths[0]))
+    print("flipped", len(paths), len(paths[0]), len(flipped_path))
     wsvg(paths, attributes=attributes, filename=output_svg)
     return
 
