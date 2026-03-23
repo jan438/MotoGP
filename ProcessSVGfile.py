@@ -13,7 +13,7 @@ def flip_svg_path_vertically(input_svg, output_svg):
     height = 263.86343
     try:
         paths, attributes = svg2paths(input_svg)
-        print("orig paths", len(paths), len(paths[0]), paths)
+        print("orig paths", len(paths), len(paths[24]), paths[24])
         path_data = paths[0]
         path = parse_path(path_data)
     except Exception as e:
