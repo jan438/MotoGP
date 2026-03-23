@@ -13,6 +13,7 @@ def flip_svg_path_vertically(input_svg):
     path_data = "M150 5 L75 200 L225 200 Z"
     height = 210
     try:
+        paths, attributes = svg2paths(input_svg)
         path = parse_path(path_data)
     except Exception as e:
         raise ValueError(f"Invalid SVG path data: {e}")
