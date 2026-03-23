@@ -14,7 +14,7 @@ def svg_to_positive_coords(input_svg, output_svg):
                     #all_x.append(point.real)
                     #all_y.append(point.imag)
                 for point in segment:
-                    print(point)
+                    print(point.real, point.imag)
 
         if not all_x or not all_y:
             print("No coordinates found in the SVG.")
