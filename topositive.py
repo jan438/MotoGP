@@ -8,11 +8,12 @@ def svg_to_positive_coords(input_svg, output_svg):
                 in doc.getElementsByTagName('path')]
     doc.unlink()
     print(str(path_strings))
-    return
     try:
         # Load paths and attributes from the SVG
         paths, attributes = svg2paths(input_svg)
-
+        print(paths)
+        key = input("Wait")
+        return
         # Extract all coordinates from all paths
         all_x = []
         all_y = []
