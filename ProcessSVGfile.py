@@ -2,7 +2,7 @@ import sys
 from svgpathtools import svg2paths, wsvg
 from svgpathtools import parse_path, Path, Line, CubicBezier
 
-def flip_svg_path_vertically(path_data, height):
+def flip_svg_path_vertically(input_svg):
     """
     Flip an SVG path vertically around the horizontal axis at y = height / 2.
 
@@ -10,6 +10,8 @@ def flip_svg_path_vertically(path_data, height):
     :param height: The total height of the SVG canvas.
     :return: Flipped path data string.
     """
+    path_data = "M150 5 L75 200 L225 200 Z"
+    height = 210
     try:
         path = parse_path(path_data)
     except Exception as e:
@@ -69,15 +71,10 @@ def svg_to_positive_coords(input_svg, output_svg):
     except Exception as e:
         print(f"An error occurred: {e}")
 
-original_path_data = "M150 5 L75 200 L225 200 Z"
-
 inputname = "BalatonPark.svg"
 
-svg_height = 210
-
 try:
-    flipped_path_data = flip_svg_path_vertically(original_path_data, svg_height)
-    print("Original Path:", original_path_data)
+    flipped_path_data = flip_svg_path_vertically(inputname)
     print("------------------")
     print("Flipped Path: ", flipped_path_data)
 except ValueError as e:
