@@ -24,7 +24,6 @@ def flip_svg_path_vertically(input_svg, output_svg):
         flipped_path = Path(*flipped_segments)
         paths, attributes = svg2paths(input_svg)
         wsvg(flipped_path, attributes=attributes, filename=output_svg)
-        circuit.save(output_svg)
     except Exception as e:
         raise ValueError(f"Invalid SVG path data: {e}")
     return
