@@ -15,6 +15,7 @@ def flip_svg_path_vertically(input_svg, output_svg):
     try:
         circuit = sg.fromfile(input_svg)
         height = circuit.height
+        print(str(height))
         path1 = circuit.find_id('path1')
         original_path_data = path1.tostr().decode().lower().split(' d="')[1].split('" ')[0]
         path = parse_path(original_path_data)
