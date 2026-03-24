@@ -12,11 +12,10 @@ def flip_svg_path_vertically(input_svg, output_svg):
     :param height: The total height of the SVG canvas.
     :return: Flipped path data string.
     """
-    svg_height = 263.86343
     try:
         circuit = sg.fromfile(input_svg)
-        height = circuit.height
-        print(str(height))
+        svg_height = circuit.height
+        svg_height = float(svg_height[:-2])
         path1 = circuit.find_id('path1')
         original_path_data = path1.tostr().decode().lower().split(' d="')[1].split('" ')[0]
         path = parse_path(original_path_data)
