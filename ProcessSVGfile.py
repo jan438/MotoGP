@@ -22,11 +22,8 @@ def flip_svg_path_vertically(input_svg, output_svg):
         for segment in path:
             flipped_segments.append(segment.translated(complex(0, -svg_height)).scaled(1, -1).translated(complex(0, svg_height)))
         flipped_path = Path(*flipped_segments)
-        print(flipped_path)
-        key = input("Wait")
     except Exception as e:
         raise ValueError(f"Invalid SVG path data: {e}")
-    print("=======================================================")
     return
 
 def svg_to_positive_coords(input_svg, output_svg):
