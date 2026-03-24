@@ -27,15 +27,6 @@ def flip_svg_path_vertically(input_svg, output_svg):
     except Exception as e:
         raise ValueError(f"Invalid SVG path data: {e}")
     print("=======================================================")
-    # Apply vertical flip: scale y by -1 and translate
-    flipped_segments = []
-    #for segment in path:
-        #flipped_segments.append(segment.translated(complex(0, -height)).scaled(1, -1).translated(complex(0, height)))
-    #flipped_path = Path(*flipped_segments)
-    #ppaths = []
-    #ppaths.append(flipped_path)
-    #print("flipped", len(ppaths), len(ppaths[0]), len(flipped_path), flipped_path)
-    #wsvg(paths, attributes=attributes, filename=output_svg)
     return
 
 def svg_to_positive_coords(input_svg, output_svg):
