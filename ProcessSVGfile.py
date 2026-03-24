@@ -16,9 +16,13 @@ def flip_svg_path_vertically(input_svg, output_svg):
         circuit = sg.fromfile(input_svg)
         path1 = circuit.find_id('path1')
         original_path_data = path1.tostr().decode().lower().split(' d="')[1].split('" ')[0]
-        print(original_path_data)
         path = parse_path(original_path_data)
-        print(path)
+        # Apply vertical flip: scale y by -1 and translate
+        flipped_segments = []
+        for segment in path:
+            flipped_segments.append(segment.translated(complex(0, -svg_height)).scaled(1, -1).translated(complex(0, svg_height)))
+        flipped_path = Path(*flipped_segments)
+        print(flipped_path)
         key = input("Wait")
     except Exception as e:
         raise ValueError(f"Invalid SVG path data: {e}")
