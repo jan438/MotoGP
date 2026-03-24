@@ -11,11 +11,13 @@ def flip_svg_path_vertically(input_svg, output_svg):
     :param height: The total height of the SVG canvas.
     :return: Flipped path data string.
     """
-    height = 263.86343
+    svg_height = 263.86343
     try:
         circuit = sg.fromfile(input_svg)
         path1 = circuit.find_id('path1')
-        path = path1.tostr().decode().lower().split(' d="')[1].split('" ')[0]
+        original_path_data = path1.tostr().decode().lower().split(' d="')[1].split('" ')[0]
+        print(original_path_data)
+        path = parse_path(original_path_data)
         print(path)
         key = input("Wait")
     except Exception as e:
