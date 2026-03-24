@@ -3,6 +3,7 @@ from svgpathtools import svg2paths, wsvg
 from svgpathtools import parse_path, Path, Line, CubicBezier
 import svgutils.transform as sg
 from reportlab.lib.units import inch, mm
+import lxml.etree as ET
 
 def flip_svg_path_vertically(input_svg, output_svg):
     """
