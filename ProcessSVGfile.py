@@ -5,7 +5,7 @@ import svgutils.transform as sg
 from reportlab.lib.units import inch, mm
 import lxml.etree as ET
 
-def flip_svg_path_vertically(input_svg, output_svg):
+def flip_svg_path_vertically(input_svg, output_svg, pathid):
     """
     Flip an SVG path vertically around the horizontal axis at y = height / 2.
 
@@ -14,7 +14,6 @@ def flip_svg_path_vertically(input_svg, output_svg):
     :return: Flipped path data string.
     """
     try:
-        pathid = "path1"
         circuit = sg.fromfile(input_svg)
         svg_height = circuit.height
         measurement = svg_height[len(svg_height) - 2:]
@@ -83,9 +82,10 @@ def svg_to_positive_coords(input_svg, output_svg):
         print(f"An error occurred: {e}")
 
 inputname = "BalatonParkorig.svg"
+pathid = "path1"
 
-flip_svg_path_vertically(inputname, "PDF/" + inputname)
+flip_svg_path_vertically(inputname, "PDF/" + inputname, pathid)
 
-#svg_to_positive_coords(inputname, "PDF/" + inputname)
+#svg_to_positive_coords(inputname, "PDF/" + inputname, pathid)
 
 key = input("Wait")
