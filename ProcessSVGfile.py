@@ -31,6 +31,8 @@ def flip_svg_path_vertically(input_svg, output_svg, pathid):
             flipped_segments.append(segment.translated(complex(0, -svg_height)).scaled(1, -1).translated(complex(0, svg_height)))
         flipped_path = Path(*flipped_segments)
         paths, attributes = svg2paths(input_svg)
+        original_style_data = circuit.xpath(f'//*[@id = "{pathid}"]')[0].attrib['style']
+        print(original_style_data)
         wsvg(flipped_path, attributes=attributes, filename=output_svg)
     except Exception as e:
         raise ValueError(f"Invalid SVG path data: {e}")
