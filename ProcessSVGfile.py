@@ -21,6 +21,7 @@ def flip_svg_path_vertically(input_svg, output_svg):
             svg_height = float(svg_height[:-2])
         path1 = circuit.find_id('path1')
         svg = ET.parse(input_svg)
+        path = svg.xpath('//*[@id = "path1"]')[0].attrib['d']
         path1str = path1.tostr()
         print("path1", dir(path1), "tostr", path1str)
         original_path_data = path1.tostr().decode().lower().split(' d="')[1].split('" ')[0]
