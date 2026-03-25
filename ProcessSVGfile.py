@@ -14,6 +14,7 @@ def flip_svg_path_vertically(input_svg, output_svg):
     :return: Flipped path data string.
     """
     try:
+        pathid = "path1"
         circuit = sg.fromfile(input_svg)
         svg_height = circuit.height
         measurement = svg_height[len(svg_height) - 2:]
