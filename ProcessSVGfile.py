@@ -4,6 +4,7 @@ from svgpathtools import parse_path, Path, Line, CubicBezier
 import svgutils.transform as sg
 from reportlab.lib.units import inch, mm
 import lxml.etree as ET
+import warnings
 
 def flip_svg_path_vertically(input_svg, output_svg, pathid):
     """
@@ -80,6 +81,8 @@ def svg_to_positive_coords(input_svg, output_svg):
         print(f"Error: File '{input_svg}' not found.")
     except Exception as e:
         print(f"An error occurred: {e}")
+
+warnings.filterwarnings('ignore')
 
 inputname = "BalatonParkorig.svg"
 pathid = "path1"
