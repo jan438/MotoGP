@@ -23,7 +23,7 @@ def flip_svg_path_vertically(input_svg, output_svg):
         #path1 = circuit.find_id('path1')
         #path = path1.tostr().decode().lower().split(' d="')[1].split('" ')[0]
         circuit = ET.parse(input_svg)
-        original_path_data = circuit.xpath('//*[@id = "path1"]')[0].attrib['d']
+        original_path_data = circuit.xpath(f'//*[@id = "{pathid}"]')[0].attrib['d']
         path = parse_path(original_path_data)
         # Apply vertical flip: scale y by -1 and translate
         flipped_segments = []
