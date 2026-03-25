@@ -20,6 +20,7 @@ def flip_svg_path_vertically(input_svg, output_svg):
         if measurement == "mm" or measurement == "cm" or measurement == "in" or measurement == "px" or measurement == "pt":
             svg_height = float(svg_height[:-2])
         path1 = circuit.find_id('path1')
+        svg = ET.parse(input_svg)
         path1str = path1.tostr()
         print("path1", dir(path1), "tostr", path1str)
         original_path_data = path1.tostr().decode().lower().split(' d="')[1].split('" ')[0]
