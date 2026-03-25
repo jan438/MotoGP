@@ -83,6 +83,8 @@ def svg_to_positive_coords(input_svg, output_svg):
 
 inputname = "BalatonParkorig.svg"
 pathid = "path1"
+#inputname = "PhillipIslandorig.svg"
+#pathid = "path2419"
 
 flip_svg_path_vertically(inputname, "PDF/" + inputname, pathid)
 
