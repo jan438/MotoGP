@@ -85,6 +85,6 @@ inputname = "BalatonParkorig.svg"
 
 flip_svg_path_vertically(inputname, "PDF/" + inputname)
 
-#svg_to_positive_coords(inputname, "PDF/outfile.svg")
+#svg_to_positive_coords(inputname, "PDF/" + inputname)
 
 key = input("Wait")
