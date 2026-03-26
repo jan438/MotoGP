@@ -17,18 +17,15 @@ def flip_svg_path_vertically(input_svg, output_svg, pathid):
             svg_height = float(svg_height[:-2])
         else:
             svg_height = float(svg_height)
-        original_path_data = circuit.xpath(f'//*[@id = "{pathid}"]')[0].attrib['d']
-        print(original_path_data)
-        path = parse_path(original_path_data)
-        # Apply vertical flip: scale y by -1 and translate
+        originald = circuit.xpath(f'//*[@id = "{pathid}"]')[0].attrib['d']
+        originals = circuit.xpath(f'//*[@id = "{pathid}"]')[0].attrib['style']
+        print(originald)
+        path = parse_path(originald)
         flipped_segments = []
         for segment in path:
             flipped_segments.append(segment.translated(complex(0, -svg_height)).scaled(1, -1).translated(complex(0, svg_height)))
         flipped_path = Path(*flipped_segments)
-        paths, attributes = svg2paths(input_svg)
-        original_style_data = circuit.xpath(f'//*[@id = "{pathid}"]')[0].attrib['style']
-        wsvg(flipped_path, attributes=attributes, filename = "w" + output_svg)
-        circuit.write("x" + output_svg, encoding='utf-8', xml_declaration=True)
+        circuit.write(output_svg, encoding='utf-8', xml_declaration=True)
     except Exception as e:
         raise ValueError(f"Invalid SVG path data: {e}")
     return
