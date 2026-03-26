@@ -6,13 +6,6 @@ import lxml.etree as ET
 import warnings
 
 def flip_svg_path_vertically(input_svg, output_svg, pathid):
-    """
-    Flip an SVG path vertically around the horizontal axis at y = height / 2.
-
-    :param path_data: The 'd' attribute string from an SVG <path>.
-    :param height: The total height of the SVG canvas.
-    :return: Flipped path data string.
-    """
     try:
         circuit = ET.parse(input_svg)
         root = circuit.getroot()
