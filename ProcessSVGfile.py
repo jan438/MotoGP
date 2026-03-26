@@ -18,6 +18,7 @@ def flip_svg_path_vertically(input_svg, output_svg, pathid):
         else:
             svg_height = float(svg_height)
         original_path_data = circuit.xpath(f'//*[@id = "{pathid}"]')[0].attrib['d']
+        print(original_path_data)
         path = parse_path(original_path_data)
         # Apply vertical flip: scale y by -1 and translate
         flipped_segments = []
@@ -26,7 +27,6 @@ def flip_svg_path_vertically(input_svg, output_svg, pathid):
         flipped_path = Path(*flipped_segments)
         paths, attributes = svg2paths(input_svg)
         original_style_data = circuit.xpath(f'//*[@id = "{pathid}"]')[0].attrib['style']
-        #print("Style", pathid, dir(original_style_data))
         wsvg(flipped_path, attributes=attributes, filename = "w" + output_svg)
         circuit.write("x" + output_svg, encoding='utf-8', xml_declaration=True)
     except Exception as e:
@@ -38,7 +38,7 @@ warnings.filterwarnings('ignore')
 inputname = "BalatonParkorig.svg"
 pathid = "path1"
 
-flip_svg_path_vertically(inputname, "o" + inputname, pathid)
+#flip_svg_path_vertically(inputname, "o" + inputname, pathid)
 
 inputname = "PhillipIslandorig.svg"
 pathid = "path2419"
