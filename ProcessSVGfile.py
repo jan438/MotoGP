@@ -34,8 +34,8 @@ def flip_svg_path_vertically(input_svg, output_svg, pathid):
         paths, attributes = svg2paths(input_svg)
         original_style_data = circuit.xpath(f'//*[@id = "{pathid}"]')[0].attrib['style']
         #print("Style", pathid, dir(original_style_data))
-        #wsvg(flipped_path, attributes=attributes, filename=output_svg)
-        circuit.write(output_svg, encoding='utf-8', xml_declaration=True)
+        wsvg(flipped_path, attributes=attributes, filename = "w" + output_svg)
+        circuit.write("x" + output_svg, encoding='utf-8', xml_declaration=True)
     except Exception as e:
         raise ValueError(f"Invalid SVG path data: {e}")
     return
@@ -45,12 +45,11 @@ warnings.filterwarnings('ignore')
 inputname = "BalatonParkorig.svg"
 pathid = "path1"
 
-flip_svg_path_vertically(inputname, "PDF/" + inputname, pathid)
+flip_svg_path_vertically(inputname, "o" + inputname, pathid)
 
 inputname = "PhillipIslandorig.svg"
 pathid = "path2419"
 
-flip_svg_path_vertically(inputname, "PDF/" + inputname, pathid)
-
+flip_svg_path_vertically(inputname, "o" + inputname, pathid)
 
 key = input("Wait")
