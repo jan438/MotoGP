@@ -9,13 +9,6 @@ def flip_svg_path_vertically(input_svg, output_svg, pathid):
     try:
         circuit = ET.parse(input_svg)
         root = circuit.getroot()
-        paths = root.getchildren()[0]
-        path_list = paths.findall('path')
-        for path in path_list:
-            if "type" in path.keys():
-                if path.attrib['type'] == 'd':
-                    content = path.find('content')
-                    content = content.text
         for tag in root.iter():
             if not len(tag):
                 print ("tag", "tag", tag.tag, "text", tag.text)
