@@ -1,7 +1,6 @@
 import sys
 from svgpathtools import svg2paths, wsvg
 from svgpathtools import parse_path, Path, Line, CubicBezier
-import svgutils.transform as sg
 from reportlab.lib.units import inch, mm
 import lxml.etree as ET
 import warnings
@@ -15,14 +14,14 @@ def flip_svg_path_vertically(input_svg, output_svg, pathid):
     :return: Flipped path data string.
     """
     try:
-        circuit = sg.fromfile(input_svg)
-        svg_height = circuit.height
+        circuit = ET.parse(input_svg)
+        root = circuit.getroot()
+        svg_height = root.get("height")
         measurement = svg_height[len(svg_height) - 2:]
         if measurement == "mm" or measurement == "cm" or measurement == "in" or measurement == "px" or measurement == "pt":
             svg_height = float(svg_height[:-2])
         else:
             svg_height = float(svg_height)
-        circuit = ET.parse(input_svg)
         original_path_data = circuit.xpath(f'//*[@id = "{pathid}"]')[0].attrib['d']
         path = parse_path(original_path_data)
         # Apply vertical flip: scale y by -1 and translate
@@ -32,7 +31,7 @@ def flip_svg_path_vertically(input_svg, output_svg, pathid):
         flipped_path = Path(*flipped_segments)
         paths, attributes = svg2paths(input_svg)
         original_style_data = circuit.xpath(f'//*[@id = "{pathid}"]')[0].attrib['style']
-        print("Style", pathid, dir(original_style_data))
+        #print("Style", pathid, dir(original_style_data))
         wsvg(flipped_path, attributes=attributes, filename=output_svg)
     except Exception as e:
         raise ValueError(f"Invalid SVG path data: {e}")
