@@ -16,6 +16,9 @@ def flip_svg_path_vertically(input_svg, output_svg, pathid):
     try:
         circuit = ET.parse(input_svg)
         root = circuit.getroot()
+        nsmap = {'svg': 'http://www.w3.org/2000/svg'}
+        xpaths = root.findall('.//svg:path', namespaces=nsmap)
+        print(xpaths)
         svg_height = root.get("height")
         measurement = svg_height[len(svg_height) - 2:]
         if measurement == "mm" or measurement == "cm" or measurement == "in" or measurement == "px" or measurement == "pt":
