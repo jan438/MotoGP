@@ -9,8 +9,9 @@ def flip_svg_path_vertically(input_svg, output_svg, pathid):
     try:
         circuit = ET.parse(input_svg)
         root = circuit.getroot()
-        for child in root.iter():
-            print("type", type(child))
+        for tag in root.iter():
+            if not len(tag):
+                print ("tag", tag.tag, tag.text)
         nsmap = {'svg': 'http://www.w3.org/2000/svg'}
         xpaths = root.findall('.//svg:path', namespaces=nsmap)
         svg_height = root.get("height")
