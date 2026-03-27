@@ -15,6 +15,8 @@ def flip_svg_path_vertically(input_svg, output_svg, pathid):
             style_attr = path_elem.get("style")
             if id_attr == pathid:
                 print("path", path_elem, "style", style_attr, "id", id_attr)
+            else:
+                path_elem.getparent().remove(path_elem)
         svg_height = root.get("height")
         measurement = svg_height[len(svg_height) - 2:]
         if measurement == "mm" or measurement == "cm" or measurement == "in" or measurement == "px" or measurement == "pt":
