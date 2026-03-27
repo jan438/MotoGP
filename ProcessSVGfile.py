@@ -25,10 +25,10 @@ def flip_svg_path_vertically(input_svg, output_svg, pathid):
             svg_height = float(svg_height[:-2])
         else:
             svg_height = float(svg_height)
-        originald = circuit.xpath(f'//*[@id = "{pathid}"]')[0].attrib['d']
+        original_d = circuit.xpath(f'//*[@id = "{pathid}"]')[0].attrib['d']
         # to do add flipped path
-        originals = circuit.xpath(f'//*[@id = "{pathid}"]')[0].attrib['style']
-        path = parse_path(originald)
+        original_s = circuit.xpath(f'//*[@id = "{pathid}"]')[0].attrib['style']
+        path = parse_path(original_d)
         flipped_segments = []
         for segment in path:
             flipped_segments.append(segment.translated(complex(0, -svg_height)).scaled(1, -1).translated(complex(0, svg_height)))
