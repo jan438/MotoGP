@@ -18,7 +18,7 @@ def flip_svg_path_vertically(input_svg, output_svg, pathid):
             else:
                 path_elem.getparent().remove(path_elem)
         for text_elem in root.findall('.//svg:text', nsmap):
-            print("text", text_elem)
+            text_elem.getparent().remove(text_elem)
         svg_height = root.get("height")
         measurement = svg_height[len(svg_height) - 2:]
         if measurement == "mm" or measurement == "cm" or measurement == "in" or measurement == "px" or measurement == "pt":
