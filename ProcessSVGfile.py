@@ -23,7 +23,7 @@ def flip_svg_path_vertically(input_svg, output_svg, pathid):
             flipped_segments.append(segment.translated(complex(0, -svg_height)).scaled(1, -1).translated(complex(0, svg_height)))
 
         flipped_path = Path(*flipped_segments)
-        print(dir(flipped_path), flipped_path.d)
+        print(dir(flipped_path), flipped_path.d())
         nsmap = {'svg': 'http://www.w3.org/2000/svg'}
         for path_elem in root.findall('.//svg:path', nsmap):
             id_attr = path_elem.get("id")
