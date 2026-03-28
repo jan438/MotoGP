@@ -32,12 +32,10 @@ def flip_svg_path_vertically(input_svg, output_svg, pathid):
             if id_attr == pathid:
                 path_elem.set("id", pathid)
                 path_elem.set("d", flipped_path.d())
-                    # Option 2: Modify inside the style attribute if present
-                    # style = path.get("style")
-                    # if style:
-                    #     styles = dict(item.split(":") for item in style.split(";") if item)
-                    #     styles["stroke-width"] = "3"
-                    #     path.set("style", ";".join(f"{k}:{v}" for k, v in styles.items()))
+                if style_attr:
+                    styles = dict(item.split(":") for item in style_attr.split(";") if item)
+                    styles["stroke-width"] = "3"
+                    path_elem.set("style", ";".join(f"{k}:{v}" for k, v in styles.items()))
             else:
                 path_elem.getparent().remove(path_elem)
         for text_elem in root.findall('.//svg:text', nsmap):
