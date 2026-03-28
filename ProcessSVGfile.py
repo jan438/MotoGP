@@ -29,6 +29,7 @@ def flip_svg_path_vertically(input_svg, output_svg, pathid):
             id_attr = path_elem.get("id")
             style_attr = path_elem.get("style")
             if id_attr == pathid:
+                path_elem.set("id", pathid)
                 print("path", path_elem, "style", style_attr, "id", id_attr)
             else:
                 path_elem.getparent().remove(path_elem)
