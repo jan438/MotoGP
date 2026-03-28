@@ -2,21 +2,16 @@
 <!-- Created with Inkscape (http://www.inkscape.org/) --><svg xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.0" width="1331.9034" height="908.8739" id="svg2383">
   <defs id="defs2385">
     <clipPath id="clipPath3490">
-      <rect width="1511.7875" height="1003.7479" x="683.1405" y="104.1039" transform="matrix(-0.7183395,0.6956928,-0.6956928,-0.7183395,0,0)" id="rect3492" style="fill:#006a00;fill-opacity:1;fill-rule:nonzero;stroke:none"/>
-    </clipPath>
+      </clipPath>
     <pattern id="pattern4912" patternTransform="matrix(0.1737876,0,0,0.1737876,763.47719,1693.9071)" height="18.137641" width="18.181098" patternUnits="userSpaceOnUse">
       <g transform="translate(-1025.5348,-1215.2814)" id="g4907">
-        <rect y="1215.2814" x="1025.5348" height="18.095789" width="18.172573" id="rect4899" style="opacity:1;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.5;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"/>
-        <rect y="1215.2814" x="1025.5348" height="9.0746527" width="9.0746527" id="rect4903" style="opacity:1;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.5;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"/>
-        <rect y="1224.3444" x="1034.6412" height="9.0746527" width="9.0746527" id="rect4905" style="opacity:1;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.5;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"/>
-      </g>
+        </g>
     </pattern>
     <pattern patternTransform="matrix(0.4562459,1.6264824e-8,-1.6264824e-8,0.4562459,-1778.2267,454.6431)" id="pattern4166" xlink:href="#pattern4912"/>
     <clipPath id="clipPath9716">
       </clipPath>
     <clipPath id="clipPath3494">
-      <rect width="2168.1926" height="1468.4177" x="-4232.8457" y="-2372.1296" transform="matrix(-0.9472965,-0.3203582,0.9519016,-0.3064038,0,0)" id="rect3496" style="fill:#006a00;fill-opacity:1;fill-rule:nonzero;stroke:none"/>
-    </clipPath>
+      </clipPath>
   </defs>
   <metadata id="metadata2388">
     <rdf:RDF>
@@ -98,7 +93,6 @@
     <g transform="matrix(1.9555278,0,0,1.9555278,-2363.2969,-280.76004)" id="g3804" style="display:inline">
       </g>
     <g transform="matrix(0.9360189,0.8856542,0.8856542,-0.9360189,-260.24797,882.37812)" clip-path="url(#clipPath9716)" id="g4801" style="display:inline">
-      <rect width="13.041035" height="53.588943" ry="0" x="-1620.8837" y="376.01733" transform="matrix(-0.7183395,-0.6956928,0.6956928,-0.7183395,0,0)" clip-path="url(#clipPath3490)" id="rect3457" style="fill:url(#pattern4166);fill-opacity:1;stroke:#000000;stroke-width:0.77603012;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;display:inline"/>
-    </g>
+      </g>
     </g>
 </svg>
