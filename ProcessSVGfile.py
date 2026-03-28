@@ -31,7 +31,7 @@ def flip_svg_path_vertically(input_svg, output_svg, pathid):
             d_attr = path_elem.get("d")
             if id_attr == pathid:
                 path_elem.set("id", pathid)
-                path_elem.set("d", original_d)
+                path_elem.set("d", flipped_path.d())
             else:
                 path_elem.getparent().remove(path_elem)
         for text_elem in root.findall('.//svg:text', nsmap):
