@@ -43,6 +43,8 @@ def flip_svg_path_vertically(input_svg, output_svg, pathid):
             rect_elem.getparent().remove(rect_elem)
         for elli_elem in root.findall('.//svg:ellipse', nsmap):
             elli_elem.getparent().remove(elli_elem)
+        for use_elem in root.findall('.//svg:use', nsmap):
+            use_elem.getparent().remove(use_elem)
         circuit.write(output_svg, encoding='utf-8', xml_declaration=True)
     except Exception as e:
         raise ValueError(f"Invalid SVG path data: {e}")
