@@ -224,9 +224,11 @@ for i in range(len(circuitsdata)):
     my_canvas.drawString(leftmargin + col * colwidth + (colwidth - namewidth) / 2, circuit_y - 20, displayname)
     my_canvas.drawString(leftmargin + col * colwidth, circuit_y + date_y, day)
     my_canvas.drawString(leftmargin + col * colwidth + 20, circuit_y + date_y, month)
+    namewidth = pdfmetrics.stringWidth(displayname, motogpfont, 8)
     my_canvas.drawString(leftmargin + col * colwidth + 30, circuit_y + date_y, starttime)
     drawing = scaleSVG('Wiki/location.svg', 0.07)
     renderPDF.draw(drawing, my_canvas, leftmargin + col * colwidth, circuit_y + location_y)
+    namewidth = pdfmetrics.stringWidth(displayname, motogpfont, 10)
     my_canvas.drawString(leftmargin + col * colwidth + 20, circuit_y + location_y + 6, location)
     my_canvas.drawString(leftmargin + col * colwidth + 20, circuit_y + description_y + 6, description)
     col = col + 1
