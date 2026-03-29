@@ -50,14 +50,14 @@ def flip_svg_path_vertically(input_svg, output_svg, pathid):
 
 warnings.filterwarnings('ignore')
 
-inputname = "BalatonParkorig.svg"
+inputname = "Wiki/BalatonParkorig.svg"
 pathid = "path1"
 
-flip_svg_path_vertically(inputname, "o" + inputname, pathid)
+flip_svg_path_vertically(inputname, inputname[:-8] + ".svg", pathid)
 
-inputname = "PhillipIslandorig.svg"
+inputname = "Wiki/PhillipIslandorig.svg"
 pathid = "path2419"
 
-flip_svg_path_vertically(inputname, "o" + inputname, pathid)
+flip_svg_path_vertically(inputname, inputname[:-8] + ".svg", pathid)
 
 key = input("Wait")
