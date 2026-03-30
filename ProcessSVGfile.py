@@ -48,7 +48,7 @@ def flip_svg_path_vertically(input_svg, output_svg, pathid):
             id_attr = g_elem.get("id")
             transform_attr = g_elem.get("transform")
             if transform_attr is not None:
-                print(id_attr, transform_attr)
+                g_elem.set("transform", "")
         circuit.write(output_svg, encoding='utf-8', xml_declaration=True)
     except Exception as e:
         raise ValueError(f"Invalid SVG path data: {e}")
