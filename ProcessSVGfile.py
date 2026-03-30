@@ -50,33 +50,33 @@ def flip_svg_path_vertically(input_svg, output_svg, pathid):
             transform_attr = g_elem.get("transform")
             if transform_attr is not None:
                 g_elem.set("transform", "")
-        max_x = math.inf
-        max_y = math.inf
+        max_x = -math.inf
+        max_y = -math.inf
         for node in flipped_path:
             if isinstance(node, CubicBezier):
                 start_x = node.start.real
-                if start_x < max_x:
+                if start_x > max_x:
                     max_x = start_x
                 start_y = node.start.imag
-                if start_y < max_y:
+                if start_y > max_y:
                     max_y = start_y
                 control1_x = node.control1.real
-                if control1_x < max_x:
+                if control1_x > max_x:
                     max_x = control1_x
                 control1_y = node.control1.imag
-                if control1_y < max_y:
+                if control1_y > max_y:
                     max_y = control1_y
                 control2_x = node.control2.real
-                if control2_x < max_x:
+                if control2_x > max_x:
                     max_x = control2_x 
                 control2_y = node.control2.imag
-                if control2_y < max_y:
+                if control2_y > max_y:
                     max_y = control2_y
                 end_x = node.end.real
-                if end_x < max_x:
+                if end_x > max_x:
                     max_x = end_x 
                 end_y = node.end.imag
-                if end_y < max_y:
+                if end_y > max_y:
                     max_y = end_y
         print("max_x", max_x, "max_y", max_y)
         positive_path = Path()
