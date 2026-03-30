@@ -79,6 +79,12 @@ def flip_svg_path_vertically(input_svg, output_svg, pathid):
                 if end_y < max_y:
                     max_y = end_y
         print("max_x", max_x, "max_y", max_y)
+        positive_path = Path()
+        nsmap = {'svg': 'http://www.w3.org/2000/svg'}
+        for path_elem in root.findall('.//svg:path', nsmap):
+            id_attr = path_elem.get("id")
+            if id_attr == pathid:
+                path_elem.set("d", positive_path.d())
         circuit.write(output_svg, encoding='utf-8', xml_declaration=True)
     except Exception as e:
         raise ValueError(f"Invalid SVG path data: {e}")
