@@ -3,6 +3,7 @@ from svgpathtools import svg2paths, wsvg
 from svgpathtools import parse_path, Path, Line, CubicBezier
 from reportlab.lib.units import inch, mm
 import lxml.etree as ET
+import math
 import warnings
 
 def flip_svg_path_vertically(input_svg, output_svg, pathid):
@@ -49,6 +50,8 @@ def flip_svg_path_vertically(input_svg, output_svg, pathid):
             transform_attr = g_elem.get("transform")
             if transform_attr is not None:
                 g_elem.set("transform", "")
+        max_x = -math.inf
+        max_y = -math.inf
         for node in flipped_path:
             if isinstance(node, CubicBezier):
                 start_x = node.start.real
