@@ -51,7 +51,15 @@ def flip_svg_path_vertically(input_svg, output_svg, pathid):
                 g_elem.set("transform", "")
         for node in flipped_path:
             if isinstance(node, CubicBezier):
-                print("nodeCB", node)
+                start_x = node.start.real
+                start_y = node.start.imag
+                control1_x = node.control1.real
+                control1_y = node.control1.imag
+                control2_x = node.control2.real
+                control2_y = node.control2.imag
+                end_x = node.end.real
+                end_y = node.end.imag
+                print("nodeCB start_x", start_x)
         circuit.write(output_svg, encoding='utf-8', xml_declaration=True)
     except Exception as e:
         raise ValueError(f"Invalid SVG path data: {e}")
