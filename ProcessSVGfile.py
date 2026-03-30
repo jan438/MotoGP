@@ -22,7 +22,6 @@ def flip_svg_path_vertically(input_svg, output_svg, pathid):
         for segment in path:
             flipped_segments.append(segment.translated(complex(0, -svg_height)).scaled(1, -1).translated(complex(0, svg_height)))
         flipped_path = Path(*flipped_segments)
-        print(dir(flipped_path), flipped_path.d())
         nsmap = {'svg': 'http://www.w3.org/2000/svg'}
         for path_elem in root.findall('.//svg:path', nsmap):
             id_attr = path_elem.get("id")
@@ -46,7 +45,9 @@ def flip_svg_path_vertically(input_svg, output_svg, pathid):
         for use_elem in root.findall('.//svg:use', nsmap):
             use_elem.getparent().remove(use_elem)
         for g_elem in root.findall('.//svg:g', nsmap):
-            print(g_elem.get("transform"))
+            id_attr = g_elem.get("id")
+            transform_attr = g_elem.get("transform")
+            print(id_attr, transform_attr)
         circuit.write(output_svg, encoding='utf-8', xml_declaration=True)
     except Exception as e:
         raise ValueError(f"Invalid SVG path data: {e}")
