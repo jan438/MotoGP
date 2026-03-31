@@ -2,6 +2,7 @@ import os
 import sys
 import csv
 import math
+import pytz
 import unicodedata
 from pathlib import Path
 from reportlab.lib.pagesizes import A4
@@ -45,6 +46,17 @@ class RaceEvent:
         self.endtime = endtime
         self.month = month
         
+def converttimetztolocalclock(timetz):
+    utc_string = timetz
+    utc_format = "%Y%m%dT%H%M%S"
+    local_tz = pytz.timezone('Europe/Amsterdam')
+    utc_dt = datetime.strptime(utc_string, utc_format)
+    #local_dt = utc_dt.replace(tzinfo=pytz.utc).astimezone(local_tz)
+    local_dt = utc_dt
+    hour = local_dt.hour
+    minute = local_dt.minute
+    return [hour, minute]
+       
 def weekDay(year, month, day):
     offset = [0, 31, 59, 90, 120, 151, 181, 212, 243, 273, 304, 334]
     afterFeb = 1
@@ -226,6 +238,8 @@ for i in range(len(circuitsdata)):
     my_canvas.drawString(leftmargin + col * colwidth, circuit_y + date_y, day)
     my_canvas.drawString(leftmargin + col * colwidth + 20, circuit_y + date_y, month)
     my_canvas.setFont(motogpfont, 8)
+    [hour,minute] = converttimetztolocalclock(starttime)
+    print(hour)
     my_canvas.drawString(leftmargin + col * colwidth + 50, circuit_y + date_y, starttime)
     drawing = scaleSVG('Wiki/location.svg', 0.07)
     renderPDF.draw(drawing, my_canvas, leftmargin + col * colwidth, circuit_y + location_y)
