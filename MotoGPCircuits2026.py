@@ -239,8 +239,10 @@ for i in range(len(circuitsdata)):
     my_canvas.drawString(leftmargin + col * colwidth + 20, circuit_y + date_y, month)
     my_canvas.setFont(motogpfont, 8)
     [hour,minute] = converttimetztolocalclock(starttime)
-    print(hour)
-    my_canvas.drawString(leftmargin + col * colwidth + 50, circuit_y + date_y, starttime)
+    strhour = "{:02d}".format(hour)
+    strminute = "{:02d}".format(minute)
+    startevent = strhour + strminute
+    my_canvas.drawString(leftmargin + col * colwidth + 50, circuit_y + date_y, startevent)
     drawing = scaleSVG('Wiki/location.svg', 0.07)
     renderPDF.draw(drawing, my_canvas, leftmargin + col * colwidth, circuit_y + location_y)
     my_canvas.setFont(motogpfont, 10)
