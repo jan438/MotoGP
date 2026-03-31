@@ -212,6 +212,7 @@ for i in range(len(circuitsdata)):
     month = monthnames[rce.month - 1]
     location = rce.location
     description = rce.description
+    starttime = rce.starttime
     if i == 11:
         col = 4
     if cadre_mode:
