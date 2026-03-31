@@ -78,6 +78,19 @@ def flip_svg_path_vertically(input_svg, output_svg, pathid):
                 end_y = node.end.imag
                 if end_y < min_y:
                     min_y = end_y
+            if isinstance(node, Line):
+                x0 = node.start.real
+                if x0 < min_x:
+                    min_x = x0
+                y0 = node.start.imag
+                if y0 < min_y:
+                    min_y = y0
+                x1 = node.end.real
+                if x1 < min_x:
+                    min_x = x1
+                y1 = node.end.imag
+                if y1 < min_y:
+                    min_y = y1
         print("min_x", min_x, "min_y", min_y)
         min_x_str = str(-min_x)
         min_y_str = str(-min_y) 
