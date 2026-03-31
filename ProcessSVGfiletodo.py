@@ -21,9 +21,9 @@ def flip_svg_path_vertically(input_svg, output_svg, pathid):
             svg_viewbox = root.get("viewBox")
             x = svg_viewbox.split()
             svg_height = float(x[3])
-            print("viewbox", svg_viewbox, "height", svg_height)
-            return
         original_d = circuit.xpath(f'//*[@id = "{pathid}"]')[0].attrib['d']
+        print(pathid, original_d)
+        return
         original_s = circuit.xpath(f'//*[@id = "{pathid}"]')[0].attrib['style']
         path = parse_path(original_d)
         flipped_segments = []
