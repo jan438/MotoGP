@@ -20,8 +20,7 @@ def flip_svg_path_vertically(input_svg, output_svg, pathid):
         else:
             svg_viewbox = root.get("viewBox")
             x = svg_viewbox.split()
-            svg_height = x[3]
-            svg_height = float(svg_height)
+            svg_height = float(x[3])
             print("viewbox", svg_viewbox, "height", svg_height)
             return
         original_d = circuit.xpath(f'//*[@id = "{pathid}"]')[0].attrib['d']
