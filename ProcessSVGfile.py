@@ -43,6 +43,8 @@ def flip_svg_path_vertically(input_svg, output_svg, pathid):
             rect_elem.getparent().remove(rect_elem)
         for elli_elem in root.findall('.//svg:ellipse', nsmap):
             elli_elem.getparent().remove(elli_elem)
+        for circ_elem in root.findall('.//svg:circle', nsmap):
+            circ_elem.getparent().remove(circ_elem)
         for use_elem in root.findall('.//svg:use', nsmap):
             use_elem.getparent().remove(use_elem)
         for g_elem in root.findall('.//svg:g', nsmap):
