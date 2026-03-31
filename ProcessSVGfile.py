@@ -117,7 +117,6 @@ pathid = "path2419"
 flip_svg_path_vertically(inputname, inputname[:-8] + ".svg", pathid)
 
 inputname = "Wiki/RedBullRingorig.svg"
-
-rrb = open(inputname)
+pathid = "path14"
 
 key = input("Wait")
