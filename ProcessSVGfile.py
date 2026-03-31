@@ -11,11 +11,16 @@ def flip_svg_path_vertically(input_svg, output_svg, pathid):
         circuit = ET.parse(input_svg)
         root = circuit.getroot()
         svg_height = root.get("height")
-        measurement = svg_height[len(svg_height) - 2:]
-        if measurement == "mm" or measurement == "cm" or measurement == "in" or measurement == "px" or measurement == "pt":
-            svg_height = float(svg_height[:-2])
+        if svg_height is not None:
+            measurement = svg_height[len(svg_height) - 2:]
+            if measurement == "mm" or measurement == "cm" or measurement == "in" or measurement == "px" or measurement == "pt":
+                svg_height = float(svg_height[:-2])
+            else:
+                svg_height = float(svg_height)
         else:
-            svg_height = float(svg_height)
+            svg_viewbox = root.get("viewBox")
+            x = svg_viewbox.split()
+            svg_height = float(x[3])
         original_d = circuit.xpath(f'//*[@id = "{pathid}"]')[0].attrib['d']
         path = parse_path(original_d)
         flipped_segments = []
@@ -119,5 +124,7 @@ flip_svg_path_vertically(inputname, inputname[:-8] + ".svg", pathid)
 
 inputname = "Wiki/RedBullRingorig.svg"
 pathid = "path14"
+
+flip_svg_path_vertically(inputname, inputname[:-8] + ".svg", pathid)
 
 key = input("Wait")
