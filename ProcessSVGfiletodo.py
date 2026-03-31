@@ -11,13 +11,16 @@ def flip_svg_path_vertically(input_svg, output_svg, pathid):
         circuit = ET.parse(input_svg)
         root = circuit.getroot()
         svg_height = root.get("height")
-        print(svg_height)
-        return
-        measurement = svg_height[len(svg_height) - 2:]
-        if measurement == "mm" or measurement == "cm" or measurement == "in" or measurement == "px" or measurement == "pt":
-            svg_height = float(svg_height[:-2])
+        if svg_height is not None:
+            measurement = svg_height[len(svg_height) - 2:]
+            if measurement == "mm" or measurement == "cm" or measurement == "in" or measurement == "px" or measurement == "pt":
+                svg_height = float(svg_height[:-2])
+            else:
+                svg_height = float(svg_height)
         else:
-            svg_height = float(svg_height)
+            svg_viewbox = root.get("viewBox")
+            print("viewbox", svg_viewbox)
+            return
         original_d = circuit.xpath(f'//*[@id = "{pathid}"]')[0].attrib['d']
         original_s = circuit.xpath(f'//*[@id = "{pathid}"]')[0].attrib['style']
         path = parse_path(original_d)
