@@ -1,37 +1,69 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<!-- Created with Inkscape (http://www.inkscape.org/) -->
-
-<svg
-   width="1430.4401"
-   height="885.35919"
-   id="svg2"
-   version="1.1"
-   inkscape:version="1.4.3 (fcd0343856, 2026-01-01)"
-   sodipodi:docname="Brazil.svg"
-   inkscape:export-filename="E:\Images\Maps\Race Tracks\South America\Brazil\Autódromo Internacional Ayrton Senna (Goiânia)\Autódromo Internacional Ayrton Senna (Goiânia) track map (Brazil)--Mixed circuit.png"
-   inkscape:export-xdpi="90"
-   inkscape:export-ydpi="90"
-   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
-   xmlns:xlink="http://www.w3.org/1999/xlink"
-   xmlns="http://www.w3.org/2000/svg"
-   xmlns:svg="http://www.w3.org/2000/svg"
-   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-   xmlns:cc="http://creativecommons.org/ns#"
-   xmlns:dc="http://purl.org/dc/elements/1.1/">
-  <title
-     id="title5686">Track map for Autódromo Internacional Ayrton Senna in Goiânia, Brazil</title>
-  <g
-     inkscape:label="Hidden objects"
-     inkscape:groupmode="layer"
-     id="layer1"
-     transform="translate(343.24428,-89.584991)"
-     style="display:none">
-    <path
-       style="fill:none"
-       d="M -120.47965,1169.81475 C -199.66236,1126.0197600000001 -272.0289,1163.7648 -295.44759999999997,1223.09218 M -295.4476,1223.09218 L -313.61036,1269.1045100000001 C -330.55792,1312.03834 -321.25862,1367.4801499999999 -296.65845,1406.5360799999999 L -120.47965000000002,1686.24261 C -109.49001000000003,1703.6900799999999 -92.04556700000002,1717.7062099999998 -73.25647400000003,1726.20069 L 128.956,1817.62022 C 168.79278,1835.63028 227.90681999999998,1810.27485 240.22849000000002,1755.8222 M 240.22849,1755.8222 C 250.68556999999998,1709.60967 221.36930999999996,1660.09726 168.9136899999999,1652.94422 M 168.91368999999997,1652.94422 L 35.720099000000005,1634.78145 M 35.720099,1634.78145 C 6.872748699999999,1630.84772 -23.574954999999996,1614.2230100000002 -38.74722500000001,1589.37455 L -157.41061,1395.033 C -172.60632999999999,1370.1461199999999 -148.21375999999998,1337.12285 -126.53390999999999,1329.64705 L -108.97657,1323.5928 C -77.687366,1312.80343 -36.537334,1335.22573 -17.55733699999999,1362.34002 L -0.6054254000000014,1386.5570400000001 M -0.6054254,1386.5570400000001 C 17.621151,1412.59501 43.07607300000001,1435.2356800000002 72.045623,1448.31043 L 345.6979,1571.8172100000002 C 366.63984,1581.26888 386.83625,1595.68494 399.581,1614.80222 L 446.80395,1685.63719 C 458.17646,1702.6960800000002 442.7387,1734.85772 425.00863,1745.1526000000001 L 406.24044,1756.05026 C 387.17599,1767.11994 380.42356,1800.6703 392.92109,1818.83078 L 431.66831,1875.13534 C 450.70242,1902.79428 492.25097,1923.20095 525.509,1927.8072200000001 L 1001.979,1993.7987200000002 C 1030.3,1997.7212 1067.3122,1965.4566200000002 1066.1541,1936.8887300000001 L 1064.3379,1892.08725 C 1062.6645,1850.8095200000002 1033.2863,1807.9485800000002 997.13564,1787.95408 L -120.47964999999999,1169.81475"
-       id="path3764"
-       inkscape:connector-curvature="0"
-       sodipodi:nodetypes="ssssssssssssssssssssssssssssss" />
-  </g>
+<?xml version='1.0' encoding='UTF-8'?>
+<!-- Created with Inkscape (http://www.inkscape.org/) --><svg xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" width="1430.4401" height="885.35919" id="svg2" version="1.1" inkscape:version="0.48pre1 r9509" sodipodi:docname="Autódromo Internacional Ayrton Senna (Goiânia) track map (Brazil)--Mixed circuit.svg" inkscape:export-filename="E:\Images\Maps\Race Tracks\South America\Brazil\Autódromo Internacional Ayrton Senna (Goiânia)\Autódromo Internacional Ayrton Senna (Goiânia) track map (Brazil)--Mixed circuit.png" inkscape:export-xdpi="90" inkscape:export-ydpi="90">
+  <title id="title5686">Track map for Autódromo Internacional Ayrton Senna in Goiânia, Brazil</title>
+  <defs id="defs4">
+    <filter color-interpolation-filters="sRGB" inkscape:collect="always" id="filter5277" x="-0.036581911" width="1.0731637" y="-0.16673841" height="1.3334768" inkscape:label="filter5277">
+      <feGaussianBlur inkscape:collect="always" stdDeviation="4.5896484" id="feGaussianBlur5279"/>
+    </filter>
+    <pattern inkscape:collect="always" xlink:href="#pattern4256" id="pattern4264" patternTransform="matrix(-0.77603024,9.7935988e-4,-9.7935988e-4,-0.77603024,-1649.8401,173.83698)"/>
+    <pattern patternUnits="userSpaceOnUse" width="10.793857" height="10.773841" patternTransform="matrix(-0.5630234,-0.534067,0.534067,-0.5630234,1593.7246,910.57043)" id="pattern4256">
+      <g id="g4248" transform="">
+        </g>
+    </pattern>
+  </defs>
+  <sodipodi:namedview id="base" pagecolor="#ffffff" bordercolor="#666666" borderopacity="1.0" inkscape:pageopacity="0.0" inkscape:pageshadow="2" inkscape:zoom="0.84519445" inkscape:cx="715.22003" inkscape:cy="442.6796" inkscape:document-units="px" inkscape:current-layer="layer2" showgrid="false" inkscape:window-width="1677" inkscape:window-height="1030" inkscape:window-x="1672" inkscape:window-y="-8" inkscape:window-maximized="1" inkscape:showpageshadow="false" showborder="false" fit-margin-top="0" fit-margin-left="0" fit-margin-right="0" fit-margin-bottom="0"/>
+  <metadata id="metadata7">
+    <rdf:RDF>
+      <cc:Work rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+        <dc:title>Track map for Autódromo Internacional Ayrton Senna in Goiânia, Brazil</dc:title>
+        <cc:license rdf:resource="http://creativecommons.org/licenses/by-sa/3.0/"/>
+        <dc:date>August 4th, 2010</dc:date>
+        <dc:creator>
+          <cc:Agent>
+            <dc:title>Will Pittenger</dc:title>
+          </cc:Agent>
+        </dc:creator>
+        <dc:publisher>
+          <cc:Agent>
+            <dc:title>http://wlps-ge-stuff.ucoz.com/</dc:title>
+          </cc:Agent>
+        </dc:publisher>
+        <dc:description>Created in Inkscape.  Shows the "Mixed Circuit".</dc:description>
+        <dc:identifier>3-2-1</dc:identifier>
+      </cc:Work>
+      <cc:License rdf:about="http://creativecommons.org/licenses/by-sa/3.0/">
+        <cc:permits rdf:resource="http://creativecommons.org/ns#Reproduction"/>
+        <cc:permits rdf:resource="http://creativecommons.org/ns#Distribution"/>
+        <cc:requires rdf:resource="http://creativecommons.org/ns#Notice"/>
+        <cc:requires rdf:resource="http://creativecommons.org/ns#Attribution"/>
+        <cc:permits rdf:resource="http://creativecommons.org/ns#DerivativeWorks"/>
+        <cc:requires rdf:resource="http://creativecommons.org/ns#ShareAlike"/>
+      </cc:License>
+    </rdf:RDF>
+  </metadata>
+  <g inkscape:label="Hidden objects" inkscape:groupmode="layer" id="layer1" transform="" style="display:none">
+    <path style="fill:none;stroke-width:3" d="M -120.47965,835.80873 C -199.66236,792.01374 -272.0289,829.75878 -295.44759999999997,889.08616 M -295.4476,889.08616 L -313.61036,935.09849 C -330.55792,978.03232 -321.25862,1033.47413 -296.65845,1072.53006 L -120.47965000000002,1352.23659 C -109.49001000000003,1369.68406 -92.04556700000002,1383.70019 -73.25647400000003,1392.1946699999999 L 128.956,1483.6142 C 168.79278,1501.62426 227.90681999999998,1476.26883 240.22849000000002,1421.81618 M 240.22849,1421.81618 C 250.68556999999998,1375.60365 221.36930999999996,1326.09124 168.9136899999999,1318.9382 M 168.91368999999997,1318.9382 L 35.720099000000005,1300.7754300000001 M 35.720099,1300.7754300000001 C 6.872748699999999,1296.8417 -23.574954999999996,1280.21699 -38.74722500000001,1255.3685300000002 L -157.41061,1061.02698 C -172.60632999999999,1036.1401 -148.21375999999998,1003.1168299999999 -126.53390999999999,995.64103 L -108.97657,989.58678 C -77.687366,978.79741 -36.537334,1001.21971 -17.55733699999999,1028.3339999999998 L -0.6054254000000014,1052.5510199999999 M -0.6054254,1052.5510199999999 C 17.621151,1078.5889900000002 43.07607300000001,1101.22966 72.045623,1114.3044100000002 L 345.6979,1237.81119 C 366.63984,1247.26286 386.83625,1261.67892 399.581,1280.7962 L 446.80395,1351.63117 C 458.17646,1368.69006 442.7387,1400.8517000000002 425.00863,1411.14658 L 406.24044,1422.0442400000002 C 387.17599,1433.11392 380.42356,1466.66428 392.92109,1484.82476 L 431.66831,1541.12932 C 450.70242,1568.78826 492.25097,1589.19493 525.509,1593.8011999999999 L 1001.979,1659.7927 C 1030.3,1663.7151800000001 1067.3122,1631.4506000000001 1066.1541,1602.88271 L 1064.3379,1558.0812300000002 C 1062.6645,1516.8035 1033.2863,1473.94256 997.13564,1453.9480600000002 L -120.47964999999999,835.80873" id="path3764" inkscape:connector-curvature="0" sodipodi:nodetypes="ssssssssssssssssssssssssssssss" transform="translate(330.55792, -792.01374)"/>
+    </g>
+  <g inkscape:groupmode="layer" id="layer2" inkscape:label="Visible map" transform="">
+    <g style="display:inline" id="g3227-9" transform="" clip-path="none">
+      </g>
+    <g style="display:inline" id="g3922-1" transform="" clip-path="none">
+      </g>
+    <g style="display:inline" id="g8575" transform="">
+      </g>
+    <g style="display:inline" id="g3804-6" transform="" clip-path="none">
+      <g id="g5301-2" inkscape:transform-center-x="5.0449874" inkscape:transform-center-y="8.3195314" transform="">
+        </g>
+      <g id="g5296-1" transform="">
+        </g>
+    </g>
+    <g style="display:inline" transform="" id="g5281-5" clip-path="none">
+      </g>
+    <g style="display:inline" transform="" id="g4801" clip-path="none">
+      </g>
+    <g style="display:inline" id="g4034">
+      </g>
+    </g>
 </svg>
