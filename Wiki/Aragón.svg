@@ -1,32 +1,24 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<!-- Created with Inkscape (http://www.inkscape.org/) -->
-
-<svg
-   width="834"
-   height="551"
-   id="svg2"
-   sodipodi:version="0.32"
-   inkscape:version="1.4.3 (fcd0343856, 2026-01-01)"
-   version="1.0"
-   sodipodi:docname="Aragónv.svg"
-   inkscape:output_extension="org.inkscape.output.svg.inkscape"
-   sodipodi:modified="true"
-   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
-   xmlns="http://www.w3.org/2000/svg"
-   xmlns:svg="http://www.w3.org/2000/svg">
-  <g
-     inkscape:label="Capa 1"
-     inkscape:groupmode="layer"
-     id="layer1"
-     transform="translate(-30.142849,-115.6479)">
-    <g
-       id="g2364">
-      <path
-         sodipodi:nodetypes="ccsccccccccccccccccccccccccccc"
-         id="path2366"
-         d="m 310.12913,268.05757 421.2087,-134.4283 c 25.14323,-7.13388 48.47303,-4.56702 61.84954,14.19071 7.59321,10.64786 16.19937,28.64547 10.13823,56.43629 -1.37241,6.42857 -6.04846,14.58159 -15.35715,22.85715 L 559.39702,401.39913 c -16.68397,9.06984 -24.53653,-24.99084 -47.4114,-44.48833 -32.12759,-33.76276 -64.60407,-7.32654 -118.69293,7.57614 -20.26931,8.55317 -21.98571,20.06934 -25.75889,34.85027 l -16.16244,86.36804 c -2.11468,13.33352 -7.48087,22.19956 -16.66751,29.29442 l -33.33504,22.22336 c -7.78424,5.99292 -22.8472,1.64322 -26.26396,-12.12183 l -8.08122,-44.44671 c -1.17851,-6.37308 -3.87226,-12.29024 -8.08123,-19.1929 -11.20624,-18.43741 -30.37951,-37.66465 -62.75966,-54.34818 -20.86197,-8.76834 -25.96839,-0.1007 -30,17.14286 l -25,125 c -1.79755,11.07395 2.98573,19.9252 11.18857,23.82717 l 13.63706,6.06092 c 10.57802,5.33612 8.5149,15.2203 -2.52538,25.25381 -36.10983,30.71261 -105.979635,20.12851 -109.09648,-33.84011 3.5956,-81.51625 32.262372,-162.54379 85.59408,-217.45889 7.57767,-7.86187 12.55368,-7.10541 20.97702,-4.26959 l 39.39595,21.2132 c 22.26954,10.77048 38.99,4.78361 51.0127,-4.54568 l 48.9924,-36.3655 c 9.04839,-7.23943 15.59676,-13.05028 11.61675,-21.71828 l -8.58629,-23.2335 c -0.86871,-5.59661 -5.00991,-11.42697 6.74001,-16.12225 z"
-         style="fill:none;fill-rule:evenodd;stroke:#fffa69;stroke-width:10;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
-    </g>
+<?xml version='1.0' encoding='UTF-8'?>
+<!-- Created with Inkscape (http://www.inkscape.org/) --><svg xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd" xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:cc="http://creativecommons.org/ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" width="1007.2851" height="674.61707" id="svg2" sodipodi:version="0.32" inkscape:version="1.1.1 (3bf5ae0d25, 2021-09-20)" version="1.0" sodipodi:docname="Motorland_Aragón_FIA.svg" inkscape:output_extension="org.inkscape.output.svg.inkscape" sodipodi:modified="true">
+  <defs id="defs4"/>
+  <sodipodi:namedview id="base" pagecolor="#ffffff" bordercolor="#666666" borderopacity="1.0" inkscape:pageopacity="0.0" inkscape:pageshadow="2" inkscape:zoom="0.7" inkscape:cx="413.57143" inkscape:cy="342.85714" inkscape:document-units="px" inkscape:current-layer="layer1" inkscape:window-width="1920" inkscape:window-height="1009" inkscape:window-x="1432" inkscape:window-y="-8" width="857px" height="561px" inkscape:pagecheckerboard="0" showgrid="false" fit-margin-top="0" fit-margin-left="0" fit-margin-right="0" fit-margin-bottom="0" inkscape:window-maximized="1"/>
+  <metadata id="metadata7">
+    <rdf:RDF>
+      <cc:Work rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g inkscape:label="Capa 1" inkscape:groupmode="layer" id="layer1" transform="">
+    <g id="g2384" transform="">
+      <path sodipodi:nodetypes="ccscccccccccccccccccccccccccccccc" id="path2366" d="M 308.10882,867.89805 L 837.0195799999999,699.09675 C 843.8279899999999,696.4544400000001 848.2171,697.50584 849.46035,700.2026900000001 C 851.2800199999999,704.14989 848.856,708.8963100000001 842.0195799999999,711.9538900000001 L 820.591,724.09675 C 813.96941,728.25764 812.64739,734.53835 810.591,740.5253200000001 L 801.30529,804.09675 C 799.9328800000001,810.5253200000001 797.48635,816.9539000000001 789.51957,823.38247 L 557.37671,1001.2396100000001 C 540.69274,1010.30945 532.84018,976.24877 509.96531,956.75128 C 477.83772,922.98852 445.36124,949.4247399999999 391.27238,964.3274200000001 C 371.00307,972.88059 369.28667,984.3967600000001 365.51349,999.17769 L 349.35105,1085.54573 C 347.23636999999997,1098.87925 341.87018,1107.74529 332.68354,1114.84015 L 299.3485,1137.06351 C 291.56426,1143.05643 276.5013,1138.70673 273.08454,1124.94168 L 265.00332000000003,1080.49497 C 263.82481,1074.12189 261.13106000000005,1068.20473 256.92209,1061.30207 C 245.71585000000002,1042.86466 226.54258000000002,1023.63742 194.16243000000003,1006.95389 C 173.30046000000004,998.1855499999999 168.19404000000003,1006.85319 164.16243000000003,1024.09675 L 139.16243000000003,1149.09675 C 137.36488000000003,1160.1707000000001 142.14816000000002,1169.0219499999998 150.35100000000003,1172.92392 L 163.98806000000002,1178.98484 C 174.56608000000003,1184.32096 172.50296000000003,1194.20514 161.46268,1204.23865 C 125.35285,1234.95126 55.483050000000006,1224.36716 52.36620500000001,1170.3985400000001 C 55.961805000000005,1088.88229 84.628577,1007.85475 137.96028,952.93965 C 145.53795000000002,945.0777800000001 150.51396,945.83424 158.93730000000002,948.67006 L 198.33325000000002,969.8832600000001 C 220.60279000000003,980.6537400000001 237.32325000000003,974.66687 249.34595000000002,965.3375800000001 L 298.33835,928.97208 C 307.38674,921.73265 313.93511,915.9218000000001 309.9551,907.2538000000001 L 301.36881,884.0203000000001 C 300.5001,878.4236900000001 296.3589,872.5933300000002 308.10882,867.89805 L 308.10882,867.89805" style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:3;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" transform="translate(-52.36620500000001, -696.4544400000001)"/>
+      <g transform="" id="g2343">
+        </g>
+      </g>
+    <g id="g8552" transform="">
+      </g>
+    <g id="g8552-7" transform="">
+      </g>
   </g>
 </svg>
