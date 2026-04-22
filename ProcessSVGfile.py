@@ -137,4 +137,9 @@ pathid = "path2366"
 
 flip_svg_path_vertically(inputname, inputname[:-8] + ".svg", pathid)
 
+inputname = "Wiki/Original/AyrtonSennaorig.svg"
+pathid = "path3764"
+
+flip_svg_path_vertically(inputname, inputname[:-8] + ".svg", pathid)
+
 key = input("Wait")
