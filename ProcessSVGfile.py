@@ -125,6 +125,11 @@ flip_svg_path_vertically(inputname, inputname[:-8] + ".svg", pathid)
 inputname = "Wiki/RedBullRingorig.svg"
 pathid = "path14"
 
+inputname = "Wiki/Jerezorig.svg"
+pathid = "path3164"
+
+flip_svg_path_vertically(inputname, inputname[:-8] + ".svg", pathid)
+
 flip_svg_path_vertically(inputname, inputname[:-8] + ".svg", pathid)
 
 key = input("Wait")
