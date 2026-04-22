@@ -125,6 +125,8 @@ flip_svg_path_vertically(inputname, inputname[:-8] + ".svg", pathid)
 inputname = "Wiki/Original/RedBullRingorig.svg"
 pathid = "path14"
 
+flip_svg_path_vertically(inputname, inputname[:-8] + ".svg", pathid)
+
 inputname = "Wiki/Original/Jerezorig.svg"
 pathid = "path3164"
 
